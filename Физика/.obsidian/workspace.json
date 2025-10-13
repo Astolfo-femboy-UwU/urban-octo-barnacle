@@ -1,0 +1,183 @@
+{
+  "main": {
+    "id": "fd94ebbea2409aeb",
+    "type": "split",
+    "children": [
+      {
+        "id": "d790cc0d2f87ab9b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b72574ff4f3e1531",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Задачи/7.1.A.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "7.1.A"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1ba4c8ca91714ad1",
+    "type": "split",
+    "children": [
+      {
+        "id": "ba08eb18450134e4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0d969adf6c2c4c95",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "3e3b1e15ba95aed6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "7e418223bfb9f6c5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "30c4cbbb6fa89a02",
+    "type": "split",
+    "children": [
+      {
+        "id": "a697ea7c4189edb0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32e63a49a79cc932",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Данко_часть1.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Данко_часть1"
+            }
+          },
+          {
+            "id": "76521058447d0ef0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Данко_часть1.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Данко_часть1"
+            }
+          },
+          {
+            "id": "e34b0fe4eddc322b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2b01c8741f8c9778",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Данко_часть1.pdf",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Данко_часть1"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "b72574ff4f3e1531",
+  "lastOpenFiles": [
+    "Лабораторные/1/Лабораторная работа №1.md",
+    "Лабораторные/1/DeepSeek.md",
+    "Лабораторные/1/Untitled.base",
+    "Задачи/7.1.A.md",
+    "Берман.pdf",
+    "Данко_часть1.pdf",
+    "Задачи/Untitled",
+    "Глава М3.pdf"
+  ]
+}
