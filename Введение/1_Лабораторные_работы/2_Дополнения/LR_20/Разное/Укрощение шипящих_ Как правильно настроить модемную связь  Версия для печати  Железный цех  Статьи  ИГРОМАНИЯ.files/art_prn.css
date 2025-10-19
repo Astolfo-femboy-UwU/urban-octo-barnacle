@@ -1,0 +1,147 @@
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+P {
+	FONT-SIZE: 14px; TEXT-INDENT: 2em; FONT-FAMILY: Georgia, "Times New Roman", Times, serif; TEXT-ALIGN: justify
+}
+DIV {
+	FONT-SIZE: 14px; TEXT-INDENT: 2em; FONT-FAMILY: Georgia, "Times New Roman", Times, serif; TEXT-ALIGN: justify
+}
+TABLE.image TD {
+	PADDING-RIGHT: 10px! important; PADDING-LEFT: 10px! important; PADDING-BOTTOM: 10px! important; TEXT-INDENT: 0px; PADDING-TOP: 10px! important
+}
+TABLE.image TD P {
+	PADDING-RIGHT: 10px! important; PADDING-LEFT: 10px! important; PADDING-BOTTOM: 10px! important; TEXT-INDENT: 0px; PADDING-TOP: 10px! important
+}
+TABLE.image TD DIV {
+	PADDING-RIGHT: 10px! important; PADDING-LEFT: 10px! important; PADDING-BOTTOM: 10px! important; TEXT-INDENT: 0px; PADDING-TOP: 10px! important
+}
+TABLE.vr1 {
+	BORDER-RIGHT: #333333 1px solid; BORDER-TOP: #333333 1px solid; MARGIN: 15px 20px; BORDER-LEFT: #333333 1px solid; BORDER-BOTTOM: #333333 1px solid
+}
+TABLE.vr1 TD.head {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; COLOR: #ffffff; PADDING-TOP: 0px; BACKGROUND-COLOR: #000000; TEXT-ALIGN: center
+}
+TABLE.vr1 TD.body {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+TABLE.vr2 {
+	BORDER-RIGHT: #333333 1px solid; BORDER-TOP: #333333 1px solid; MARGIN: 15px 20px; BORDER-LEFT: #333333 1px solid; BORDER-BOTTOM: #333333 1px solid
+}
+TABLE.vr2 TD.head {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; COLOR: #ffffff; PADDING-TOP: 0px; FONT-FAMILY: Arial,Helvetica,sans-serif; BACKGROUND-COLOR: #000000; TEXT-ALIGN: center
+}
+TABLE.vr2 TD.body {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+TABLE.vr1 P {
+	TEXT-ALIGN: left
+}
+TABLE.vr2 P {
+	TEXT-ALIGN: left
+}
+TABLE.data {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 10px; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+TABLE.data TD.comment P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px 5px; TEXT-INDENT: 10px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+TABLE.data TD.data_title {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; TEXT-ALIGN: center
+}
+TABLE.content1 {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 0px; PADDING-TOP: 1px; BORDER-COLLAPSE: collapse
+}
+TABLE.content2 {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 0px; PADDING-TOP: 1px; BORDER-COLLAPSE: collapse
+}
+TABLE.content3 {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 0px; PADDING-TOP: 1px; BORDER-COLLAPSE: collapse
+}
+TABLE.content4 {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 0px; PADDING-TOP: 1px; BORDER-COLLAPSE: collapse
+}
+TABLE.content1 {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid
+}
+TABLE.content2 {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid
+}
+TABLE.content3 {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid
+}
+TABLE.content4 {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid
+}
+TABLE.content1 TD {
+	BORDER-RIGHT: #333333 1px dotted; PADDING-RIGHT: 1px; BORDER-TOP: #333333 1px dotted; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 0px; BORDER-LEFT: #333333 1px dotted; PADDING-TOP: 1px; BORDER-BOTTOM: #333333 1px dotted
+}
+TABLE.content2 TD {
+	BORDER-RIGHT: #333333 1px dotted; PADDING-RIGHT: 1px; BORDER-TOP: #333333 1px dotted; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 0px; BORDER-LEFT: #333333 1px dotted; PADDING-TOP: 1px; BORDER-BOTTOM: #333333 1px dotted
+}
+TABLE.content3 TD {
+	BORDER-RIGHT: #333333 1px dotted; PADDING-RIGHT: 1px; BORDER-TOP: #333333 1px dotted; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 0px; BORDER-LEFT: #333333 1px dotted; PADDING-TOP: 1px; BORDER-BOTTOM: #333333 1px dotted
+}
+TABLE.content4 TD {
+	BORDER-RIGHT: #333333 1px dotted; PADDING-RIGHT: 1px; BORDER-TOP: #333333 1px dotted; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 0px; BORDER-LEFT: #333333 1px dotted; PADDING-TOP: 1px; BORDER-BOTTOM: #333333 1px dotted
+}
+TABLE.data .td2 {
+	
+}
+TABLE.data .td3 {
+	
+}
+TABLE.data .td4 {
+	
+}
+TABLE.data .td5 {
+	
+}
+TABLE.data .td2 {
+	
+}
+TABLE.data .td3 {
+	
+}
+TABLE.data .td4 {
+	
+}
+TABLE.data .td5 {
+	
+}
+TABLE.content1 TD.title {
+	FONT-WEIGHT: bold; TEXT-TRANSFORM: uppercase; TEXT-ALIGN: left
+}
+TABLE.content1 TD.head {
+	FONT-WEIGHT: bold; TEXT-ALIGN: center
+}
+TABLE.content2 TD.head {
+	FONT-WEIGHT: bold; TEXT-ALIGN: center
+}
+TABLE.content3 TD.head {
+	FONT-WEIGHT: bold; TEXT-ALIGN: center
+}
+TABLE.content4 TD.head {
+	FONT-WEIGHT: bold; TEXT-ALIGN: center
+}
+TABLE.content1 TD.head {
+	
+}
+TABLE.content2 TD.head {
+	
+}
+TABLE.content3 TD.head {
+	
+}
+TABLE.content4 TD.head {
+	
+}
+TD.rub_cont {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; FONT-WEIGHT: bold; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+TD.art_cont {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}

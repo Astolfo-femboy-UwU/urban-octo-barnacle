@@ -1,0 +1,87 @@
+BODY {
+	FONT-SIZE: 10pt; BACKGROUND: white; FONT-FAMILY: Arial Cyr, Geneva; TEXT-ALIGN: justify
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16pt; TEXT-ALIGN: center
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 13pt; TEXT-ALIGN: left
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; FONT-STYLE: italic; TEXT-ALIGN: left
+}
+H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; TEXT-ALIGN: left
+}
+H5 {
+	FONT-WEIGHT: bold; FONT-STYLE: italic; TEXT-ALIGN: left
+}
+H6 {
+	FONT-WEIGHT: bold; TEXT-ALIGN: left
+}
+P {
+	MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt; TEXT-INDENT: 2em
+}
+TT {
+	FONT-WEIGHT: bold
+}
+PRE {
+	FONT-WEIGHT: bold
+}
+UL {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+OL {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+TABLE {
+	MARGIN-BOTTOM: 10pt
+}
+TD {
+	FONT-SIZE: 10pt; TEXT-INDENT: 0em
+}
+TD P {
+	FONT-SIZE: 10pt; TEXT-INDENT: 0em
+}
+TH {
+	FONT-SIZE: 10pt; BACKGROUND: silver; TEXT-INDENT: 0em; TEXT-ALIGN: left
+}
+TH P {
+	FONT-SIZE: 10pt; BACKGROUND: silver; TEXT-INDENT: 0em; TEXT-ALIGN: left
+}
+.sub {
+	FONT-SIZE: 13pt; FONT-STYLE: italic
+}
+.author {
+	MARGIN-TOP: 10pt; FONT-WEIGHT: bold; MARGIN-BOTTOM: 10pt; TEXT-INDENT: 0em; FONT-STYLE: italic; TEXT-ALIGN: center
+}
+.epigraf {
+	MARGIN-BOTTOM: 10pt; TEXT-INDENT: 0em; TEXT-ALIGN: right
+}
+.extension {
+	MARGIN-BOTTOM: 10pt; TEXT-INDENT: 0em; FONT-STYLE: italic; TEXT-ALIGN: left
+}
+.contents {
+	FONT-WEIGHT: bold; COLOR: gray; TEXT-DECORATION: none
+}
+.contents:hover {
+	TEXT-DECORATION: underline
+}
+.extra {
+	FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.extra:hover {
+	TEXT-DECORATION: underline
+}
+.sup {
+	FONT-SIZE: 8pt; VERTICAL-ALIGN: super
+}
+.pic {
+	MARGIN-BOTTOM: 10pt; TEXT-INDENT: 0em; TEXT-ALIGN: center
+}
+.tablesign {
+	MARGIN-TOP: 10pt; FONT-WEIGHT: bold; FONT-SIZE: 10pt; TEXT-INDENT: 0em; TEXT-ALIGN: left
+}
+.source {
+	MARGIN-TOP: 10pt; FONT-WEIGHT: bold; MARGIN-BOTTOM: 10pt; TEXT-INDENT: 0em; FONT-STYLE: italic; TEXT-ALIGN: right
+}

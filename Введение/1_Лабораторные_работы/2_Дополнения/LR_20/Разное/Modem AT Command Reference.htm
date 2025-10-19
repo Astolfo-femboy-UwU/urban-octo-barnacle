@@ -1,0 +1,895 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0036)http://www.tos.org.ua/ATS/atcmds.htm -->
+<HTML><HEAD><TITLE>Modem AT Command Reference</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META content="none, default" name="Microsoft Border">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff>
+<TABLE cellSpacing=0 cellPadding=0 width=537 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=middle width=92></TD>
+    <TD vAlign=center width=247>&nbsp; </TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top>
+      <P align=center><BR></P>
+      <H1 align=center>Modem AT Command Reference</H1>
+      <TABLE cellPadding=2 border=4>
+        <TBODY>
+        <TR vAlign=top>
+          <TD>AT </TD>
+          <TD>Command </TD>
+          <TD>Chipset/Protocol </TD></TR>
+        <TR vAlign=top>
+          <TD>+++ </TD>
+          <TD>Escape Code </TD>
+          <TD>All </TD></TR>
+        <TR vAlign=top>
+          <TD>A/ </TD>
+          <TD>Repeat Last Command </TD>
+          <TD>All </TD></TR>
+        <TR vAlign=top>
+          <TD>A&gt; </TD>
+          <TD>Continuously Repeat Command </TD>
+          <TD>USR </TD></TR>
+        <TR vAlign=top>
+          <TD>AT </TD>
+          <TD>Command Mode Prefix </TD>
+          <TD>All </TD></TR>
+        <TR vAlign=top>
+          <TD>AT#CID=n </TD>
+          <TD>n=0 Disable caller ID <BR>n=1 Enable caller ID in readable 
+            format <BR>n=2 Enable caller ID in HEX format </TD>
+          <TD>Must have feature #142. Type ATi10 </TD></TR>
+        <TR vAlign=top>
+          <TD>AT$ </TD>
+          <TD>HELP, Command Summary </TD>
+          <TD>USR </TD></TR>
+        <TR vAlign=top>
+          <TD>AT%Cn </TD>
+          <TD>n=0 Data compression disable <BR>n=1 MNP5 enable <BR>n=2 V.42 
+            enable <BR>n=3 V.42bis and MNP5 </TD>
+          <TD>V.34, Rockwell, Compression selection </TD></TR>
+        <TR vAlign=top>
+          <TD>AT%En </TD>
+          <TD>n=0 Do not request retrain <BR>n=1 Enable monitoring and 
+            retraining <BR>if line is bad <BR>n=2 Enable monitoring and 
+            retraining <BR>if line is bad, wait one minute <BR>before 
+            renogotiating higher speed </TD>
+          <TD>V.32 retraining </TD></TR>
+        <TR vAlign=top>
+          <TD>AT%Fn </TD>
+          <TD>n=1 Select 75Tx/1200Rx <BR>n=2 Select 100Tx/75Rx <BR>n=3 Select 
+            V.23 half-duplex </TD>
+          <TD>Optional feature #121. Data echo options </TD></TR>
+        <TR vAlign=top>
+          <TD>AT%Gn </TD>
+          <TD>n=0 Disable V.32bis rate negotiation <BR>n=1 Enable V.32bis rate 
+            negotiation </TD>
+          <TD>V.32 Initiation of rate renegotiation </TD></TR>
+        <TR vAlign=top>
+          <TD>AT%L </TD>
+          <TD>Report received signal level <BR>009=-9 dBm (or more) 
+            <BR>010=-10 dBm etc. <BR>043=-43 dBm (or less) </TD>
+          <TD>Rockwell. Returns value representing signal level in -dBm. The 
+            smaller the number, the better the connection. </TD></TR>
+        <TR vAlign=top>
+          <TD>AT%Q </TD>
+          <TD>Report line signal quality <BR>Range of 0-128 </TD>
+          <TD>Rockwell. Lower the number, better the line. Reading is 
+            instantanteous, repeat serveral times for acurate reading. </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;$ </TD>
+          <TD>HELP, Ampersand Commands </TD>
+          <TD>USR </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;An </TD>
+          <TD>n=0 Disable /ARQ Result Codes <BR>n=1 Enable /ARQ Result Codes 
+            <BR>n=2 Enable /Modulation Codes <BR>n=3 Enable /Extra Result Codes 
+          </TD>
+          <TD>Result codes-All </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Bn </TD>
+          <TD>n=0 Floating DTE Speed <BR>n=1 Fixed DTE Speed <BR>n=2 DTE Speed 
+            Fixed When ARQ </TD>
+          <TD>DTE speed variables </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Cn </TD>
+          <TD>n=0 DCD Always On <BR>n=1 Modem Controls DCD </TD>
+          <TD>Data Carrier Detect </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Dn </TD>
+          <TD>n=0 Ignore DTR <BR>n=1 On-Line Command Mode <BR>n=2 DTE Controls 
+            DTR <BR>n=3 Reset modem (ATZ) </TD>
+          <TD>Select modem reaction to DTR. Works with &amp;Q command </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Fn </TD>
+          <TD>n=0 Load Factory 0, no FC <BR>n=1 Load Factory 1, HW FC <BR>n=2 
+            Load Factory 2, SW FC </TD>
+          <TD>Load Factory Default </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Gn </TD>
+          <TD>n=0 No Guard Tone <BR>n=1 550 Hz Guard Tone <BR>n=2 1800 Hz 
+            Guard Tone </TD>
+          <TD>Guard Tone </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Hn </TD>
+          <TD>n=0 Disable TX Flow Control <BR>n=1 CTS <BR>n=2 Xon/Xoff <BR>n=3 
+            CTS and Xon/Xoff </TD>
+          <TD>USR, serial port flow control </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;In </TD>
+          <TD>n=0 Disable RX Flow Control <BR>n=1 Xon/Xoff <BR>n=2 Xon/Xoff 
+            Chars Filtered <BR>n=3 HP Enq/Ack Host Mode <BR>n=4 HP Enq/Ack 
+            Terminal Mode <BR>n=5 Xon/Xoff for non-ARQ Mode </TD>
+          <TD>USR, serial port flow control </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Kn </TD>
+          <TD>n=0 Disable Data Compression <BR>n=1 Auto Data Compression 
+            <BR>n=2 Enable Data Compression <BR>n=3 Selective Data Compression 
+          </TD>
+          <TD>USR, data compression control </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Kn </TD>
+          <TD>n=0 Disable flow control <BR>n=3 Enable bi-directional hardware 
+            <BR>(RTS/CTS) flow control <BR>n=4 Enable software (XON/XOFF) 
+            <BR>n=5 Enable trnasparent flow control <BR>n=6 Enable both hardware 
+            and software <BR>flow control </TD>
+          <TD>Rockwell, serial port flow control </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Mn </TD>
+          <TD>n=0 Normal Mode <BR>n=4 ARQ/Normal Mode <BR>n=5 ARQ Mode </TD>
+          <TD>USR Asynchronous/Synchnous mode </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Nn </TD>
+          <TD>n=0 Highest Link Speed <BR>n=1 300 bps <BR>n=2 1200 bps <BR>n=3 
+            2400 bps <BR>n=4 4800 bps <BR>n=5 7200 bps <BR>n=6 9600 bps <BR>n=7 
+            12000 bps <BR>n=8 14400 bps <BR>n=9 16800 bps <BR>n=10 19200 bps 
+            <BR>n=11 21600 bps <BR>n=12 24000 bps <BR>n=13 26400 bps <BR>n=14 
+            28800 bps <BR>n=15 31200 bps <BR>n=16 33600 bps </TD>
+          <TD>USR </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Pn </TD>
+          <TD>n=0 N.American Pulse Dial <BR>n=1 UK Pulse Dial </TD>
+          <TD>USR pulse dial selection </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Pn </TD>
+          <TD>n=0 N.American Pulse Dial <BR>(39%/61% and 10PPS) <BR>n=1 
+            UK/Hong Kong Pulse Dial <BR>(33%/67% and 10PPS) <BR>n=2 39%/61% and 
+            20PPS <BR>n=3 33%/67% and 20 PPS (Japan) </TD>
+          <TD>Rockwell make/break ratio for pulse dial </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Q </TD>
+          <TD>n=1 Synch mode 1 <BR>n=2 Synch mode 2, dial stored number 
+            <BR>when DTR makes transition <BR>n=3 Synch mode 3, manual dialing 
+            <BR>n=4 Reserved <BR>n=5 Reliable Asynch mode <BR>n=6 Normal Asynch 
+            mode </TD>
+          <TD>Rockwell asynch/synch mode <BR>Same as &amp;M, depending on 
+            &amp;F </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Rn </TD>
+          <TD>n=1 Ignore RTS <BR>n=2 RX to DTE/RTS high </TD>
+          <TD>USR </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Sn </TD>
+          <TD>n=0 DSR Always On <BR>n=1 Modem Controls DSR </TD>
+          <TD>USR </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Tn </TD>
+          <TD>n=0 End Test <BR>n=1 Analog Loopback (ALB) <BR>n=3 Digital 
+            Loopback (DLB) <BR>n=4 Grant Remote DLB <BR>n=5 Deny Remote DLB 
+            <BR>n=6 Remote Digital Loopback <BR>n=7 Remote DLB With Self Test 
+            <BR>n=8 ALB With Self Test </TD>
+          <TD>USR </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Un </TD>
+          <TD>n=0 Variable link rate floor. <BR>n=1 Minimum link rate 300 bps 
+            <BR>n=2 Minimum link rate 1200 bps <BR>n=3 Minimum link rate 2400 
+            bps <BR>n=4 Minimum link rate 4800 bps <BR>n=5 Minimum link rate 
+            7200 bps <BR>n=6 Minimum link rate 9600 bps <BR>n=7 Minimum link 
+            rate 12000 bps <BR>n=8 Minimum link rate 14400 bps <BR>n=9 Minimum 
+            link rate 16800 bps <BR>n=10 Minimum link rate 19200 bps <BR>n=11 
+            Minimum link rate 21600 bps <BR>n=12 Minimum link rate 24000 bps 
+            <BR>n=13 Minimum link rate 26400 bps <BR>n=14 Minimum link rate 
+            28800 bps <BR>n=15 Minimum link rate 31200 bps <BR>n=16 Minimum link 
+            rate 33600 bps </TD>
+          <TD>USR </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;V </TD>
+          <TD>Display configuration information </TD>
+          <TD>Rockwell </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Wn </TD>
+          <TD>n=0 Store Configuration 0 <BR>n=1 Store Configuration 1 </TD>
+          <TD>All </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Yn </TD>
+          <TD>n=0 Destructive <BR>n=1 Destructive/Expedited <BR>n=2 
+            Nondest./Expedited <BR>n=3 Nondest./Unexpedited </TD>
+          <TD>All </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Zn=s </TD>
+          <TD>Store Phone Number </TD>
+          <TD>All </TD></TR>
+        <TR vAlign=top>
+          <TD>AT&amp;Zn? </TD>
+          <TD>Query Phone Number </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>AT)Mn </TD>
+          <TD>n=0 Adust transmit level if remote is set <BR>to )M1, otherwise 
+            -10 dBm <BR>n=1 Will try to adust power leve to less <BR>than -10 
+            dBm with MNP 10 </TD>
+          <TD>Optional feature #144. Transmit level adjustment for cellular 
+            connection. </TD></TR>
+        <TR vAlign=top>
+          <TD>AT*B </TD>
+          <TD>Display blacklisted numbers as defined by country requirements. 
+          </TD>
+          <TD>optional feature #123. Used by countries that have permanently 
+            forbidden numbers. </TD></TR>
+        <TR vAlign=top>
+          <TD>AT*C </TD>
+          <TD>Set configuration password </TD>
+          <TD>Optional feature #124 </TD></TR>
+        <TR vAlign=top>
+          <TD>AT*E </TD>
+          <TD>Exit secure access remote configuration </TD>
+          <TD>Optional feature #124 </TD></TR>
+        <TR vAlign=top>
+          <TD>AT*Hn </TD>
+          <TD>n=1 Negotiate at highest supported speed <BR>n=2 Negotiate link 
+            at 1200bps <BR>n=3 Negotiate link at 4800bps </TD>
+          <TD>Link Negotiation Rate </TD></TR>
+        <TR vAlign=top>
+          <TD>AT*L </TD>
+          <TD>List callback security passwords </TD>
+          <TD>Optional feature #124 </TD></TR>
+        <TR vAlign=top>
+          <TD>AT*NC? </TD>
+          <TD>Display country specific configurations </TD>
+          <TD>Optional feature #120 </TD></TR>
+        <TR vAlign=top>
+          <TD>AT*NCn </TD>
+          <TD>n=ID of specific country </TD>
+          <TD>Optional feature #120 </TD></TR>
+        <TR vAlign=top>
+          <TD>AT*Pn:word: </TD>
+          <TD>n=0-19 passwords and tel. numbers </TD>
+          <TD>Optional feature #124 </TD></TR>
+        <TR vAlign=top>
+          <TD>AT*R </TD>
+          <TD>Activate remote configuration mode. </TD>
+          <TD>Optional feature #124, works with *C </TD></TR>
+        <TR vAlign=top>
+          <TD>AT*R </TD>
+          <TD>Request secure access mode </TD>
+          <TD>Optional feature #124 </TD></TR>
+        <TR vAlign=top>
+          <TD>AT+FAA=n </TD>
+          <TD>n=2 Activate silent answer for class 2 fax <BR>n=4 Activate 
+            silent answer plus for class <BR>2 fax </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>AT+FAE=n </TD>
+          <TD>n=1 Activate Adaptive Answer <BR>n=3 Activate silent answer for 
+            class 1 fax </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>AT+MS </TD>
+          <TD>Modulation control <BR>&lt;mod&gt;,&lt;automode&gt;,&lt;minimum 
+            rate&gt;,&lt;maximum rate&gt; </TD>
+          <TD>V.34 only </TD></TR>
+        <TR vAlign=top>
+          <TD>AT+MS= &lt;automode&gt; </TD>
+          <TD>n=0 Automode Disabled <BR>n=1 Automode enable using V.8 or 
+            <BR>V.32bis Annex A </TD>
+          <TD>V.34 only. Automode does not work with Bell 212 </TD></TR>
+        <TR vAlign=top>
+          <TD>AT+MS= &lt;maximum rate&gt; </TD>
+          <TD>28800,26400 etc. default for V.34 is 28800 </TD>
+          <TD>V.34 only </TD></TR>
+        <TR vAlign=top>
+          <TD>AT+MS= &lt;minimum rate&gt; </TD>
+          <TD>300,1200,2400 etc. default for V.34 is 300bps </TD>
+          <TD>V.34 only </TD></TR>
+        <TR vAlign=top>
+          <TD>AT+MS= &lt;mod&gt; </TD>
+          <TD>n=0 V.21, 300bps <BR>n=1 V.22, 1200bps <BR>n=2 V.22bis, 
+            1200/2400 <BR>n=3 V.23 bisynch 75/1200 <BR>n=9 V.32, 4800/9600 
+            <BR>n=10 V.32bis, 4800/7200/9600/12000/ <BR>14400 <BR>n=11 V.34, 
+            2400/4800/7200/9600/ <BR>12000/14400/16800/ <BR>19200/24000/26400/ 
+            <BR>28800 <BR>n=64 Bell 103, 300bps <BR>n=69 Bell 212, 1200bps 
+            <BR>n=74 V.FC, 14400/16800/ <BR>19200/24000/26400/ <BR>28800 </TD>
+          <TD>V.34 only </TD></TR>
+        <TR vAlign=top>
+          <TD>AT+MS? </TD>
+          <TD>Reports MS options </TD>
+          <TD>V.34 only </TD></TR>
+        <TR vAlign=top>
+          <TD>AT-B </TD>
+          <TD>Forced fallback to 1200 </TD>
+          <TD>Optional feature #143 </TD></TR>
+        <TR vAlign=top>
+          <TD>AT-Cn </TD>
+          <TD>n=0 MNP 10 enabled, sync mode <BR>n=1 MNP 10 enabled, asynch 
+            mode <BR>n=2 MNP 2 enabled <BR>n=3 MNP 3 enabled </TD>
+          <TD>Optional feature #143 </TD></TR>
+        <TR vAlign=top>
+          <TD>AT-Kn </TD>
+          <TD>n=0 Do not convert LAPM to MNP <BR>n=1 Convert LAPM connection 
+            to <BR>MNP 10 <BR>n=3 Enable MNP 10 extended services <BR>detection 
+          </TD>
+          <TD>Optional feature #143 </TD></TR>
+        <TR vAlign=top>
+          <TD>AT-Qn </TD>
+          <TD>n=0 Enable fallback to V.22/V.22bis <BR>n=1 Disable fallback </TD>
+          <TD>Optional feature #143 </TD></TR>
+        <TR vAlign=top>
+          <TD>AT-Un </TD>
+          <TD>n=0 Allow attenuation to -10 dBm <BR>n=1 Allow attenuation to 
+            -18 dBm <BR>n=2 Allow attenuation to -22 dBm <BR>n=3 Allow 
+            attenuation to -25 dBm <BR>n=4 Force 2400 bps transmit level to 
+            <BR>-10 dBm <BR>n=5 Force 2400 bps transmit level to <BR>-18 dBm 
+            <BR>n=6 Force 2400 bps transmit level to <BR>-22 dBm <BR>n=7 Force 
+            2400 bps transmit level to <BR>-25 dBm </TD>
+          <TD>Optional feature #143. Forced transmit level change during fall 
+            forward </TD></TR>
+        <TR vAlign=top>
+          <TD>ATA </TD>
+          <TD>
+            <P>&nbsp;</P></TD>
+          <TD>Hayes - Answer Phone Line </TD></TR>
+        <TR vAlign=top>
+          <TD>ATBn </TD>
+          <TD>n=0 V32/CCITT 1200b[s <BR>n=1 Bell Standard 212A 1200bps <BR>n=2 
+            V.23 originate: T75/R1200 when <BR>DTE speed is 1200 bit/second. 
+            <BR>V.23 answer: T75/R1200 when <BR>DTE speed is 1200 bit/second. 
+            <BR>n=3 - V.23 originate: T1200/R75 when DTE speed is 1200bps. 
+            <BR>V.23 answer: T1200/R75 when <BR>DTE speed is 1200BPS. <BR>n=6 
+            V.26 bis when line speed is 1200bps <BR>n=15 V.21 when line speed is 
+            300bps <BR>n=16 Industry Standard 103 when speed <BR>is 300 bps. 
+            <BR>n=30 V.22 bis when speed is 2400bps <BR>n=32 V.26 bis when speed 
+            is 2400bps <BR>n=41 V.32 when line speed is 4800bps <BR>n=52 V.32 
+            bis when speed is 7200bps <BR>n=60 V.32 when speed is 9600bps 
+            <BR>n=64 V.FC when speed is 9600bps <BR>n=70 V.32 bis when handshake 
+            begins <BR>at 12000 bps. <BR>n=71 V.FC when handshake begins at 
+            12000 bit/second. <BR>n=75 - V.32 bis when handshake begins at 14400 
+            bit/second. <BR>n=76 - V.FC when handshake begins at 14400 
+            bit/second. <BR>n=81 - V.FC when handshake begins at 16800-28800 
+            bit/second. </TD>
+          <TD>Hayes - Communications options </TD></TR>
+        <TR vAlign=top>
+          <TD>ATD$ </TD>
+          <TD>HELP, Dial Commands </TD>
+          <TD>USR </TD></TR>
+        <TR vAlign=top>
+          <TD>ATDL </TD>
+          <TD>Dial Last Phone Number </TD>
+          <TD>USR/Rockwell </TD></TR>
+        <TR vAlign=top>
+          <TD>ATDn </TD>
+          <TD>Dial a Telephone Number <BR>n=0..9#*TPR,;W@!()- </TD>
+          <TD>All </TD></TR>
+        <TR vAlign=top>
+          <TD>ATDSn </TD>
+          <TD>Dial Stored Phone Number </TD>
+          <TD>USR/Rockwell </TD></TR>
+        <TR vAlign=top>
+          <TD>ATEn </TD>
+          <TD>n=0 No Command Echo <BR>n=1 Echo Command Chars </TD>
+          <TD>All </TD></TR>
+        <TR vAlign=top>
+          <TD>ATFn </TD>
+          <TD>n=0 Online Echo <BR>n=1 No Online Echo </TD>
+          <TD>USR </TD></TR>
+        <TR vAlign=top>
+          <TD>ATFn </TD>
+          <TD>n=0 Best possible auto-detect, same as <BR>ATN1 <BR>n=1 V.21 or 
+            Bell 102 300bps <BR>n=3 V.23 <BR>n=4 V.22 or Bell 212A 1200bps 
+            <BR>n=5 V.22bis 2400bps <BR>n=6 V.32bis or V.32 4800bps <BR>n=7 
+            V.32bis 7200bps <BR>n=8 V.32bis or V.32 9600bps <BR>n=9 V.32bis 
+            12,000bps <BR>n=10 V.32bis 14,400bps <BR>n=13 V.FC 14,400 <BR>n=14 
+            V.FC 16,800 <BR>n=15 V.FC 19,200 <BR>n=16 V.FC 21,600 <BR>n=17 V.FC 
+            24,000 <BR>n=18 V.FC 26,400 <BR>n=19 V.FC 28,800 <BR></TD>
+          <TD>Rockwell, only used by V.FC modems <BR>Clears register S31 bit 
+            1. F13 and F19 reccommend connection rate. </TD></TR>
+        <TR vAlign=top>
+          <TD>ATHn </TD>
+          <TD>n=0 On Hook (Hang Up) <BR>n=1 Off Hook </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>Ati10 results </TD>
+          <TD>Optional Features: <BR>101=Class 1 fax <BR>104=Class 2 fax 
+            (TR29.2) <BR>105=Class 2.0 fax (ITU-TSS) <BR>115=V.17 14.4k FAX 
+            <BR>120=WorldWide support <BR>121=V.23 <BR>122=V.25bis 
+            <BR>123=Blacklisting (*B and *d commands) <BR>124=Access Security 
+            <BR>140=V.32bis 14.4k DATA <BR>141=Silent Answer [fax feature] 
+            <BR>142=Caller ID <BR>143=MNP 10 <BR>144=MNP Cellular 
+            <BR>145=AutoSync <BR>146=Enhanced Config Display (\S) <BR>147=V.FC 
+            28k <BR>148=Volume Control L+/L- <BR>149=V.FC 24k <BR></TD>
+          <TD>Optional Features cont. <BR>150=Enhanced &amp;F option 
+            <BR>151=Enhanced Rate Renogotiation <BR>153=ITU-TSS V.34 28.8 
+            <BR>154=Silent Answer Plus <BR>157=RINGING response <BR>160=Supra 
+            Voice Porcession <BR>161=Supra Voice Porcession <BR>162=Supra Voice 
+            Porcession <BR>170=Handset support <BR>171=Headset Support 
+            <BR>180=16550 UART emulation <BR>181=SupraSmart UART 
+            <BR>182=Rockwell high speed interface <BR>190=AMD flash ROM 
+            <BR>191=ATMEL flash ROM <BR></TD></TR>
+        <TR vAlign=top>
+          <TD>ATIn </TD>
+          <TD>n=0 Product Code <BR>n=1 Checksum <BR>n=2 RAM Test <BR>n=3 
+            Product ID string <BR>n=4 Current Settings <BR>n=5 NVRAM Settings 
+            <BR>n=6 Link Diagnostics <BR>n=7 Product Configuration <BR>n=10 
+            Optional features [fax, etc., see end] </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>ATL+/-n </TD>
+          <TD>+n=1-32 Increases speaker volume <BR>-n=1-32 Decreases speaker 
+            volume </TD>
+          <TD>Relative Speaker Volume-Optional feature #148 </TD></TR>
+        <TR vAlign=top>
+          <TD>ATLn </TD>
+          <TD>n=0 Low Speaker Volume <BR>n=1 Low Speaker Volume <BR>n=2 Med 
+            Speaker Volume <BR>n=3 Hi Speaker Volume </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>ATMn </TD>
+          <TD>n=0 Speaker Off <BR>n=1 Speaker On Until CD <BR>n=2 Speaker 
+            Always On <BR>n=3 Speaker Off During Dial </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>ATNn </TD>
+          <TD>n=0 Use rate in S37 <BR>n=1 Use highest possble rate </TD>
+          <TD>Connection Rate </TD></TR>
+        <TR vAlign=top>
+          <TD>ATOn </TD>
+          <TD>n=0 Return Online <BR>n=1 Return Online &amp; Retrain </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>ATP </TD>
+          <TD>Pulse Dial </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>ATQn </TD>
+          <TD>n=0 Result Codes Sent <BR>n=1 Quiet (No Result Codes) <BR>n=2 
+            Verbose/Quiet On Answer </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>ATT </TD>
+          <TD>Tone Dial </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>ATVn </TD>
+          <TD>n=0 Numeric Responses <BR>n=1 Verbal Responses </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>ATWn </TD>
+          <TD>n=0 Not reported, DTE rate shown <BR>n=1 Result reported <BR>n=2 
+            Not reported, DCE rate shown </TD>
+          <TD>Error Correction Result Codes </TD></TR>
+        <TR vAlign=top>
+          <TD>ATXn </TD>
+          <TD>n=0 Basic Result Codes <BR>n=1 Extended Result Codes <BR>n=2 
+            Wait for tone before dialing <BR>n=3 Ignore dial tone <BR>n=4 Wait 
+            for tone, detect dialtone and <BR>report busy </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>ATYn </TD>
+          <TD>n=0 Next reset to &amp;W0 settings <BR>n=1 Next reset to &amp;W1 
+            settings <BR>Internal Only <BR>n=2 Next Reset to &amp;F0 settings 
+            <BR>n=3 Next Reset to &amp;F1 settings <BR>n=3 Next Reset to &amp;F1 
+            settings </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>ATZn </TD>
+          <TD>n=0 Dipswitch #7 determines reset <BR>n=1 Reset to &amp;W0 
+            settings <BR>n=2 Reset to &amp;W1 settings <BR>n=3 Reset to &amp;F0 
+            settings <BR>n=4 Reset to &amp;F1 settings <BR>n=5 Reset to &amp;F2 
+            settings </TD>
+          <TD>Dipswitch is USR only </TD></TR>
+        <TR vAlign=top>
+          <TD>AT\Nn </TD>
+          <TD>n=0 Normal connection using flow <BR>control <BR>n=1 Direct 
+            connection, no flow control <BR>n=2 LAPM/MNP 5,4,3, 2 (Reliable) 
+            <BR>n=3 Autoreliable mode (LAPM or MNP) <BR>n=4 LAPM reliable mode 
+            <BR>n=5 MNP reliable mode </TD>
+          <TD>Operating Mode </TD></TR>
+        <TR vAlign=top>
+          <TD>AT\S </TD>
+          <TD>Display configuration information </TD>
+          <TD>Optional feature #146. </TD></TR></TBODY></TABLE>
+      <P align=center><B><FONT size=6>S Registers </P></FONT></B>
+      <TABLE cellPadding=2 border=4>
+        <TBODY>
+        <TR vAlign=top>
+          <TD>S$ </TD>
+          <TD>HELP, S Registers </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>S000=n </TD>
+          <TD>n=1-255, number of rings before the <BR>modem answers a call </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>S001 </TD>
+          <TD>Ring counter, range=0-255 </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>S002=n </TD>
+          <TD>Escape code, range=0-255 </TD>
+          <TD>default=43 "+". Anything greater than 127 disables escape </TD></TR>
+        <TR vAlign=top>
+          <TD>S003=n </TD>
+          <TD>range=0-127, default is 13 </TD>
+          <TD>Carriage Return </TD></TR>
+        <TR vAlign=top>
+          <TD>S004=n </TD>
+          <TD>range 0-127, default is 10 </TD>
+          <TD>Line feed </TD></TR>
+        <TR vAlign=top>
+          <TD>S005=n </TD>
+          <TD>range 0-32, default is 8 </TD>
+          <TD>Backspace </TD></TR>
+        <TR vAlign=top>
+          <TD>S006=n </TD>
+          <TD>range 2-255, default 2 or 4 </TD>
+          <TD>Time to wait to blind dial, units=seconds </TD></TR>
+        <TR vAlign=top>
+          <TD>S007=n </TD>
+          <TD>range 1-255, default=2 </TD>
+          <TD>Time to wait for carrier, units=seconds </TD></TR>
+        <TR vAlign=top>
+          <TD>S008=n </TD>
+          <TD>range=0-255, default=2 </TD>
+          <TD>Pause time for comma, units=seconds </TD></TR>
+        <TR vAlign=top>
+          <TD>S009=n </TD>
+          <TD>range=1-255, default=6 </TD>
+          <TD>Time to wait before recognizing carrier <BR>units=1/10 seconds 
+          </TD></TR>
+        <TR vAlign=top>
+          <TD>S010=n </TD>
+          <TD>range=1-255, default=14 </TD>
+          <TD>Delay from lost carrier to hang up <BR>units=1/10 seconds </TD></TR>
+        <TR vAlign=top>
+          <TD>S011=n </TD>
+          <TD>range=50-255, default= 70 or 95 </TD>
+          <TD>DTMF tone duration/spacing <BR>units=1/1000 seconds </TD></TR>
+        <TR vAlign=top>
+          <TD>S012=n </TD>
+          <TD>range=0-255, default=5 </TD>
+          <TD>Escape code guard time <BR>units =1/100 seconds </TD></TR>
+        <TR vAlign=top>
+          <TD>S018=n </TD>
+          <TD>Range: 0-255 seconds, Default: 0 </TD>
+          <TD>Test Timer. Sets the length of time, in seconds, that the modem 
+            conducts a test (commanded by &amp;Tn) before <BR>returning to the 
+            command mode. If this register value is zero, the test will not 
+            automatically <BR>terminate; the test must be terminated from the 
+            command mode by issuing an &amp;T0 or H command. <BR>When S18 is 
+            non-zero, the modem returns the OK message upon test termination. 
+        </TD></TR>
+        <TR vAlign=top>
+          <TD>S025=n </TD>
+          <TD>range=0-255, default=1 </TD>
+          <TD>Delay to DTR, units=1/100 seconds </TD></TR>
+        <TR vAlign=top>
+          <TD>S026=n </TD>
+          <TD>range=0-255, default=5 </TD>
+          <TD>RTS to CTS delay, units=1/100 seconds </TD></TR>
+        <TR vAlign=top>
+          <TD>S030=n </TD>
+          <TD>range=0-255, default=0 </TD>
+          <TD>Disconnect inactivity timer <BR>units=tens of seconds </TD></TR>
+        <TR vAlign=top>
+          <TD>S032=n </TD>
+          <TD>range=0-255, default=19 </TD>
+          <TD>XON charachter </TD></TR>
+        <TR vAlign=top>
+          <TD>S033=n </TD>
+          <TD>range=0-255, default=19 </TD>
+          <TD>XOFF charachter </TD></TR>
+        <TR vAlign=top>
+          <TD>S036=n </TD>
+          <TD>n=0 Disconnect <BR>n=1 Establish a direct connection <BR>n=3 
+            Establish a normal connection <BR>n=4 Establish an MNP connection if 
+            <BR>possible, otherwise direct <BR>n=5 Establish an MNP connection 
+            if <BR>possible, otherwise normal </TD>
+          <TD>Negotiation failure treatment </TD></TR>
+        <TR vAlign=top>
+          <TD>S037=n </TD>
+          <TD>n=0 Rate of last AT command issue, or <BR>modem default 
+            (maximum) <BR>n=1 300bps <BR>n=5 1200bps <BR>n=6 2400bps <BR>n=8 
+            4800bps <BR>n=9 9600bps <BR>n=10 12,000bps <BR>n=11 14,400bps 
+            <BR>n=12 28,800bps </TD>
+          <TD>Desired line speed. Ignored unless N=0, overridden by +MS 
+            setting. </TD></TR>
+        <TR vAlign=top>
+          <TD>S038=n </TD>
+          <TD>range=0-255, default=20 </TD>
+          <TD>Delay before forced disconnect <BR>units=seconds </TD></TR>
+        <TR vAlign=top>
+          <TD>S046=n </TD>
+          <TD>n=136 Compression disabled <BR>n=138 Compression enabled </TD>
+          <TD>Protocol selection </TD></TR>
+        <TR vAlign=top>
+          <TD>S048=n </TD>
+          <TD>n=0 Disable V.42, proceed with LAPM <BR>n=7 Enable V.42 
+            <BR>n=128 Disable V.42, look to S36 </TD>
+          <TD>V.42 negotiation </TD></TR>
+        <TR vAlign=top>
+          <TD>S080=n </TD>
+          <TD>n=0-31Reserved <BR>n=32 V.25 commands only <BR>n=64 Remote 
+            configure enable <BR>n=128 Callback security enable </TD>
+          <TD>V.25 only, optional feature #120 <BR>default=1. Settings are bit 
+            values expressed in decimal </TD></TR>
+        <TR vAlign=top>
+          <TD>S086=n </TD>
+          <TD>n=0 Normal disconnect, no error <BR>n=4 Loss of carrier <BR>n=5 
+            V.42 negotiation failed <BR>n=9 Modems could not find common 
+            <BR>protocol <BR>n=12 Normal disconnect initiated by <BR>remote 
+            modem <BR>n=13 Remote modem did not respond <BR>after 10 
+            re-transmissions <BR>n=14 Protocol violation </TD>
+          <TD>Connection failure cause code register </TD></TR>
+        <TR vAlign=top>
+          <TD>S095=n </TD>
+          <TD>n=0 CONNECT XXXX shows DCE <BR>n=1 Append/ARQ to verbose code if 
+            <BR>protocol is not NONE <BR>n=2 Enable CARRIER XXXX result <BR>n=3 
+            Enable PROTOCOL XXXX result <BR>n=4 Reserved <BR>n=5 Enable 
+            COMPRESSION result <BR>n=6 Reserved <BR>n=7 Enable RINGING response 
+          </TD>
+          <TD>V.34 Rockwell Extended result codes </TD></TR>
+        <TR vAlign=top>
+          <TD>S091=n </TD>
+          <TD>
+            <P>&nbsp;</P></TD>
+          <TD>PSTN transit level </TD></TR>
+        <TR vAlign=top>
+          <TD>S095=n </TD>
+          <TD>n=0 Disable COMPRESSION XXXX <BR>n=32 Enable result code </TD>
+          <TD>USR Result code commands </TD></TR>
+        <TR vAlign=top>
+          <TD>S109=n </TD>
+          <TD>n=1 reserved <BR>n=2 4800bps <BR>n=4 7200bps <BR>n=8 9600bps 
+            <BR>n=16 12000 bps <BR>n=32 14400 bps <BR>n=64 reserved <BR>n=128 
+            reserved </TD>
+          <TD>V.32 &amp; V.32bis range of available modem speeds. Lowest speed 
+            to start of training/ negotiation. </TD></TR>
+        <TR vAlign=top>
+          <TD>S110=n </TD>
+          <TD>n=0 V.32 no rate adjustment <BR>n=1 V.32/V.32bis no rate 
+            adjustment <BR>n=2 V.32/V.32bis with rate adjustment <BR>n=3 start 
+            negotiation at lowest possible <BR>speed as set in +MS command 
+            <BR>n=14 V.34, V.FC, V.32bis with rate <BR>adjustment </TD>
+          <TD>V.32, V.32bis and V.FC rate adjustment options </TD></TR>
+        <TR vAlign=top>
+          <TD>S201=n </TD>
+          <TD>n=0 initial power setting <BR>n=5 Compromise equalizer enable 
+            <BR>n=6 Reserved <BR>n=7 Reserved </TD>
+          <TD>Cellular transmit level </TD></TR>
+        <TR vAlign=top>
+          <TD>Sr=n </TD>
+          <TD>Sets Register "r" to "n" </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR>
+        <TR vAlign=top>
+          <TD>Sr? </TD>
+          <TD>Query Register "r" </TD>
+          <TD>
+            <P>&nbsp;</P></TD></TR></TBODY></TABLE>
+      <P align=center><B><FONT size=6>RS-232C pin assignments </P></FONT></B>
+      <DIV align=center>
+      <CENTER>
+      <TABLE cellPadding=2 border=2>
+        <TBODY>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><B><FONT color=#ffffff size=4>Pin</FONT></B> </P></TD>
+          <TD>
+            <P align=center><B><FONT color=#ffffff size=4>EIA</FONT></B> </P></TD>
+          <TD>
+            <P align=center><B><FONT color=#ffffff size=4>Abbrev.</FONT></B> 
+          </P></TD>
+          <TD>
+            <P align=center><B><FONT color=#ffffff size=4>Source</FONT></B> 
+          </P></TD>
+          <TD>
+            <P align=center><B><FONT color=#ffffff size=4>Description</FONT></B> 
+            </P></TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><FONT size=4>1</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>AA</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>sheild</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>n/a</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>protective ground</FONT> </P></TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><FONT size=4>2</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>BA</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>TXD</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DTE</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>transmit data</FONT> </P></TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><FONT size=4>3</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>BB</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>RXD</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DCE</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>receive data</FONT> </P></TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><FONT size=4>4</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>CA</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>RTS</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DTE</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>request to send</FONT> </P></TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><FONT size=4>5</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>CB</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>CTS</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DCE</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>clear to send</FONT> </P></TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><FONT size=4>6</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>CC</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DSR</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DCE</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>data set ready</FONT> </P></TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><FONT size=4>7</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>AB</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>GND</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>n/a</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>signal ground</FONT> </P></TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><FONT size=4>8</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>CF</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DCD</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DCE</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>data carrier detect</FONT> </P></TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><FONT size=4>12</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>CI</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>SI</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DCE</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>data speed indicator</FONT> </P></TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><FONT size=4>15</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DB</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>TCLK</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DCE</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>transmit clock, sync only</FONT> 
+        </P></TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><FONT size=4>17</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DD</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>RCLK</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DCE</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>receive clock, sync only</FONT> 
+        </P></TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><FONT size=4>20</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>CD</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DTR</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DTE</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>data terminal ready</FONT> </P></TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><FONT size=4>22</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>CE</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>RI</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DCE</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>ring indicator</FONT> </P></TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><FONT size=4>23</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>CI</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>SI</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DCE</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>data signal rate selector</FONT> 
+        </P></TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <P align=center><FONT size=4>24</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DA</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>XTCLK</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>DTE</FONT> </P></TD>
+          <TD>
+            <P align=center><FONT size=4>external transmit clock, sync 
+            only</FONT> 
+</P></TD></TR></TBODY></TABLE></CENTER></DIV></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=540 border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <HR width="100%" noShade SIZE=1>
+    </TD></TR>
+  <TR>
+    <TD></TD></TR></TBODY></TABLE></BODY></HTML>

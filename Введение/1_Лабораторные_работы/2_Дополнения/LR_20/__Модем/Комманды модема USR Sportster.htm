@@ -1,0 +1,487 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0042)http://www.e-tel.ru/~p_punks/commands.html -->
+<HTML><HEAD><TITLE>Комманды модема USR Sportster</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META content="Alexey V Bugrov" name=Author>
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY background="Комманды модема USR Sportster.files/backgrd.gif"><TT><A 
+href="http://www.e-tel.ru/~p_punks/index.html">На первую страницу</A></TT> 
+<HR>
+
+<UL>
+  <LI>Набирайте команды в верхнем или нижнем регистре (но не смешивайте). 
+  <LI>Используйте клавишу <B><TT>Backspace</TT></B> для удаления последних 
+  неправильно набранных символов. Помните, что префикс <TT>AT</TT> удалить 
+  нельзя, т.к. он не хранится в буфере модема и служит лишь указанием модему 
+  принять команду. 
+  <LI>Если команда имеет цифровую опцию, то нулевое значение можно опускать. 
+  Например: команды ATB и ATB0 равнозначны. 
+  <LI>Любая строка-команда, посылаемая в модем (кроме <TT>A/ A&gt; +++</TT>), 
+  должна начинаться с префикса AT. После этого префикса может идти собственно 
+  одна или несколько команд. Между командами допустимы пробелы, но они не 
+  обязательны. Ввод любой строки-команды (точнее серии команд) должен 
+  завершаться нажатием клавиши <B><TT>Enter</TT></B>. 
+  <LI>Максимальная длина строки-команды - 60 символов (не считая префикса AT, 
+  пробелов, и нажатия клавиши <TT><B>Enter</B></TT>). 
+  <P><I>Например:</I> <PRE>AT I6
+AT I6 I11
+AT &amp;F1 &amp;K3 &amp;M5 S0=0 S39=6
+</PRE>
+  <LI>Нажатие <TT><B>Ctrl</B></TT>+<TT><B>S</B></TT> приостанавливает вывод 
+  информации на экран. Любая клавиша для продолжения. 
+  <LI>Нажатие <TT><B>Ctrl</B></TT>+<TT><B>C</B></TT> или 
+  <TT><B>Ctrl</B></TT>+<TT><B>К</B></TT> прерывает вывод информации на экран. 
+  </LI></UL><B>Символом <TT>*</TT> помечены опции, которые выбираются по 
+умолчанию</B> 
+<P>
+<TABLE align=center border=1>
+  <CAPTION><TT>
+  <H1>Набор команд модемов U.S. Robotics Sportster</H1></TT></CAPTION>
+  <TBODY>
+  <TR align=middle>
+    <TD colSpan=2><B><I>Справочные команды </I></B>
+  <TR vAlign=top>
+    <TD align=middle>$
+    <TD>Вывести список основных команд модема 
+  <TR vAlign=top>
+    <TD align=middle>S$
+    <TD>Вывести назначение основных s-регистров 
+  <TR vAlign=top>
+    <TD align=middle>&amp;$
+    <TD>Вывести список &amp;-команд 
+  <TR vAlign=top>
+    <TD align=middle>D$
+    <TD>Вывести список команд, используемых при наборе номера после команды <A 
+      href="http://www.e-tel.ru/~p_punks/commands.html#ref5">D</A> 
+  <TR align=middle>
+    <TD colSpan=2><B><I>Команды установки и разрыва связи </I></B>
+  <TR vAlign=top>
+    <TD align=middle><A name=a>A</A>
+    <TD>Модем поднимает трубку и пытается установить связь. Используется при 
+      входящем звонке. 
+  <TR vAlign=top>
+    <TD align=middle><A name=d>Dn</A>
+    <TD><A name=ref5>Подсоединиться</A> к линии (поднять трубку) и дождаться 
+      диалтона (сигнала вызова АТС), после чего набрать номер <TT>n</TT>. 
+      Нажатие любой клавиши вызывает опускание трубки и возврат в командный 
+      режим. Номер может включать дополнительные символы набора номера: <PRE>* P - переход в режим импульсного набора
+  T - переход в режим тонового набора
+  <A name=pause>,</A> - пауза в наборе номера на число секунд, указанное в регистре <A href="http://www.e-tel.ru/~p_punks/s-regs.html#s8">s8</A>
+  ; - вернуться в командный режим после набора номера
+  ! - Flash switch. Модем быстро опускает и поднимает трубку.
+  / - задержка на 125 мсек.
+  W - ожидать диалтона (сигнала вызова АТС). Например при звонке по 
+      межгороду после цифры 8.
+  <I>    Примечание: требует режима X3 или выше</I>
+  @ - дождаться тишины в линии.
+  <I>    Примечание: требует режима X3 или выше</I>
+  R - перейти в режим ответа (аналогично команде A, 
+      но после набора номера, который был до символа R).
+  # - дополнительный тон для тонового набора.
+  * - дополнительный тон для тонового набора.
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>DL
+    <TD>Повторить набор последнего набранного номера. 
+  <TR vAlign=top>
+    <TD align=middle>DSn
+    <TD>Набрать номер, хранящийся в памяти модема в позиции n (n=0-3). 
+      Записать номер в память модема можно командой <TT><A 
+      href="http://www.e-tel.ru/~p_punks/commands.html#storenumb">&amp;Zn=s</A></TT> 
+
+  <TR vAlign=top>
+    <TD align=middle>Hn
+    <TD>Поднять/опустить трубку. <PRE>H0 - опустить трубку.
+H1 - поднять трубку.
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>On
+    <TD>Выход из командного режима при установленной связи. <PRE>O0 - выход с ретрейном.
+O1 - выход без ретрейна.
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>+++
+    <TD>Переход в командный режим во время установленного 
+      соединения.<BR>Данная команда вводится без префикса <TT>AT</TT> и без 
+      завершающего нажатия клавиши <B><TT>Enter</TT></B> 
+  <TR align=middle>
+    <TD colSpan=2><B><I>Команды изменения конфигурации </I></B>
+  <TR vAlign=top>
+    <TD align=middle><A name=countries>C10=n</A>
+    <TD><FONT color=red>Недокументированная команда (только для Sportster 
+      56k)</FONT><BR>Установить страну, код которой равен n. Список кодов стран 
+      (из <A 
+      href="http://www.usr.spb.ru/support/faqs/faq_sportster.html">FAQ</A> by 
+      Igor Belyanin): <PRE> 0  USA/CANADA        12 Belgium       
+ 1  Japan             13 Denmark       
+ 2  Finland           14 Australia     
+ 3  Sweden            15 France        
+ 4  UK                16 Germany       
+ 5  Norwai            17 International 
+ 6  Switzerland       18 Austria       
+ 7  Netherland        19 Ireland       
+ 8  South Africa      20 Spain         
+ 9  Italy             21 Portugal      
+ 10 New Zeland        22 Asia          
+ 11 Czech/Slovakia    23 Korea         
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>Bn
+    <TD>Установить последовательность ответа. <PRE>* B0 - ITU-T v.25 answer sequence
+  B1 - U.S. Answer tone
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>En
+    <TD>Установить состояние локального эха. <PRE>* E0 - Эхо выключено
+  E1 - Эхо включено (модем отображает введенные команды).
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>Fn
+    <TD>Установить состояние локального эха для режима online. <PRE>  F0 - Эхо включено. Модем возвращает на экран копию данных,
+       посланных на удаленный модем.
+* F1 - Эхо выключено.
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>Ln
+    <TD>Громкость встроенного динамика. <PRE>  L0 - Совсем тихо
+  L1 - Тихо
+* L2 - Среднее значение
+  L3 - Громко
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>Mn
+    <TD>Состояние встроенного динамика. <PRE>  M0 - Всегда выключен
+* M1 - Включен до установки соединения
+  M2 - Всегда включен
+  M3 - Включен после набора номера, но до установки соединения.
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>P
+    <TD>Установить импульсный набор номера. 
+  <TR vAlign=top>
+    <TD align=middle>Qn
+    <TD>Контроль отображения результатов выполнения команды. <PRE>* Q0 - Показывать результаты
+  Q1 - Не показывать результаты
+  Q2 - Показывать результаты только в режиме дозвона
+  Q3 - Показывать результаты только в режиме ответа
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>Sr.b=n
+    <TD>Устанавливает бит номер b регистра r равным n. 
+  <TR vAlign=top>
+    <TD align=middle>Sr=n
+    <TD>Устанавливает регистр r равным n. 
+  <TR vAlign=top>
+    <TD align=middle>S~F=n
+    <TD><FONT color=red>Недокументированная команда (только для Sportster 
+      56k)</FONT> <BR>Установка серийного номера, где n - 24 символа 
+  <TR vAlign=top>
+    <TD align=middle>T
+    <TD>Установить тоновый набор номера. 
+  <TR vAlign=top>
+    <TD align=middle>Vn
+    <TD>Устанавливает режим вывода сообщений от модема <PRE>  V0 - Цифровой формат (коды результатов).
+* V1 - Словесный (строковой) формат вывода результатов.
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle><A name=x4>Xn</A>
+    <TD>Выбор отображаемых кодов результата <PRE><B> Код результата         X0  X1  X2  X3  X4 </B>
+
+  0/OK                   *   *   *   *   *
+  1/CONNECT              *   *   *   *   *
+  2/RING                 *   *   *   *   *
+  3/NO CARRIER           *   *   *   *   *
+  4/ERROR                *   *   *   *   *
+  5/CONNECT 1200             *   *   *   *
+  6/NO DIAL TONE                 *       *
+  7/BUSY                             *   *
+  8/NO ANSWER                        *   *
+  10/CONNECT 2400            *   *   *   *
+  13/CONNECT 9600            *   *   *   *
+  18/CONNECT 4800            *   *   *   *
+  20/CONNECT 7200            *   *   *   *
+  21/CONNECT 12000           *   *   *   *
+  25/CONNECT 14400           *   *   *   *
+  43/CONNECT 16800               *   *   *
+  85/CONNECT 19200               *   *   *
+  91/CONNECT 21600               *   *   *
+  99/CONNECT 24000               *   *   *
+ 103/CONNECT 26400               *   *   *
+ 107/CONNECT 28800               *   *   *
+ 151/CONNECT 31200               *   *   *
+ 155/CONNECT 33600               *   *   *
+
+ <B><U> Функции                                 </U></B>
+
+  Адаптивный набор номера        *   *   *
+  Ожидание второго диалтона  (W) *       *
+  Ожидание ответа (@)                *   *
+  Быстрый набор номера           *       *
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>Yn
+    <TD>Выбор шаблона настроек, который будет использоваться модемом при 
+      включении питания или сбросе. <PRE>* Y0 - Шаблон номер 0 из памяти (NVRAM) модема.
+  Y1 - Шаблон номер 1 из памяти (NVRAM) модема.
+  Y2 - Шаблон заводских настроек (&amp;F0 Generic Template)
+  Y3 - Шаблон заводских настроек (&amp;F1 Hardware Flow Control)
+  Y4 - Шаблон заводских настроек (&amp;F2 Sowtware Flow Control)
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>Zn
+    <TD>Сброс модема. <PRE>  Z0 - Сброс модема и восстановление настроек из шаблона выбранного командой Yn.
+  Z1 - Сброс модема и восстановление настроек из NVRAM шаблона номер 0
+  Z2 - Сброс модема и восстановление настроек из NVRAM шаблона номер 1
+  Z3 - Сброс модема и восстановление заводских настроек из профиля &amp;F0
+  Z4 - Сброс модема и восстановление заводских настроек из профиля &amp;F1
+  Z5 - Сброс модема и восстановление заводских настроек из профиля &amp;F2
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;An
+    <TD>Контроль вывода ARQ-сообщений. <PRE>  &amp;A0 - Запрет вывода ARQ-сообщений.
+  &amp;A1 - Разрешение вывода ARQ-сообщений.
+  &amp;A2 - Добавляется индикатор v-модуляции.
+* &amp;A3 - Добавляется индикатор протокола: 
+        LAPM/MNP/NONE (контроль ошибок)
+        V42bis/MNP5 (сжатие данных)
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;Bn
+    <TD>Устанавливает скорость последовательного порта <PRE>  &amp;B0 - Переменная скорость, меняется в зависимости от скорости соединения.
+* &amp;B1 - Фиксированная скорость.
+  &amp;B2 - Фиксированная скорость в режиме ARQ, переменная в обычном режиме.
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;Cn
+    <TD>Контролирует сигнал CD (Carrier Detect) последовательного порта. <PRE>  &amp;C0 - Сигнал все время находится в состоянии ON.
+* &amp;C1 - Состояние сигнала соответствует наличию/отсутствию несущей.
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;Dn
+    <TD>Контролирует сигнал DTR (Data Terminal Ready) последовательного порта. 
+<PRE>  &amp;D0 - Игнорирование сигнала DTR.
+  &amp;D1 - Сброс сигнала DTR переводит модем в командный режим.
+* &amp;D2 - Нормальная реакция на DTR (разрыв связи).
+  &amp;D3 - Сброс сигнала DTR приводит к сбросу модема.
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;Fn
+    <TD>Сброс модема и загрузка настроек одного из заводских шаблонов. <PRE>  &amp;F0 - Generic Template (нет контроля потока данных)
+  &amp;F1 - Hardware flow control template (аппаратный контроль потока).
+  &amp;F2 - Software flow control template (программный XON/XOFF контроль потока).
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;Gn
+    <TD>Контролирует Guard Tone <PRE>* &amp;G0 - запрет Guard Tone'a.
+  &amp;G1 - 550 Гц Guard Tone (для ряда европейских стран).
+  &amp;G2 - 1800 Гц Guard Tone (для Великобритании).
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;Hn
+    <TD><A name=ref4>Устанавливает контроль потока передаваемых данных</A> <PRE>  &amp;H0 - Контроль потока запрещен.
+* &amp;H1 - Аппаратный контроль потока.
+  &amp;H2 - Программный контроль потока (XON/XOFF).
+  &amp;H3 - Программный и аппаратный контроль потока.
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;In
+    <TD><A name=ref3>Устанавливает программный контроль потока принимаемых 
+      данных</A> <PRE>* &amp;I0 - Программный контроль потока запрещен.
+  &amp;I1 - XON/XOFF пропускаются.
+  &amp;I2 - XON/XOFF символы фильтруются.
+  &amp;I3 - HP Enq/Ack Host Mode
+  &amp;I4 - HP Enq/Ack Terminal Mode
+  &amp;I5 - XON/XOFF for non-ARQ Mode
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;Kn
+    <TD>Контролирует сжатие данных <PRE>  &amp;K0 - Сжатие запрещено
+* &amp;K1 - Автоматически запрещается/разрешается
+  &amp;K2 - Сжатие разрешено
+  &amp;K3 - Выборочное сжатие
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;Mn
+    <TD>Устанавливает контроль ошибок (ARQ) для скоростей выше 1200 bps. <PRE>  &amp;M0 - Контроль ошибок запрещен
+  &amp;M1 - зарезервировано
+  &amp;M2 - зарезервировано
+  &amp;M3 - зарезервировано
+* &amp;M4 - Автоматически выбирается режим с контролем или без контроля
+  &amp;M5 - Только режимы с контролем ошибок
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;Nn
+    <TD>Устанавливает скорость соединения, если соединение не может быть 
+      установлено на этой скорости модем разрывает связь <A 
+      href="http://www.e-tel.ru/~p_punks/commands.html#ref1">(см. 
+      примечание)</A>. <PRE>* &amp;N0  - Макс. скорость    &amp;N20 - 32000 bps
+  &amp;N1  - 300 bps           &amp;N21 - 33333 bps
+  &amp;N2  - 1200 bps          &amp;N22 - 34666 bps
+  &amp;N3  - 2400 bps          &amp;N23 - 36000 bps
+  &amp;N4  - 4800 bps          &amp;N24 - 37333 bps
+  &amp;N5  - 7200 bps          &amp;N25 - 38666 bps
+  &amp;N6  - 9600 bps          &amp;N26 - 40000 bps
+  &amp;N7  - 12000 bps         &amp;N27 - 41333 bps
+  &amp;N8  - 14400 bps         &amp;N28 - 42666 bps
+  &amp;N9  - 16800 bps         &amp;N29 - 44000 bps
+  &amp;N10 - 19200 bps         &amp;N30 - 45333 bps
+  &amp;N11 - 21600 bps         &amp;N31 - 46666 bps
+  &amp;N12 - 24000 bps         &amp;N32 - 48000 bps
+  &amp;N13 - 26400 bps         &amp;N33 - 49333 bps
+  &amp;N14 - 28800 bps         &amp;N34 - 50666 bps
+  &amp;N15 - 31200 bps         &amp;N35 - 52000 bps
+  &amp;N16 - 33600 bps         &amp;N36 - 53333 bps
+  &amp;N17 - 28000 bps         &amp;N37 - 54666 bps
+  &amp;N18 - 29333 bps         &amp;N38 - 56000 bps
+  &amp;N19 - 30666 bps         &amp;N39 - 57333 bps
+</PRE><A name=ref1><I>Примечание:</I></A> если команда &amp;Nn 
+      используется совместно с командой <A 
+      href="http://www.e-tel.ru/~p_punks/commands.html#ref2">&amp;Un</A>, то в 
+      этом случае команда &amp;Nn устанавливает максимальную скорость 
+      соединения, а <A 
+      href="http://www.e-tel.ru/~p_punks/commands.html#ref2">&amp;Un</A> - 
+      минимальную. 
+  <TR vAlign=top>
+    <TD align=middle>&amp;Pn
+    <TD>Устанавливает соотношение <TT><B>make/brake</B></TT> для пульсового 
+      набора. <PRE>* &amp;P0 - N.American Pulse Dial
+  &amp;P1 - UK Pulse Dial
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;Rn
+    <TD>Устанавливает аппаратный контроль потока принимаемых данных (см. также 
+      <A href="http://www.e-tel.ru/~p_punks/commands.html#ref3">&amp;In</A> и <A 
+      href="http://www.e-tel.ru/~p_punks/commands.html#ref4">&amp;Hn</A>). <PRE>  &amp;R0 - зарезервировано
+  &amp;R1 - Модем игнорирует сигнал RTS (Request to Send)
+        последовательного порта
+* &amp;R2 - Модем передает данные в компьютер только 
+        при активном сигнале RTS
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;Sn
+    <TD>Контролирует сигнал DSR (Data Set Ready). <PRE>* &amp;S0 - Сигнал находится все время в состоянии ON.
+  &amp;S1 - Модем активизирует сигнал DSR при наличии пакета 
+        данных в буфере приема.
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;Un
+    <TD><A name=ref2>Устанавливает нижний предел скорости соединения</A>. <PRE>* &amp;U0  - Макс. скорость    &amp;U20 - 32000 bps
+  &amp;U1  - 300 bps           &amp;U21 - 33333 bps
+  &amp;U2  - 1200 bps          &amp;U22 - 34666 bps
+  &amp;U3  - 2400 bps          &amp;U23 - 36000 bps
+  &amp;U4  - 4800 bps          &amp;U24 - 37333 bps
+  &amp;U5  - 7200 bps          &amp;U25 - 38666 bps
+  &amp;U6  - 9600 bps          &amp;U26 - 40000 bps
+  &amp;U7  - 12000 bps         &amp;U27 - 41333 bps
+  &amp;U8  - 14400 bps         &amp;U28 - 42666 bps
+  &amp;U9  - 16800 bps         &amp;U29 - 44000 bps
+  &amp;U10 - 19200 bps         &amp;U30 - 45333 bps
+  &amp;U11 - 21600 bps         &amp;U31 - 46666 bps
+  &amp;U12 - 24000 bps         &amp;U32 - 48000 bps
+  &amp;U13 - 26400 bps         &amp;U33 - 49333 bps
+  &amp;U14 - 28800 bps         &amp;U34 - 50666 bps
+  &amp;U15 - 31200 bps         &amp;U35 - 52000 bps
+  &amp;U16 - 33600 bps         &amp;U36 - 53333 bps
+  &amp;U17 - 28000 bps         &amp;U37 - 54666 bps
+  &amp;U18 - 29333 bps         &amp;U38 - 56000 bps
+  &amp;U19 - 30666 bps         &amp;U39 - 57333 bps
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;Wn
+    <TD>Запись настроек в память (NVRAM). <PRE>  &amp;W0 - Запись настроек в профиль номер 0
+  &amp;W1 - Запись настроек в профиль номер 1
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>&amp;Yn
+    <TD>Sets break handling <PRE>  &amp;Y0 - Destructive, but doesn't send break
+  &amp;Y1 - Destructive/Expedited
+  &amp;Y2 - Nondest./Expedited
+  &amp;Y3 - Nondest./Unexpedited
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle><A name=storenumb>&amp;Zn=s</A>
+    <TD>Записать номер s в память модема в позицию n 
+  <TR vAlign=top>
+    <TD align=middle>&amp;Zn=L
+    <TD>Записать последний набранный номер в память модема в позицию n 
+  <TR vAlign=top>
+    <TD align=middle>#CID=n
+    <TD>Сaller ID <PRE>  #CID=0 - Caller ID выключен
+  #CID=1 - Форматированный Caller ID
+  #CID=2 - Неформатированный Сaller ID
+</PRE>Подробнее смотрите в описании <A 
+      href="http://www.e-tel.ru/~p_punks/voice.html#cid">голосовых команд</A> 
+  <TR align=middle>
+    <TD colSpan=2><B><I>Команды диагностики и статистики </I></B>
+  <TR vAlign=top>
+    <TD align=middle>Sn?
+    <TD>Выводит содержимое регистра n 
+  <TR vAlign=top>
+    <TD align=middle>Zn?
+    <TD>Выводит телефонный номер сохраненный в памяти в позиции n 
+  <TR vAlign=top>
+    <TD align=middle>In
+    <TD>Выводят следующую информацию <PRE>  I0 - 4 цифры - код продукта
+  I1 - контрольная сумма ПЗУ
+  I2 - результат теста ОЗУ
+  I3 - тип продукта
+  I4 - текущие настройки модема
+  I5 - настройки, сохраненные в NVRAM.
+  <A name=ati6>I6</A> - диагностика установленного соединения
+  I7 - конфигурация модема (техническая информация)
+  I9 - Plug and Play идентификатор
+ I11 - статистика соединения
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle><A name=test>&amp;Tn</A>
+    <TD>Включение тестовых режимов. <PRE>  &amp;T0 - Конец тестирования.
+  &amp;T1 - Analog Loopback (ALB)
+  &amp;T2 - зарезервированно
+  &amp;T3 - Digital Loopback (DLB)
+  &amp;T4 - Grant Remote DLB
+* &amp;T5 - Deny Remote DLB
+  &amp;T6 - Remote Digital Loopback
+  &amp;T7 - Remote DLB With Self Test
+  &amp;T8 - ALB With Self Test
+</PRE>
+  <TR vAlign=top>
+    <TD align=middle>Y11
+    <TD><FONT color=red>Недокументированная команда</FONT><BR>Вывод АЧХ линии 
+  <TR vAlign=top>
+    <TD align=middle>S~?
+    <TD><FONT color=red>Недокументированная команда</FONT><BR>Вывод серийного 
+      номера 
+  <TR align=middle>
+    <TD colSpan=2><B><I>Дополнительные команды </I></B>
+  <TR vAlign=top>
+    <TD align=middle>A/
+    <TD>Повторяет последнюю введенную команду. 
+  <TR vAlign=top>
+    <TD align=middle>A&gt;
+    <TD>Циклически повторяет последнюю введенную команду. 
+  <TR vAlign=top>
+    <TD align=middle>GBOOT5
+    <TD><FONT color=red>Недокументированная команда</FONT><BR>Вызывает переход 
+      модема в Boot-режим. <B>Не используйте эту команду без необходимости, т.к. 
+      в Boot-режиме можно довольно легко повредить модем</B>. В boot-режиме 
+      доступен ряд дополнительных команд, но я здесь их не привожу, т.к. для 
+      обычного пользователя они вряд ли нужны. Boot-режим доступен только на 
+      перепрограммирумыех модемах с Flash ROM. 
+  <TR vAlign=top>
+    <TD align=middle>GM
+    <TD><FONT color=red>Недокументированная команда</FONT><BR>Выход из 
+      Boot-режима. Полная переинициализация модема (равносильна включению и 
+      выключению питания). </TR></TBODY></TABLE><!-- the end of page -->
+<HR>
+
+<DIV align=left>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><IMG height=59 alt="Punks SOFTware Logo" 
+      src="Комманды модема USR Sportster.files/logopsl.jpg" width=148 
+      align=abscenter> 
+    <TD><FONT color=#404040 size=-1>Copyright © Punks SOFTware Ltd. <BR><A 
+      href="mailto:%20AVB@dialup.etr.ru">Mail to me</A> <BR>Last updated:
+      <SCRIPT>document.write(document.lastModified);</SCRIPT>
+       </FONT></TR></TBODY></TABLE></DIV></BODY></HTML>

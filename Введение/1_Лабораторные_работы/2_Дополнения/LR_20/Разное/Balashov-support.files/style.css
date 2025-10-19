@@ -1,0 +1,45 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #999999; FONT-WEIGHT: normal; FONT-SIZE: 10px; MARGIN: 1px; SCROLLBAR-HIGHLIGHT-COLOR: white; SCROLLBAR-SHADOW-COLOR: white; COLOR: black; SCROLLBAR-3DLIGHT-COLOR: #999999; SCROLLBAR-ARROW-COLOR: white; SCROLLBAR-TRACK-COLOR: white; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; SCROLLBAR-DARKSHADOW-COLOR: #999999; SCROLLBAR-BASE-COLOR: #999999; BACKGROUND-COLOR: white
+}
+A {
+	COLOR: #006400
+}
+A:hover {
+	COLOR: maroon
+}
+BIG {
+	COLOR: maroon
+}
+STRONG {
+	FONT-WEIGHT: bold
+}
+P {
+	FONT-SIZE: 12px; MARGIN-LEFT: 10px; COLOR: black; TEXT-INDENT: 10pt; MARGIN-RIGHT: 10px; FONT-FAMILY: Arial, Helvetica, sans-serif; WHITE-SPACE: normal
+}
+LI {
+	FONT-SIZE: 12px; MARGIN-BOTTOM: 6pt; MARGIN-LEFT: 5px
+}
+UL {
+	MARGIN-TOP: 2px; FONT-SIZE: 12px; MARGIN-BOTTOM: 2pt; MARGIN-LEFT: 15px
+}
+OL {
+	MARGIN-TOP: 10pt; FONT-SIZE: 12px; MARGIN-BOTTOM: 2pt; MARGIN-LEFT: 5px
+}
+H1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; MARGIN-LEFT: 2px; COLOR: black; MARGIN-RIGHT: 2px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; MARGIN-LEFT: 2px; COLOR: black; MARGIN-RIGHT: 2px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN-LEFT: 2px; COLOR: black; MARGIN-RIGHT: 2px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; MARGIN-LEFT: 2px; COLOR: black; MARGIN-RIGHT: 2px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; MARGIN-LEFT: 2px; COLOR: black; MARGIN-RIGHT: 2px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 20px; MARGIN-LEFT: 2px; COLOR: black; MARGIN-RIGHT: 2px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}

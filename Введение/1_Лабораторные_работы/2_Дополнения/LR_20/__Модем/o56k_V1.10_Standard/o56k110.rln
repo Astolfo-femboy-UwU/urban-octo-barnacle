@@ -1,0 +1,58 @@
+         Omni56k Plus and Omni56K Firmware Version 1.10 Release Note
+        -------------------------------------------------------------
+   
+     1. Version information:
+
+          ati1                          ati1
+          49564                         46902
+          Omni56K  1.10                 Omni56K Plus  1.10          
+          2001 10 08 17:12              2001 10 08 17:16
+
+          OK                            OK
+
+    2. Firmware changed (Based on  1.09)
+
+    2.1 Release of 1.09a
+        - Add V.44 function .
+        - Fixed V.42bis initial error, that cause some time connection fail after a long time test.
+        
+         
+    2.1 Release of 1.09b
+        - Improve V.44 throughput.
+        - Fixed the fase BUSY detection problem, that cause fail connection with some local switch.
+
+    2.2 Release of 1.09c
+        -Fixed the function regression of call back security .
+        -Fixed the problem of V.90 connection fail with some ISP server.
+        -Fixed CZEC PTT issues.
+
+    2.3 Release of 1.10
+        -Rename from 1.09C
+
+    3. V.44 function Usage
+        - The V.44 protocol is a new data compression algorithm ,its purpose is to improve compression 
+          ratio and through put.
+        - The V.44 feature is enable by AT&K5 .
+        - In modem to modem connection,the V.44 protocol may be enabled to perform peer to peer 
+          transfer.
+        - When dial up to ISP , the V.44 modem is only enabled if the ISP server support the protcol.
+        
+
+    4. Version Change limitation
+
+    4.1 Omni56K Plus firmware change limitation
+        
+                                     Target version
+                    1.05 and below        1.06       1.07    1.08 after
+             --------------------------------------------------------------
+ original   1.05           OK            Not allowed   OK      OK
+ firmware   1.06           Not allowed   OK            OK      OK
+            1.07           Not allowed   OK            OK      OK
+            1.08 after     OK            Not allowed   OK      OK
+
+     4.2  There are no limitation for Omni56K to change firmware.
+
+
+
+
+

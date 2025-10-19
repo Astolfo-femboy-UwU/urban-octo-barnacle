@@ -1,0 +1,1143 @@
+HTML {
+	HEIGHT: 100%
+}
+BODY {
+	HEIGHT: 100%
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 71% tahoma, arial, sans-serif; COLOR: #333; PADDING-TOP: 0px; BACKGROUND-COLOR: #fff
+}
+.sp {
+	COLOR: #666
+}
+#allpage {
+	BACKGROUND: url(/i/line_vert.gif) repeat-y 24% 0px; MARGIN-BOTTOM: -112px; ; WIDTH: expression(body.clientWidth<=770?"770px":"100%"); HEIGHT: 100%; min-width: 770px
+}
+UNKNOWN {
+	MIN-HEIGHT: 100%; HEIGHT: auto
+}
+#empty {
+	CLEAR: both; HEIGHT: 112px
+}
+#footer {
+	MIN-HEIGHT: 112px; BACKGROUND: url(/i/footer_bg.gif) repeat-y 24% 0px; ; WIDTH: expression(body.clientWidth<=770?"770px":"100%"); COLOR: #ccc; min-width: 770px
+}
+ HTML #footer {
+	HEIGHT: 112px
+}
+H1 {
+	BACKGROUND: #f0f0f0; FLOAT: left; MARGIN: 0px; FONT: bold 150% arial, tahoma, sans-serif; WIDTH: 100%; COLOR: #624a7e
+}
+H1 SPAN {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; BACKGROUND: #fff; FLOAT: left; PADDING-BOTTOM: 3px; MARGIN: 0px 15px; PADDING-TOP: 4px
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0.5em; FONT: bold 15px arial, tahoma, sans-serif; COLOR: #627690; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 1em 0px 0.5em; FONT: 17px tahoma, sans-serif; COLOR: #093; PADDING-TOP: 0px
+}
+H5 {
+	FONT-SIZE: 92%; MARGIN: 0px 0px 1em; TEXT-TRANSFORM: uppercase; COLOR: #624a7e
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TABLE {
+	FONT-SIZE: 100%; BORDER-COLLAPSE: collapse
+}
+P {
+	MARGIN: 0.5em 0px 1.5em
+}
+IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+A {
+	COLOR: #624a7e; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0.5em 0px; PADDING-TOP: 0px
+}
+UL LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 22px; BACKGROUND: url(/i/arr02.gif) no-repeat 10px 0.45em; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+INPUT {
+	FONT: 100% tahoma, sans-serif; COLOR: #000
+}
+TEXTAREA {
+	FONT: 100% tahoma, sans-serif; COLOR: #000
+}
+SELECT {
+	FONT: 100% tahoma, sans-serif; COLOR: #000
+}
+BUTTON {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 12px; BACKGROUND: #624a7e; PADDING-BOTTOM: 4px; FONT: 100% tahoma, sans-serif; CURSOR: hand; COLOR: #fff; BORDER-TOP-STYLE: none; PADDING-TOP: 4px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.btn {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; FONT-SIZE: 110%; PADDING-BOTTOM: 4px; WIDTH: auto! important; PADDING-TOP: 4px
+}
+.both {
+	CLEAR: both
+}
+.spacer {
+	FONT-SIZE: 0px; WIDTH: 1px; HEIGHT: 1px
+}
+.fleft {
+	FLOAT: left
+}
+.fright {
+	FLOAT: right
+}
+.aright {
+	TEXT-ALIGN: right
+}
+.acenter {
+	TEXT-ALIGN: center
+}
+.aleft {
+	TEXT-ALIGN: left
+}
+.red {
+	COLOR: #dc2727
+}
+.rel {
+	POSITION: relative
+}
+.abs {
+	POSITION: absolute
+}
+.mini {
+	FONT-SIZE: 92%
+}
+.bold {
+	FONT-WEIGHT: bold
+}
+.grey {
+	COLOR: #999
+}
+.nowrap {
+	WHITE-SPACE: nowrap
+}
+.usual {
+	MARGIN-BOTTOM: 30px
+}
+.usual INPUT {
+	BORDER-RIGHT: #cfcfcf 1px solid; BORDER-TOP: #cfcfcf 1px solid; PADDING-LEFT: 3px; BACKGROUND: #f0f0f0; BORDER-LEFT: #cfcfcf 1px solid; WIDTH: 250px; BORDER-BOTTOM: #cfcfcf 1px solid
+}
+.usual DIV {
+	MARGIN: 0px 0px 1.1em
+}
+.usual H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.usual INPUT {
+	MARGIN: 4px 0px 10px; VERTICAL-ALIGN: middle
+}
+.usual SELECT {
+	MARGIN: 4px 0px 10px; VERTICAL-ALIGN: middle
+}
+.usual TEXTAREA {
+	MARGIN: 4px 0px 10px; VERTICAL-ALIGN: middle
+}
+.usual TEXTAREA {
+	BORDER-RIGHT: #cfcfcf 1px solid; BORDER-TOP: #cfcfcf 1px solid; BACKGROUND: #f0f0f0; BORDER-LEFT: #cfcfcf 1px solid; WIDTH: 330px; BORDER-BOTTOM: #cfcfcf 1px solid; HEIGHT: 100px
+}
+.radio {
+	MARGIN-BOTTOM: -2px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.radio P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 25px; PADDING-BOTTOM: 0px; MARGIN: 0px; TEXT-INDENT: -20px; PADDING-TOP: 5px
+}
+.radio P INPUT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; MARGIN: 0px 5px 0px 0px; VERTICAL-ALIGN: middle; WIDTH: 15px; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 15px; BORDER-BOTTOM-STYLE: none
+}
+.usual .cldr INPUT {
+	WIDTH: 6.5em
+}
+.usual .cldr IMG {
+	MARGIN: 0px 0px 6px 5px; VERTICAL-ALIGN: middle; CURSOR: hand
+}
+.element_required {
+	COLOR: #fe3721; FONT-FAMILY: tahoma, sans-serif
+}
+.usual BUTTON {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 12px; PADDING-BOTTOM: 4px; COLOR: #fff; PADDING-TOP: 4px
+}
+.auth_form INPUT {
+	WIDTH: 80%
+}
+.auth_form A {
+	FONT-SIZE: 92%
+}
+.userinfo LI {
+	PADDING-LEFT: 15px; BACKGROUND: url(/i/arr02.gif) no-repeat 0px 0.45em
+}
+.goods INPUT {
+	BORDER-RIGHT: #cfcfcf 1px solid; BORDER-TOP: #cfcfcf 1px solid; BACKGROUND: #f0f0f0; BORDER-LEFT: #cfcfcf 1px solid; BORDER-BOTTOM: #cfcfcf 1px solid; TEXT-ALIGN: center
+}
+#customerInfoForm INPUT {
+	WIDTH: 180px
+}
+.left {
+	FLOAT: left; WIDTH: 24%
+}
+.right {
+	FLOAT: left; WIDTH: 76%; PADDING-TOP: 15px
+}
+.content {
+	BORDER-TOP: #d4d4d4 1px solid; FLOAT: left; WIDTH: 100%
+}
+.left .cont {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 30px; PADDING-BOTTOM: 0px; COLOR: #757575; PADDING-TOP: 20px
+}
+.right .cont {
+	PADDING-RIGHT: 28px; PADDING-LEFT: 28px; PADDING-BOTTOM: 0px; PADDING-TOP: 45px
+}
+.sp .right .cont {
+	PADDING-RIGHT: 14px; PADDING-LEFT: 14px; PADDING-BOTTOM: 0px; PADDING-TOP: 45px
+}
+ HTML .right .cont {
+	PADDING-TOP: 18px
+}
+ HTML .sp .right .cont {
+	PADDING-TOP: 18px
+}
+.header .right {
+	MIN-HEIGHT: 132px; BACKGROUND: url(/i/top_bg.gif) #fff repeat-x; PADDING-TOP: 0px
+}
+ HTML .header .right {
+	HEIGHT: 132px
+}
+.header .left {
+	BACKGROUND: url(/i/logo_bg.gif) repeat-x
+}
+.header .left DIV {
+	BORDER-RIGHT: #fff 2px solid; BACKGROUND: url(/i/logo.gif) no-repeat; HEIGHT: 132px
+}
+.header {
+	FLOAT: left; WIDTH: 100%
+}
+.header IMG {
+	FLOAT: left
+}
+.header .slogan {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 29px; FLOAT: left; PADDING-BOTTOM: 0px; FONT: bold 15px arial, sans-serif; COLOR: #624a7e; PADDING-TOP: 40px
+}
+.header .phones {
+	PADDING-RIGHT: 40px; MARGIN-TOP: 40px; PADDING-LEFT: 30px; FONT-SIZE: 88%; FLOAT: right; PADDING-BOTTOM: 0px; BORDER-LEFT: #d4d4d4 1px solid; COLOR: #757575; PADDING-TOP: 0px; HEIGHT: 60px
+}
+.header .phones .bold {
+	TEXT-ALIGN: center
+}
+.sp .header .slogan {
+	PADDING-TOP: 0px
+}
+.sp .header .phones {
+	MARGIN-TOP: 0px
+}
+.path {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 30px; PADDING-BOTTOM: 5px; PADDING-TOP: 10px
+}
+.menu {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #624a7e; PADDING-BOTTOM: 18px; OVERFLOW: hidden; WIDTH: 100%; PADDING-TOP: 18px; BORDER-BOTTOM: #fff 1px solid
+}
+.menu UL {
+	MARGIN: 0px 30px
+}
+.menu UL LI {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: url(/i/menu_li.gif) no-repeat 100% 4px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+.menu UL LI#first {
+	PADDING-LEFT: 0px
+}
+.menu UL LI#last {
+	BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.menu UL LI#first A {
+	PADDING-LEFT: 25px; BACKGROUND: url(/i/ico_home.gif) no-repeat
+}
+.menu UL LI#last A {
+	PADDING-RIGHT: 25px; BACKGROUND: url(/i/ico_basket.gif) no-repeat 100% 0px
+}
+.menu A {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; COLOR: #fff! important; LINE-HEIGHT: 150%; PADDING-TOP: 2px; TEXT-DECORATION: none
+}
+.menu A:hover {
+	TEXT-DECORATION: underline
+}
+.menu UL LI#act {
+	COLOR: #cab8e0; PADDING-TOP: 2px
+}
+.search_form {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 25px; FONT-WEIGHT: bold; FONT-SIZE: 92%; BACKGROUND: url(/i/search_bg.gif) no-repeat; PADDING-BOTTOM: 4px; MARGIN: 15px 0px 0px; COLOR: #757575; PADDING-TOP: 4px
+}
+.search_form INPUT {
+	MARGIN: 0px 5px; VERTICAL-ALIGN: middle
+}
+.search_form .btn_search {
+	BACKGROUND: #624a7e; WIDTH: 17px; HEIGHT: 17px
+}
+.search_form .search_field {
+	BORDER-RIGHT: #cfcfcf 1px solid; BORDER-TOP: #cfcfcf 1px solid; BACKGROUND: #f0f0f0; MARGIN: 0px 5px 0px 0px; BORDER-LEFT: #cfcfcf 1px solid; WIDTH: 60%; BORDER-BOTTOM: #cfcfcf 1px solid
+}
+.search_form .fleft {
+	WIDTH: 4em; PADDING-TOP: 3px
+}
+.search_form .nowrap {
+	MARGIN-LEFT: 4em
+}
+.cat_menu {
+	MARGIN: 0px
+}
+.cat_menu LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 15px; BACKGROUND: url(/i/arr01.gif) no-repeat 0px 0.45em; PADDING-BOTTOM: 5px; FONT: bold 110% tahoma, sans-serif; COLOR: #757575; PADDING-TOP: 0px
+}
+.cat_menu LI A {
+	COLOR: #624a7e; TEXT-DECORATION: none
+}
+.cat_menu LI A:hover {
+	TEXT-DECORATION: underline
+}
+.h1_cm {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 92%; PADDING-BOTTOM: 10px; TEXT-TRANSFORM: uppercase; PADDING-TOP: 40px
+}
+.cm {
+	MARGIN: 0px
+}
+.cm LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 15px; BACKGROUND: url(/i/arr02.gif) no-repeat 0px 0.45em; PADDING-BOTTOM: 5px; FONT: bold 100% tahoma, sans-serif; COLOR: #624a7e; PADDING-TOP: 0px
+}
+.cm LI A {
+	COLOR: #757575! important; TEXT-DECORATION: none
+}
+.cm LI A:hover {
+	TEXT-DECORATION: underline
+}
+.item {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(/i/line_hor.gif) repeat-x 0px 100%; FLOAT: left; MARGIN-BOTTOM: 24px; PADDING-BOTTOM: 24px; WIDTH: 100%; PADDING-TOP: 0px
+}
+.item .text {
+	MARGIN-LEFT: 224px
+}
+ HTML .text {
+	BORDER-RIGHT: #fff 1px solid; BORDER-TOP: #fff 1px solid; BORDER-LEFT: #fff 1px solid; BORDER-BOTTOM: #fff 1px solid
+}
+.item .img {
+	FLOAT: left; WIDTH: 150px
+}
+.item .img IMG {
+	BORDER-RIGHT: #ececec 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #ececec 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #ececec 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #ececec 1px solid
+}
+.item .price {
+	PADDING-RIGHT: 10px; BORDER-TOP: #fff 2px solid; PADDING-LEFT: 10px; BACKGROUND: #f1f1f1; PADDING-BOTTOM: 10px; COLOR: #757575; PADDING-TOP: 10px; TEXT-ALIGN: center
+}
+.item .price A {
+	FONT-WEIGHT: bold; FONT-SIZE: 92%; COLOR: #624a7e
+}
+.item .price B {
+	FONT-WEIGHT: normal; FONT-SIZE: 150%; COLOR: #624a7e
+}
+.item H4 {
+	FONT: bold 110% tahoma, sans-serif; COLOR: #624a7e
+}
+.item SMALL {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.item H5 {
+	MARGIN: 0px 0px 5px
+}
+.sep {
+	FONT-SIZE: 0px; FLOAT: left; WIDTH: 100%; HEIGHT: 0px
+}
+.single .img IMG {
+	PADDING-RIGHT: 17px; PADDING-LEFT: 17px; PADDING-BOTTOM: 17px; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.single {
+	BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN-BOTTOM: 0px
+}
+.more {
+	FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+#footer .content {
+	BORDER-TOP: #624a7e 11px solid
+}
+#footer .left {
+	BACKGROUND: #f9f9f9
+}
+#footer .right {
+	PADDING-TOP: 0px
+}
+#footer .left .cont {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 45px; MIN-HEIGHT: 79px; PADDING-BOTTOM: 0px; PADDING-TOP: 22px
+}
+ HTML #footer .left .cont {
+	HEIGHT: 79px
+}
+#footer .right .cont {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 56px; PADDING-BOTTOM: 0px; PADDING-TOP: 33px
+}
+#footer .developers {
+	FONT-SIZE: 92%
+}
+#footer .developers IMG {
+	FLOAT: left; MARGIN: 3px 0px 0px; VERTICAL-ALIGN: middle
+}
+#footer .developers DIV {
+	MARGIN-LEFT: 35px; WIDTH: 100px
+}
+#footer .developers A {
+	COLOR: #afafaf; TEXT-DECORATION: none
+}
+#footer .developers .pad_b {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 0px
+}
+.counters {
+	FLOAT: right; WIDTH: 280px; MARGIN-RIGHT: 25px
+}
+.counters IMG {
+	MARGIN: 0px 3px 0px 0px
+}
+.copy {
+	FONT-WEIGHT: bold; FONT-SIZE: 92%; FLOAT: left; COLOR: #bdbdbd
+}
+.hide_line {
+	FONT-SIZE: 0px; BACKGROUND: #fff; FLOAT: left; WIDTH: 100%; POSITION: relative; TOP: -25px; HEIGHT: 5px
+}
+.tbl {
+	WIDTH: 100%
+}
+.tbl TD {
+	BORDER-RIGHT: #dfdfdf 0px solid; PADDING-RIGHT: 8px; BORDER-TOP: #dfdfdf 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 8px; VERTICAL-ALIGN: top; BORDER-LEFT: #dfdfdf 0px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #dfdfdf 1px solid
+}
+.tbl TH {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 92%; BACKGROUND: #624a7e; PADDING-BOTTOM: 8px; COLOR: #fff; PADDING-TOP: 8px
+}
+.goods TD {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px
+}
+.goods TH {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px
+}
+.goods {
+	BORDER-BOTTOM: #624a7e 3px solid
+}
+.order {
+	FONT-WEIGHT: bold; FONT-SIZE: 92%; TEXT-DECORATION: none
+}
+.currency {
+	POSITION: relative
+}
+.currency DIV {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 92%; RIGHT: 0px; BACKGROUND: #fff; PADDING-BOTTOM: 3px; COLOR: #624a7e; PADDING-TOP: 3px; POSITION: absolute; TOP: -40px
+}
+ HTML .currency DIV {
+	RIGHT: 28px; TOP: -55px
+}
+.descr {
+	PADDING-RIGHT: 14px; PADDING-LEFT: 14px; PADDING-BOTTOM: 10px; PADDING-TOP: 0px
+}
+.cat_sect_menu {
+	MARGIN: 0px 0px 15px; OVERFLOW: hidden; WIDTH: 100%
+}
+.cat_sect_menu LI {
+	PADDING-RIGHT: 28px; PADDING-LEFT: 15px; BACKGROUND: url(/i/cat_menu01.gif) no-repeat 0px 5px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.cat_sect_menu A {
+	TEXT-DECORATION: none
+}
+.cat_sect_menu A:hover {
+	TEXT-DECORATION: underline
+}
+.sort A {
+	COLOR: #010101! important; TEXT-DECORATION: none
+}
+.pager A {
+	COLOR: #010101! important; TEXT-DECORATION: none
+}
+.sort {
+	COLOR: #666
+}
+.pager {
+	COLOR: #666
+}
+.sort {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 15px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.sort A:hover {
+	TEXT-DECORATION: underline
+}
+.pager A:hover {
+	TEXT-DECORATION: underline
+}
+.oldprice {
+	TEXT-DECORATION: line-through
+}
+#scalemarket .header .left {
+	BACKGROUND: url(/i/logo_scalemarket_bg.gif) repeat-x
+}
+#scalemarket .header .left DIV {
+	BACKGROUND: url(/i/logo_scalemarket.gif) no-repeat
+}
+#scalemarket .cat_sect_menu A {
+	COLOR: #a02443
+}
+#scalemarket H1 {
+	COLOR: #a02443
+}
+#scalemarket A {
+	COLOR: #a02443
+}
+#scalemarket .header .slogan {
+	COLOR: #a02443
+}
+#scalemarket .cat_menu LI {
+	COLOR: #a02443
+}
+#scalemarket .cat_menu LI A {
+	COLOR: #a02443
+}
+#scalemarket .cm LI {
+	COLOR: #a02443
+}
+#scalemarket .item .price A {
+	COLOR: #a02443
+}
+#scalemarket .item .price B {
+	COLOR: #a02443
+}
+#scalemarket .item H4 {
+	COLOR: #a02443
+}
+#scalemarket H5 {
+	COLOR: #a02443
+}
+#scalemarket .currency DIV {
+	COLOR: #a02443
+}
+#scalemarket .menu {
+	BACKGROUND: #a02443
+}
+#scalemarket .search_form .btn_search {
+	BACKGROUND: #a02443
+}
+#scalemarket .tbl TH {
+	BACKGROUND: #a02443
+}
+#scalemarket BUTTON {
+	BACKGROUND: #a02443
+}
+#scalemarket #footer .content {
+	BORDER-TOP: #a02443 11px solid
+}
+#scalemarket .goods {
+	BORDER-BOTTOM: #a02443 3px solid
+}
+#scalemarket .cat_sect_menu LI {
+	BACKGROUND: url(/i/cat_menu02.gif) no-repeat 0px 5px
+}
+#scalemarket .menu UL LI#act {
+	COLOR: #f592ab
+}
+#kioskprinter .header .left {
+	BACKGROUND: url(/i/logo_kioskprinter_bg.gif) repeat-x
+}
+#kioskprinter .header .left DIV {
+	BACKGROUND: url(/i/logo_kioskprinter.gif) no-repeat
+}
+#kioskprinter .cat_sect_menu A {
+	COLOR: #db5b5b
+}
+#kioskprinter H1 {
+	COLOR: #db5b5b
+}
+#kioskprinter A {
+	COLOR: #db5b5b
+}
+#kioskprinter .header .slogan {
+	COLOR: #db5b5b
+}
+#kioskprinter .cat_menu LI {
+	COLOR: #db5b5b
+}
+#kioskprinter .cat_menu LI A {
+	COLOR: #db5b5b
+}
+#kioskprinter .cm LI {
+	COLOR: #db5b5b
+}
+#kioskprinter .item .price A {
+	COLOR: #db5b5b
+}
+#kioskprinter .item .price B {
+	COLOR: #db5b5b
+}
+#kioskprinter .item H4 {
+	COLOR: #db5b5b
+}
+#kioskprinter H5 {
+	COLOR: #db5b5b
+}
+#kioskprinter .currency DIV {
+	COLOR: #db5b5b
+}
+#kioskprinter .menu {
+	BACKGROUND: #db5b5b
+}
+#kioskprinter .search_form .btn_search {
+	BACKGROUND: #db5b5b
+}
+#kioskprinter .tbl TH {
+	BACKGROUND: #db5b5b
+}
+#kioskprinter BUTTON {
+	BACKGROUND: #db5b5b
+}
+#kioskprinter #footer .content {
+	BORDER-TOP: #db5b5b 11px solid
+}
+#kioskprinter .goods {
+	BORDER-BOTTOM: #db5b5b 3px solid
+}
+#kioskprinter .cat_sect_menu LI {
+	BACKGROUND: url(/i/cat_menu03.gif) no-repeat 0px 5px
+}
+#kioskprinter .menu UL LI#act {
+	COLOR: #f9afaf
+}
+#countermarket .header .left {
+	BACKGROUND: url(/i/logo_countermarket_bg.gif) repeat-x
+}
+#countermarket .header .left DIV {
+	BACKGROUND: url(/i/logo_countermarket.gif) no-repeat
+}
+#countermarket .cat_sect_menu A {
+	COLOR: #848484
+}
+#countermarket H1 {
+	COLOR: #848484
+}
+#countermarket A {
+	COLOR: #848484
+}
+#countermarket .header .slogan {
+	COLOR: #848484
+}
+#countermarket .cat_menu LI {
+	COLOR: #848484
+}
+#countermarket .cat_menu LI A {
+	COLOR: #848484
+}
+#countermarket .cm LI {
+	COLOR: #848484
+}
+#countermarket .item .price A {
+	COLOR: #848484
+}
+#countermarket .item .price B {
+	COLOR: #848484
+}
+#countermarket .item H4 {
+	COLOR: #848484
+}
+#countermarket H5 {
+	COLOR: #848484
+}
+#countermarket .currency DIV {
+	COLOR: #848484
+}
+#countermarket .menu {
+	BACKGROUND: #848484
+}
+#countermarket .search_form .btn_search {
+	BACKGROUND: #848484
+}
+#countermarket .tbl TH {
+	BACKGROUND: #848484
+}
+#countermarket BUTTON {
+	BACKGROUND: #848484
+}
+#countermarket #footer .content {
+	BORDER-TOP: #848484 11px solid
+}
+#countermarket .goods {
+	BORDER-BOTTOM: #848484 3px solid
+}
+#countermarket .cat_sect_menu LI {
+	BACKGROUND: url(/i/cat_menu04.gif) no-repeat 0px 5px
+}
+#countermarket .menu UL LI#act {
+	COLOR: #bebebe
+}
+#scanermarket .header .left {
+	BACKGROUND: url(/i/logo_scanermarket_bg.gif) repeat-x
+}
+#scanermarket .header .left DIV {
+	BACKGROUND: url(/i/logo_scanermarket.gif) no-repeat 100% 0px
+}
+#scanermarket .cat_sect_menu A {
+	COLOR: #412f72
+}
+#scanermarket H1 {
+	COLOR: #412f72
+}
+#scanermarket A {
+	COLOR: #412f72
+}
+#scanermarket .header .slogan {
+	COLOR: #412f72
+}
+#scanermarket .cat_menu LI {
+	COLOR: #412f72
+}
+#scanermarket .cat_menu LI A {
+	COLOR: #412f72
+}
+#scanermarket .cm LI {
+	COLOR: #412f72
+}
+#scanermarket .item .price A {
+	COLOR: #412f72
+}
+#scanermarket .item .price B {
+	COLOR: #412f72
+}
+#scanermarket .item H4 {
+	COLOR: #412f72
+}
+#scanermarket H5 {
+	COLOR: #412f72
+}
+#scanermarket .currency DIV {
+	COLOR: #412f72
+}
+#scanermarket .menu {
+	BACKGROUND: #412f72
+}
+#scanermarket .search_form .btn_search {
+	BACKGROUND: #412f72
+}
+#scanermarket .tbl TH {
+	BACKGROUND: #412f72
+}
+#scanermarket BUTTON {
+	BACKGROUND: #412f72
+}
+#scanermarket #footer .content {
+	BORDER-TOP: #412f72 11px solid
+}
+#scanermarket .goods {
+	BORDER-BOTTOM: #412f72 3px solid
+}
+#scanermarket .cat_sect_menu LI {
+	BACKGROUND: url(/i/cat_menu05.gif) no-repeat 0px 5px
+}
+#labelprinter .header .left {
+	BACKGROUND: url(/i/logo_labelprinter_bg.gif) repeat-x
+}
+#labelprinter .header .left DIV {
+	BACKGROUND: url(/i/logo_labelprinter.gif) no-repeat 100% 0px
+}
+#labelprinter .cat_sect_menu A {
+	COLOR: #93554a
+}
+#labelprinter H1 {
+	COLOR: #93554a
+}
+#labelprinter A {
+	COLOR: #93554a
+}
+#labelprinter .header .slogan {
+	COLOR: #93554a
+}
+#labelprinter .cat_menu LI {
+	COLOR: #93554a
+}
+#labelprinter .cat_menu LI A {
+	COLOR: #93554a
+}
+#labelprinter .cm LI {
+	COLOR: #93554a
+}
+#labelprinter .item .price A {
+	COLOR: #93554a
+}
+#labelprinter .item .price B {
+	COLOR: #93554a
+}
+#labelprinter .item H4 {
+	COLOR: #93554a
+}
+#labelprinter H5 {
+	COLOR: #93554a
+}
+#labelprinter .currency DIV {
+	COLOR: #93554a
+}
+#labelprinter .menu {
+	BACKGROUND: #93554a
+}
+#labelprinter .search_form .btn_search {
+	BACKGROUND: #93554a
+}
+#labelprinter .tbl TH {
+	BACKGROUND: #93554a
+}
+#labelprinter BUTTON {
+	BACKGROUND: #93554a
+}
+#labelprinter #footer .content {
+	BORDER-TOP: #93554a 11px solid
+}
+#labelprinter .goods {
+	BORDER-BOTTOM: #93554a 3px solid
+}
+#labelprinter .cat_sect_menu LI {
+	BACKGROUND: url(/i/cat_menu06.gif) no-repeat 0px 5px
+}
+#labelprinter .menu UL LI#act {
+	COLOR: #f0aea2
+}
+#postech .header .left {
+	BACKGROUND: url(/i/logo_postech_bg.gif) repeat-x
+}
+#postech .header .left DIV {
+	BACKGROUND: url(/i/logo_postech.gif) no-repeat 100% 0px
+}
+#postech .cat_sect_menu A {
+	COLOR: #008478
+}
+#postech H1 {
+	COLOR: #008478
+}
+#postech A {
+	COLOR: #008478
+}
+#postech .header .slogan {
+	COLOR: #008478
+}
+#postech .cat_menu LI {
+	COLOR: #008478
+}
+#postech .cat_menu LI A {
+	COLOR: #008478
+}
+#postech .cm LI {
+	COLOR: #008478
+}
+#postech .item .price A {
+	COLOR: #008478
+}
+#postech .item .price B {
+	COLOR: #008478
+}
+#postech .item H4 {
+	COLOR: #008478
+}
+#postech H5 {
+	COLOR: #008478
+}
+#postech .currency DIV {
+	COLOR: #008478
+}
+#postech .menu {
+	BACKGROUND: #008478
+}
+#postech .search_form .btn_search {
+	BACKGROUND: #008478
+}
+#postech .tbl TH {
+	BACKGROUND: #008478
+}
+#postech BUTTON {
+	BACKGROUND: #008478
+}
+#postech #footer .content {
+	BORDER-TOP: #008478 11px solid
+}
+#postech .goods {
+	BORDER-BOTTOM: #008478 3px solid
+}
+#postech .cat_sect_menu LI {
+	BACKGROUND: url(/i/cat_menu07.gif) no-repeat 0px 5px
+}
+#postech .menu UL LI#act {
+	COLOR: #77dbd2
+}
+#tsdmarket .header .left {
+	BACKGROUND: url(/i/logo_tsdmarket_bg.gif) repeat-x
+}
+#tsdmarket .header .left DIV {
+	BACKGROUND: url(/i/logo_tsdmarket.gif) no-repeat
+}
+#tsdmarket .cat_sect_menu A {
+	COLOR: #518274
+}
+#tsdmarket H1 {
+	COLOR: #518274
+}
+#tsdmarket A {
+	COLOR: #518274
+}
+#tsdmarket .header .slogan {
+	COLOR: #518274
+}
+#tsdmarket .cat_menu LI {
+	COLOR: #518274
+}
+#tsdmarket .cat_menu LI A {
+	COLOR: #518274
+}
+#tsdmarket .cm LI {
+	COLOR: #518274
+}
+#tsdmarket .item .price A {
+	COLOR: #518274
+}
+#tsdmarket .item .price B {
+	COLOR: #518274
+}
+#tsdmarket .item H4 {
+	COLOR: #518274
+}
+#tsdmarket H5 {
+	COLOR: #518274
+}
+#tsdmarket .currency DIV {
+	COLOR: #518274
+}
+#tsdmarket .menu {
+	BACKGROUND: #518274
+}
+#tsdmarket .search_form .btn_search {
+	BACKGROUND: #518274
+}
+#tsdmarket .tbl TH {
+	BACKGROUND: #518274
+}
+#tsdmarket BUTTON {
+	BACKGROUND: #518274
+}
+#tsdmarket #footer .content {
+	BORDER-TOP: #518274 11px solid
+}
+#tsdmarket .goods {
+	BORDER-BOTTOM: #518274 3px solid
+}
+#tsdmarket .cat_sect_menu LI {
+	BACKGROUND: url(/i/cat_menu08.gif) no-repeat 0px 5px
+}
+#tsdmarket .menu UL LI#act {
+	COLOR: #a2daca
+}
+#rest .header .left {
+	BACKGROUND: url(/i/logo_rest_bg.jpg) no-repeat
+}
+#rest .header .left DIV {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#rest .cat_sect_menu A {
+	COLOR: #ff9900
+}
+#rest H1 {
+	COLOR: #ff9900
+}
+#rest A {
+	COLOR: #ff9900
+}
+#rest .header .slogan {
+	COLOR: #ff9900
+}
+#rest .cat_menu LI {
+	COLOR: #ff9900
+}
+#rest .cat_menu LI A {
+	COLOR: #ff9900
+}
+#rest .cm LI {
+	COLOR: #ff9900
+}
+#rest .item .price A {
+	COLOR: #ff9900
+}
+#rest .item .price B {
+	COLOR: #ff9900
+}
+#rest .item H4 {
+	COLOR: #ff9900
+}
+#rest H5 {
+	COLOR: #ff9900
+}
+#rest .currency DIV {
+	COLOR: #ff9900
+}
+#rest .menu {
+	BACKGROUND: #ff9900
+}
+#rest .search_form .btn_search {
+	BACKGROUND: #ff9900
+}
+#rest .tbl TH {
+	BACKGROUND: #ff9900
+}
+#rest BUTTON {
+	BACKGROUND: #ff9900
+}
+#rest #footer .content {
+	BORDER-TOP: #ff9900 11px solid
+}
+#rest .goods {
+	BORDER-BOTTOM: #ff9900 3px solid
+}
+#rest .cat_sect_menu LI {
+	BACKGROUND: url(/i/cat_menu09.gif) no-repeat 0px 5px
+}
+#rest .cat_menu LI {
+	BACKGROUND-IMAGE: url(/i/cat_menu09.gif)
+}
+#rest .menu UL LI#act {
+	COLOR: #ffe1b3
+}
+#termorolik .header .left {
+	BACKGROUND: #fff
+}
+#termorolik .header .left DIV {
+	BACKGROUND: url(/i/logo_termorolik.jpg) no-repeat right 2px
+}
+#termorolik .cat_sect_menu A {
+	COLOR: #993c2e
+}
+#termorolik H1 {
+	COLOR: #993c2e
+}
+#termorolik A {
+	COLOR: #993c2e
+}
+#termorolik .header .slogan {
+	COLOR: #993c2e
+}
+#termorolik .cat_menu LI {
+	COLOR: #993c2e
+}
+#termorolik .cat_menu LI A {
+	COLOR: #993c2e
+}
+#termorolik .cm LI {
+	COLOR: #993c2e
+}
+#termorolik .item .price A {
+	COLOR: #993c2e
+}
+#termorolik .item .price B {
+	COLOR: #993c2e
+}
+#termorolik .item H4 {
+	COLOR: #993c2e
+}
+#termorolik H5 {
+	COLOR: #993c2e
+}
+#termorolik .currency DIV {
+	COLOR: #993c2e
+}
+#termorolik .menu {
+	BACKGROUND: #993c2e
+}
+#termorolik .search_form .btn_search {
+	BACKGROUND: #993c2e
+}
+#termorolik .tbl TH {
+	BACKGROUND: #993c2e
+}
+#termorolik BUTTON {
+	BACKGROUND: #993c2e
+}
+#termorolik #footer .content {
+	BORDER-TOP: #993c2e 11px solid
+}
+#termorolik .goods {
+	BORDER-BOTTOM: #993c2e 3px solid
+}
+#termorolik .cat_sect_menu LI {
+	BACKGROUND: url(/i/cat_menu09.gif) no-repeat 0px 5px
+}
+#termorolik .cat_menu LI {
+	BACKGROUND-IMAGE: url(/i/cat_menu09.gif)
+}
+#termorolik .menu UL LI#act {
+	COLOR: #dcbcb8
+}
+#poscomplex .header .left {
+	BACKGROUND: url(/i/logo_poscomplex.gif) repeat-x 0px 2px
+}
+#poscomplex .header .left DIV {
+	BACKGROUND: url(/i/logo_poscomplex.jpg) no-repeat 0px 2px
+}
+#poscomplex .cat_sect_menu A {
+	COLOR: #2f4e72
+}
+#poscomplex H1 {
+	COLOR: #2f4e72
+}
+#poscomplex A {
+	COLOR: #2f4e72
+}
+#poscomplex .header .slogan {
+	COLOR: #2f4e72
+}
+#poscomplex .cat_menu LI {
+	COLOR: #2f4e72
+}
+#poscomplex .cat_menu LI A {
+	COLOR: #2f4e72
+}
+#poscomplex .cm LI {
+	COLOR: #2f4e72
+}
+#poscomplex .item .price A {
+	COLOR: #2f4e72
+}
+#poscomplex .item .price B {
+	COLOR: #2f4e72
+}
+#poscomplex .item H4 {
+	COLOR: #2f4e72
+}
+#poscomplex H5 {
+	COLOR: #2f4e72
+}
+#poscomplex .currency DIV {
+	COLOR: #2f4e72
+}
+#poscomplex .menu {
+	BACKGROUND: #2f4e72
+}
+#poscomplex .search_form .btn_search {
+	BACKGROUND: #2f4e72
+}
+#poscomplex .tbl TH {
+	BACKGROUND: #2f4e72
+}
+#poscomplex BUTTON {
+	BACKGROUND: #2f4e72
+}
+#poscomplex #footer .content {
+	BORDER-TOP: #2f4e72 11px solid
+}
+#poscomplex .goods {
+	BORDER-BOTTOM: #2f4e72 3px solid
+}
+#poscomplex .cat_sect_menu LI {
+	BACKGROUND: url(/i/cat_menu09.gif) no-repeat 0px 5px
+}
+#poscomplex .cat_menu LI {
+	BACKGROUND-IMAGE: url(/i/cat_menu09.gif)
+}
+#poscomplex .menu UL LI#act {
+	COLOR: #acb8c7
+}

@@ -1,0 +1,159 @@
+BODY {
+	COLOR: #555555; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+TD {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+A:link {
+	COLOR: #198ad2
+}
+A:visited {
+	COLOR: #198ad2
+}
+.zagl {
+	FONT-WEIGHT: bold
+}
+.tab {
+	
+}
+.tab0 {
+	
+}
+.tab2 {
+	
+}
+.tab3 {
+	BORDER-RIGHT: #ffd972 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #a5a5a5 0px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 5px; BORDER-LEFT: #ffd972 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #a5a5a5 1px solid
+}
+.tab4 {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 6px; PADDING-TOP: 6px
+}
+.small {
+	FONT-SIZE: 10px
+}
+.ssmall {
+	FONT-SIZE: 12px
+}
+A.zagl:link {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #555555; TEXT-DECORATION: none
+}
+A.zagl:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #555555; TEXT-DECORATION: none
+}
+A.zagl:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #ff4e00; TEXT-DECORATION: none
+}
+A.ssmall {
+	TEXT-DECORATION: none
+}
+A.ssmall:hover {
+	COLOR: #198ad2; TEXT-DECORATION: underline
+}
+A.ssmall2:link {
+	COLOR: #555555; TEXT-DECORATION: none
+}
+A.ssmall2:visited {
+	COLOR: #555555; TEXT-DECORATION: none
+}
+A.ssmall2:hover {
+	COLOR: #198ad2; TEXT-DECORATION: none
+}
+A.ffffff_b:link {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #555555; TEXT-DECORATION: none
+}
+.small A.ffffff_b:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #ff4e00; BORDER-BOTTOM: #ff4e00 1px dotted; TEXT-DECORATION: none
+}
+A.ffffff_b:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #555555; TEXT-DECORATION: none
+}
+A.short_news:link {
+	FONT-SIZE: 10px
+}
+P.kolonka_link {
+	FONT-SIZE: 10px
+}
+.fconf_in2 {
+	BACKGROUND: #eeeeee
+}
+.fconf_in1 {
+	BACKGROUND: #f8f8f8
+}
+.fconf_botline {
+	FONT-SIZE: 12px; BACKGROUND: #a0a0a0; COLOR: #ffffff
+}
+.fconf_botline A {
+	COLOR: #ffffff
+}
+.fconf_text {
+	FONT-SIZE: 12px; COLOR: #000000
+}
+.fsmall {
+	FONT-SIZE: 11px
+}
+.fdate {
+	FONT-SIZE: 11px
+}
+.fsubj {
+	FONT-SIZE: 11px
+}
+P.razdel {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #555555; FONT-FAMILY: Verdana, Tahoma, Arial, sans-serif; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+A.razdel {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #555555; FONT-FAMILY: Verdana, Tahoma, Arial, sans-serif; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+A.razdel:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #555555; FONT-FAMILY: Verdana, Tahoma, Arial, sans-serif; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+A.razdel:hover {
+	COLOR: #ff4e00
+}
+P.razdel2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #555555; FONT-FAMILY: Verdana, Tahoma, Arial, sans-serif; TEXT-ALIGN: left
+}
+P.razdel3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #555555; FONT-FAMILY: Verdana, Tahoma, Arial, sans-serif; TEXT-ALIGN: center
+}
+P.date {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #898989; FONT-FAMILY: Verdana, Tahoma, Arial, sans-serif
+}
+SPAN.date {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #898989; FONT-FAMILY: Verdana, Tahoma, Arial, sans-serif
+}
+.quest_oblig {
+	COLOR: #ff4444
+}
+.quest_nooblig {
+	COLOR: #444444
+}
+.quest_comment {
+	FONT-SIZE: 10px; COLOR: #000000
+}
+.ramka {
+	BORDER-RIGHT: #a5a5a5 1px solid; BORDER-TOP: #a5a5a5 1px solid; BORDER-LEFT: #a5a5a5 1px solid; BORDER-BOTTOM: #a5a5a5 1px solid
+}
+bgin3 {
+	BACKGROUND: #ffffff
+}
+.copy {
+	FONT-SIZE: 10px
+}
+.stat {
+	FONT-SIZE: 10px; COLOR: #dddddd
+}
+A.top_menu {
+	FONT-SIZE: 12px
+}
+A.top_menu:hover {
+	TEXT-DECORATION: none
+}
+.h4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+.code {
+	BORDER-RIGHT: #d1d7dc 1px solid; BORDER-TOP: #d1d7dc 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #d1d7dc 1px solid; COLOR: #006600; BORDER-BOTTOM: #d1d7dc 1px solid; FONT-FAMILY: Courier, 'Courier New', sans-serif; BACKGROUND-COLOR: #fafafa
+}
+P.highlight {
+	BORDER-RIGHT: #d1d7dc 1px solid; BORDER-TOP: #d1d7dc 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #d1d7dc 1px solid; COLOR: #006600; BORDER-BOTTOM: #d1d7dc 1px solid; FONT-FAMILY: Courier, 'Courier New', sans-serif; BACKGROUND-COLOR: #fafafa
+}

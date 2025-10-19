@@ -1,0 +1,67 @@
+$$  коментарий
+$tip114    <----- тип вопроса
+$wo1 -------------------------------------------------
+
+         Какой уровень ВОС обеспечивает конечному
+           
+          пользователю набор сетевых сервисов:
+
+$ot1* ------------------------------------------------
+
++   Application layer
+
+
+    Presentation layer
+
+
+
+    Session layer
+
+
+    Network layer
+$ot2* ------------------------------------------------
+
+    Presentation layer
+
+
++   Application layer
+
+
+
+    Session layer
+
+
+    Network layer
+$ot3* ------------------------------------------------
+
+    Presentation layer
+
+
+    Session layer
+
+
+
++   Application layer
+
+
+    Network layer
+$ot4* ------------------------------------------------
+
+    Presentation layer
+
+
+    Session layer
+
+
+
+    Network layer
+
+
++   Application layer
+$spr*  <- справка
+ *****  
+
+
+$end   <--- конец справки и всего файла
+
+

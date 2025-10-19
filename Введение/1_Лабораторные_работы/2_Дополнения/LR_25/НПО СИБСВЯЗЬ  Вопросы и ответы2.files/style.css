@@ -1,0 +1,21 @@
+BODY {
+	MARGIN-TOP: 0px; MARGIN-LEFT: 0px; BACKGROUND-COLOR: #ffffff
+}
+TD {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Tahoma,Verdana,Arial,Sans-Serif,Helvetica,Geneva
+}
+A {
+	COLOR: #0135a1; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #0033ff; TEXT-DECORATION: underline overline
+}
+.Title {
+	FONT-WEIGHT: bold; COLOR: #336699
+}
+.my {
+	COLOR: #5d5d5d
+}
+.w {
+	COLOR: #a0a0a0
+}

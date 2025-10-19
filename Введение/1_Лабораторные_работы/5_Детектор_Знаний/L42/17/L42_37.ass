@@ -1,0 +1,67 @@
+$$  коментарий
+$tip114    <----- тип вопроса
+$wo1 -------------------------------------------------
+  
+      Какой уровень ВОС позволяет преодолеть
+ 
+  синтаксические различия в представлении данных:
+$ot1* ------------------------------------------------
+
++   Presentation layer
+
+
+    Session layer
+
+
+
+    Application layer
+
+
+    Network layer
+$ot2* ------------------------------------------------
+
+    Network layer
+
+
++   Presentation layer
+
+
+
+    Session layer
+
+
+    Application layer
+$ot3* ------------------------------------------------
+
+    Application layer
+
+
+    Network layer
+
+
+
++   Presentation layer
+
+
+    Session layer
+
+$ot4* ------------------------------------------------
+
+    Session layer
+
+
+    Application layer
+
+
+
+    Network layer
+
+
++   Presentation layer
+$spr*  <- справка
+ *****  
+
+
+$end   <--- конец справки и всего файла
+
+

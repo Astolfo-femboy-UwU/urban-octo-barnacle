@@ -1,0 +1,1407 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0051)http://www.citforum.ru/hardware/modem_tut/gl3.shtml -->
+<HTML><HEAD><TITLE>Управление модемом</TITLE><LINK title="Andrew Alikberov" 
+rev=made href="mailto:info@citmgu.ru">
+<META 
+content="Информационные технологии, Модемы, установка, наладка,команды, режимы, Управление модемом, формат AT-команд, Сообщения модема, Ввод команд, " 
+name='KeyWords"'>
+<META content=all name=Robots>
+<META content="Управление модемом, 1998, www.citforum.ru" name=Description>
+<META content=Static name=Document-state><LINK 
+href="Управление модемом.files/citforum.css" rel=stylesheet>
+<STYLE>PRE {
+	BORDER-RIGHT: 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 9pt; OVERFLOW-X: auto; PADDING-BOTTOM: 11pt; BORDER-LEFT: 1px solid; WIDTH: 468px; PADDING-TOP: 3px; BORDER-BOTTOM: 1px solid
+}
+</STYLE>
+
+<META http-equiv=content-type content="text/html; charset=Windows-1251">
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY text=#000000 vLink=#003860 aLink=#800000 link=#006890 bgColor=#ffffff 
+topMargin=0 marginheight="0"><A name=top></A><!-- counters -->
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD><!--TopList COUNTER-->
+      <SCRIPT language=JavaScript><!--
+d=document;js=10;a=';r='+escape(d.referrer)
+//--></SCRIPT>
+
+      <SCRIPT language=JavaScript1.1><!--
+js=11;a+=';j='+navigator.javaEnabled()
+//--></SCRIPT>
+
+      <SCRIPT language=JavaScript1.2><!--
+js=12;s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+//--></SCRIPT>
+
+      <SCRIPT language=JavaScript1.3><!--
+js=13//--></SCRIPT>
+
+      <SCRIPT language=JavaScript><!--
+d.write('<img src="http://top.list.ru/counter'+
+'?id=26978;js='+js+a+'" alt="" height=1 width=1>')
+if(js>11)d.write('<'+'!-- ')//--></SCRIPT>
+      <NOSCRIPT><IMG height=1 alt="" src="Управление модемом.files/counter.gif" 
+      width=1></NOSCRIPT>
+      <SCRIPT language=JavaScript><!--
+if(js>11)d.write('--'+'>')
+//--></SCRIPT>
+<!--TopList COUNTER--></TD>
+    <TD><!--LiveInternet counter-->
+      <SCRIPT language=JavaScript><!--
+document.write('<img src="http://counter.yadro.ru/hit?r'+
+escape(document.referrer)+((typeof(screen)=='undefined')?'':
+';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+
+';i'+escape('Жж'+document.title)+';'+Math.random()+
+'" width=1 height=1 alt="">')//--></SCRIPT>
+<!--/LiveInternet--></TD>
+    <TD><IMG height=1 alt="" src="Управление модемом.files/top100.gif" width=1 
+      border=0></TD></TR></TBODY></TABLE><!-- end of counters -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0><!--
+<tr>
+  <td colspan=3><img width=931 height=1><br></td>
+</tr>
+-->
+  <TBODY>
+  <TR vAlign=top>
+    <TD rowSpan=6><A href="http://www.citforum.ru/"><IMG height=44 alt=Logo 
+      src="Управление модемом.files/citlogo8.gif" width=140 border=0></A></TD>
+    <TD rowSpan=6>&nbsp;&nbsp;&nbsp;</TD>
+    <TD bgColor=#008080><IMG height=1 alt="" 
+      src="Управление модемом.files/1x1.gif" width=1 border=0></TD></TR>
+  <TR>
+    <TD bgColor=#daecd7><IMG height=3 alt="" 
+      src="Управление модемом.files/1x1.gif" width=1 border=0></TD></TR>
+  <TR>
+    <TD bgColor=#008080>
+      <TABLE cellSpacing=1 cellPadding=1 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+            href="http://citcity.ru/">Деловая газета CitCity.ru</A></FONT></TD>
+          <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+            href="http://citkit.ru/">CITKIT.ru - все об Open 
+Source</A></FONT></TD>
+          <TD align=middle bgColor=#f4f9f3><A class=head 
+            href="http://forum.citforum.ru/">Форумы</A></TD>
+          <TD align=middle bgColor=#f4f9f3><A class=head 
+            href="http://www.citforum.ru/news.shtml">Все публикации</A></TD>
+          <TD align=middle bgColor=#f4f9f3><A class=head 
+            href="http://www.citmgu.ru/">Учебный центр</A></TD>
+          <TD align=middle bgColor=#f4f9f3><A class=head 
+            href="http://smoking-room.ru/">Курилка</A></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD><IMG height=3 alt="" src="Управление модемом.files/1x1.gif" width=1 
+      border=0></TD></TR>
+  <TR>
+    <TD width="100%">
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=left width=21><IMG height=21 alt=CitForum 
+            src="Управление модемом.files/cd1.gif" width=21 border=0></TD>
+          <TD align=left><FONT size=2>&nbsp;&nbsp;&nbsp;<A 
+            href="http://www.citforum.ru/cdrom.shtml"><B><NOBR>CITForum на 
+            CD</NOBR></B></A></FONT></TD>
+          <TD align=middle><FONT size=2>&nbsp;&nbsp;&nbsp;<NOBR><A 
+            href="http://www.citforum.ru/subscribe.shtml"><B>Подписка на новости 
+            портала</B></A></NOBR></FONT></TD>
+          <TD align=right><FONT size=2><B><NOBR>Море(!) аналитической 
+            информации!</NOBR></B> :: <A 
+            href="http://www.citforum.ru/">CITFORUM.RU</A></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=5 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD bgColor=#008080><IMG height=1 alt="" 
+            src="Управление модемом.files/1x1.gif" width=931 border=0></TD></TR>
+        <TR>
+          <TD bgColor=#daecd7><IMG height=3 alt="" 
+            src="Управление модемом.files/1x1.gif" width=1 border=0></TD></TR>
+        <TR>
+          <TD bgColor=#008080>
+            <TABLE cellSpacing=1 cellPadding=3 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+                  href="http://www.citforum.ru/consulting/">IT-консалтинг</A></FONT></TD>
+                <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+                  href="http://www.citforum.ru/SE/">Software 
+                  Engineering</A></FONT></TD>
+                <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+                  href="http://www.citforum.ru/programming/">Программирование</A></FONT></TD>
+                <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+                  href="http://www.citforum.ru/database/">СУБД</A></FONT></TD>
+                <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+                  href="http://www.citforum.ru/security/">Безопасность</A></FONT></TD>
+                <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+                  href="http://www.citforum.ru/internet/">Internet</A></FONT></TD>
+                <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+                  href="http://www.citforum.ru/nets/">Сети</A></FONT></TD>
+                <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+                  href="http://www.citforum.ru/operating_systems/">Операционные 
+                  системы</A></FONT></TD>
+                <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+                  href="http://www.citforum.ru/hardware/">Hardware</A></FONT></TD><!--
+<td bgcolor=#F4F9F3 align=center><font size=-1><a class=head href=/faq/>FAQ (ЧаВО)</a></font></td>
+<td bgcolor=#F4F9F3 align=center><font size=-1><a class=head href=/howto/>HOWTO</a></font></td>
+--></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=5 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top>
+          <TD vAlign=top width=200>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0><!--date-->
+              <TBODY>
+              <TR>
+                <TD bgColor=#008080><IMG height=1 alt="" 
+                  src="Управление модемом.files/1x1.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD bgColor=#daecd7><IMG height=3 alt="" 
+                  src="Управление модемом.files/1x1.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD bgColor=#008080>
+                  <TABLE cellSpacing=1 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD bgColor=#f4f9f3>
+                        <P class=topic1 align=center><B>28.09.2007</B> 
+                    </P></TD></TR></TBODY></TABLE></TD></TR><!--/date-->
+              <TR>
+                <TD align=middle><IFRAME marginWidth=0 marginHeight=0 
+                  src="Управление модемом.files/2007-09-24_citforum_200x350.htm" 
+                  frameBorder=0 width=200 scrolling=no 
+height=350></IFRAME></TD></TR>
+              <TR>
+                <TD bgColor=#008080><IMG height=1 alt="" 
+                  src="Управление модемом.files/1x1.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD bgColor=#daecd7><IMG height=3 alt="" 
+                  src="Управление модемом.files/1x1.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD bgColor=#008080>
+                  <TABLE cellSpacing=1 cellPadding=1 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD align=middle bgColor=#ffffff>
+                        <FORM action=http://www.google.ru/custom method=get>
+                        <TABLE cellSpacing=0 cellPadding=1 border=0>
+                          <TBODY>
+                          <TR vAlign=bottom>
+                            <TD><A href="http://www.google.ru/search"><IMG 
+                              height=32 alt=Google 
+                              src="Управление модемом.files/google_75x32.gif" 
+                              width=75 align=middle border=0></A></TD>
+                            <TD><INPUT type=submit value=Поиск name=sa></TD></TR>
+                          <TR>
+                            <TD colSpan=2><INPUT maxLength=255 size=25 
+                            name=q></TD></TR>
+                          <TR>
+                            <TD colSpan=2><INPUT type=radio value="" 
+                              name=sitesearch>WWW <INPUT type=radio CHECKED 
+                              value=citforum.ru name=sitesearch>CITForum.ru 
+                          </TD></TR></TBODY></TABLE><INPUT type=hidden 
+                        value=LW:140;ALC:#800000;L:http://www.citforum.ru/pictures/logos/citlogo8.gif;LC:#006890;LH:44;AH:left;VLC:#003860;S:http://www.citforum.ru/;AWFID:a524ad3720194500; 
+                        name=cof> <INPUT type=hidden value=citforum.ru 
+                        name=domains> </FORM></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=#008080><IMG height=1 alt="" 
+                  src="Управление модемом.files/1x1.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD bgColor=#daecd7><IMG height=3 alt="" 
+                  src="Управление модемом.files/1x1.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD bgColor=#008080>
+                  <TABLE cellSpacing=1 cellPadding=8 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD align=middle bgColor=white><IFRAME frameSpacing=0 
+                        src="Управление модемом.files/citforum_left.htm" 
+                        frameBorder=no width=180 scrolling=no 
+                        height=420></IFRAME></TD></TR>
+                    <TR>
+                      <TD bgColor=#ffffff><FONT size=2>
+                        <P><B>Новости мира IT:</B> 
+                        <UL class=column>
+                          <LI>28.09 - <A href="http://citcity.ru/17033/">Palm 
+                          представила стодолларовый смартфон</A>
+                          <LI>28.09 - <A href="http://citcity.ru/17028/">Создана 
+                          шина для квантового компьютера</A>
+                          <LI>28.09 - <A href="http://citcity.ru/17032/">Cisco 
+                          получила 100 из 100 возможных баллов за соблюдение 
+                          прав сотрудников, потребителей и инвесторов</A>
+                          <LI>28.09 - <A href="http://citcity.ru/17031/">Релиз 
+                          Red Hat Global Desktop Linux вновь отложен </A>
+                          <LI>28.09 - <A href="http://citcity.ru/17030/">Регтайм 
+                          начинает регистрацию русскоязычных доменов в зонах 
+                          .COM и .NET</A>
+                          <LI>28.09 - <A href="http://citcity.ru/17029/">Запуск 
+                          домена ASIA не превратится в лотерею </A>
+                          <LI>28.09 - <A href="http://citcity.ru/17027/">За 
+                          первый день продаж Halo 3 принесла Microsoft 170 
+                          миллионов долларов</A>
+                          <LI>28.09 - <A 
+                          href="http://citcity.ru/17026/">Symphony: аналог MS 
+                          Office скачали уже 100 тыс. раз</A>
+                          <LI>28.09 - <A 
+                          href="http://citcity.ru/17025/">Microsoft с партнерами 
+                          выпустит серию аналогов Apple TV</A>
+                          <LI>27.09 - <A href="http://citcity.ru/17024/">Google 
+                          празднует день рождения</A>
+                          <LI>27.09 - <A href="http://citcity.ru/17023/">Intel и 
+                          Sun Microsystems объединяют усилия на российском 
+                          рынке</A>
+                          <LI>27.09 - <A href="http://citcity.ru/17022/">Red Hat 
+                          реорганизуется и сообщает о финансовых успехах</A>
+                          <LI>27.09 - <A 
+                          href="http://citcity.ru/17021/">Motorola 
+                          продемонстрировала чип WiMax для мобильных 
+                          устройств</A>
+                          <LI>27.09 - <A 
+                          href="http://citcity.ru/17020/">MontaVista готовит 
+                          новую версию Linux для мобильных телефонов</A>
+                          <LI>27.09 - <A href="http://citcity.ru/17015/">ИПС 
+                          РАН, НИВЦ МГУ, Intel и «Т-Платформы» анонсировали 
+                          программу «СКИФ Университеты»</A>
+                          <LI>27.09 - <A href="http://citcity.ru/17014/">Яндекс 
+                          опубликовал спутниковые карты Петербурга и области</A>
+                          <LI>27.09 - <A href="http://citcity.ru/17013/">Adobe 
+                          представила новые версии Photoshop Elements и Premiere 
+                          Elements</A>
+                          <LI>27.09 - <A 
+                          href="http://citcity.ru/17012/">Mandriva становится 
+                          проще и доступнее</A>
+                          <LI>27.09 - <A 
+                          href="http://citcity.ru/17011/">Еврокомиссия отпускает 
+                          Windows на свободу</A>
+                          <LI>26.09 - <A 
+                          href="http://citcity.ru/17010/">Нано-память будет 
+                          хранить информацию 100 тысяч лет</A>
+                          <LI>26.09 - <A 
+                          href="http://citcity.ru/17009/">"Лаборатория 
+                          Касперского" запускает мобильный сайт</A>
+                          <LI>26.09 - <A href="http://citcity.ru/17008/">Sun 
+                          выпустила серверы на базе процессоров Intel</A>
+                          <LI>26.09 - <A href="http://citcity.ru/17007/">EQO 
+                          запускает программу всемирных услуг бесплатного обмена 
+                          мобильными сообщениями </A>
+                          <LI>26.09 - <A href="http://citcity.ru/17006/">В 
+                          панели Ask Toolbar найдена критическая уязвимость</A>
+                          <LI style="FONT-WEIGHT: bold">26.09 - <A 
+                          href="http://citcity.ru/17005/">В Москве прошла 
+                          конференция HighLoad – 2007</A>
+                          <LI>26.09 - <A href="http://citcity.ru/17004/">Nvidia 
+                          анонсировала обновление линейки nForce</A>
+                          <LI>26.09 - <A 
+                          href="http://citcity.ru/17003/">Microsoft собирается 
+                          приобрести пять процентов Facebook </A>
+                          <LI>26.09 - <A href="http://citcity.ru/17002/">В зоне 
+                          .mobi зарегистрирован 700 000-ный домен</A>
+                          <LI>26.09 - <A 
+                          href="http://citcity.ru/17001/">Одноклассники.ру 
+                          получили $10 млн. инвестиций</A>
+                          <LI>26.09 - <A href="http://citcity.ru/17000/">В 
+                          OpenOffice обнаружена серьёзная уязвимость</A> 
+</LI></UL>
+                        <P><A href="http://citcity.ru/" target=_blank><B>Все 
+                        новости на CitCity.ru</B></A> </FONT>
+                        <P align=right><A 
+                        href="http://citcity.ru/rss/citforum.xml"><IMG height=14 
+                        src="Управление модемом.files/xml_rss.gif" width=36 
+                        border=0></A> 
+            </P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD>
+          <TD width="98%">
+            <DIV 
+            style="BORDER-RIGHT: #008080 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #008080 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 0px auto 3px; BORDER-LEFT: #008080 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #008080 1px solid; TEXT-ALIGN: center">
+            <SCRIPT language=JavaScript><!--
+document.write('<table cellpadding=1><tr valign=middle><td align=center><a class=plain href="http://citforum.ru/redir/hcse_citforum" target=_blank><img src="/a/hcse2.gif" width=60 height=70 border=0><br><div align=center><b><nobr>ВКШ "Эксперт"</nobr></b></div></a></td><td align=center style="font-size:0.9em;font-weight:bold"><a class=plain href="http://citforum.ru/redir/hcse_citforum" target=_blank>Повышение квалификации для сисадминов, разработчиков, специалистов по безопасности! Диплом МГУ и сертификаты ведущих вендоров! Зарезервируйте место в группе сегодня!</a></td></tr></table>');
+//--></SCRIPT>
+            </DIV>
+            <CENTER><IFRAME marginWidth=0 marginHeight=0 
+            src="Управление модемом.files/center.htm" frameBorder=0 width=468 
+            scrolling=no height=60></IFRAME></CENTER>
+            <H3 align=center>Глава 3. Управление модемом</H3>
+            <P align=justify>В главе 3 описан формат AT-команд. Здесь также 
+            описаны возможные сообщения, выдаваемые модемом в ответ на введенную 
+            команду. 
+            <P align=justify>Обычно пользователи работают с модемом посредством 
+            развитых телекоммуникационных программами, в этом случае нет 
+            необходимости управлять модемом посредством AT-команд напрямую и 
+            анализировать непосредственные ответы модема. Программа сама 
+            посылает команды и обрабатывает сообщения модема. Иными словами, 
+            весь интерфейс низкого уровня скрыт от пользователя, которому обычно 
+            не важно, что именно телекоммуникационный пакет посылает модему и 
+            какие сообщения получает в ответ, для того, чтобы, например, 
+            передать файл или положить письмо в ящик электронной почты, так как 
+            Вас, как правило, интересует конечный результат, а не способ его 
+            достижения. 
+            <P align=justify>Впрочем, если Вам по каким либо причинам требуется 
+            управлять модемом напрямую, то сведения изложенные в настоящей главе 
+            окажутся как нельзя кстати. <A name=1></A>
+            <H4>Ввод команд</H4>
+            <UL type=disk>
+              <LI><A 
+              href="http://www.citforum.ru/hardware/modem_tut/gl3.shtml#1_1">Как 
+              исправить неправильно набранную команду</A> 
+              <LI><A 
+              href="http://www.citforum.ru/hardware/modem_tut/gl3.shtml#1_2">Как 
+              набирать команды в виде, наиболее удобном для восприятия</A> 
+              <LI><A 
+              href="http://www.citforum.ru/hardware/modem_tut/gl3.shtml#1_3">Ввод 
+              командных строк длиной более сорока символов</A> 
+              <LI><A 
+              href="http://www.citforum.ru/hardware/modem_tut/gl3.shtml#1_4">Пропуск 
+              параметров (параметры по умолчанию)</A> 
+              <LI><A 
+              href="http://www.citforum.ru/hardware/modem_tut/gl3.shtml#1_5">Повторное 
+              выполнение командной строки</A> 
+              <LI><A 
+              href="http://www.citforum.ru/hardware/modem_tut/gl3.shtml#1_6">Сведения 
+              о командах</A> </LI></UL>
+            <P align=justify>С помощью AT-команд Вашему модему можно приказать 
+            исполнять большое количество разнообразных функций, среди которых - 
+            набор номера, ответ удаленному модему, действия по передаче факсов и 
+            многие другие. Однако, модем воспринимает AT-команды тогда и только 
+            тогда, когда он находится в командном режиме. 
+            <P>Чтобы ввести AT-команду, сделайте следующее: 
+            <OL>
+              <LI>Наберите AT в латинском регистре (вообще, всюду в данном 
+              документе все символы команд набираются в латинском регистре). Эти 
+              две буквы всегда должны стоять в начале командной строки (за 
+              исключением случая A/, описанного ниже). Допустимо использовать 
+              или заглавные, или строчные буквы, но не те и другие одновременно 
+              ( AT или at, но не At) 
+              <LI>Наберите команду или подряд несколько команд, которые Вы 
+              хотите исполнить. Длина командной строки не должна превышать 40 
+              символов. 
+              <LI>Нажмите клавишу &lt;Enter&gt;. Модем выполнит командную строку 
+              и выдаст сообщение о результате. </LI></OL><A name=1_1></A>
+            <P><I>Как исправить неправильно набранную команду.</I> 
+            <P align=justify>Если при наборе команды вы обнаружили ошибку, то 
+            для ее исправления следует клавишей &lt;BackSpace&gt; ("забой") 
+            стереть неверные символы и набрать остаток командной строки заново. 
+            Таким способом можно исправлять любые неверно набранные команды, за 
+            исключением самого префикса AT. <A name=1_2></A>
+            <P><I>Как набирать команды в виде, наиболее удобном для 
+            восприятия.</I> 
+            <P align=justify>Чтобы сделать набранную командную строку более 
+            удобочитаемой и, тем самым, избежать возможных ошибок, допустимо 
+            отделять отдельные команды и поля параметров знаками препинания и 
+            пробелами. В любом месте командной строки допускается ставить 
+            пробел. В телефонном же номере допустимы кроме пробелов и знаки 
+            скобок, и дефис.<BR>Например:</P><PRE>  AT M3 DT 9, 1 (818)555-1234
+</PRE>
+            <P align=justify>При разборе командной строки модем игнорирует 
+            пробелы и указанные знаки препинания. Однако, длина строки команд 
+            вместе с этими знаками не должна превышать 40-символьный лимит. <A 
+            name=1_3></A>
+            <P><I>Ввод командных строк длиной более 40 символов</I> 
+            <P align=justify>Если Вы хотите ввести строку длиной более 40 
+            символов, вам придется разбить ее на две отдельные строки и вводить 
+            каждую отдельно. В случае, если требуется ввести очень длинную 
+            команду набора номера D (к примеру, команда для набора номера и 
+            выдачи тонового пароля может оказаться значительно длиннее), 
+            наберите сначала первую часть номера, длиной до 39 символов (вместе 
+            с самой командой AT, D и прочими символами), в конце поставьте ';' и 
+            нажмите &lt;Enter&gt;. При этом модем, исполнив команду, вернется в 
+            командный режим и Вы сможете набрать еще одну команду D с оставшейся 
+            частью номера. <A name=1_4></A>
+            <P><I>Пропуск параметров (параметры по умолчанию)</I> 
+            <P align=justify>Некоторые команды требуют задания числовых 
+            параметров, однако при вводе эти параметры можно опустить, тогда 
+            модем, исполняя команду, будет использовать параметр, принятый по 
+            умолчанию. Везде в этом документе, где явно не указано иное, 
+            значением параметра по умолчанию является 0. 
+            <P align=justify>Например, команда Q - "Задать режим выдачи ответов" 
+            имеет параметр 0 или 1. 
+            <P>Q0 - говорит модему, что тот обязан сопровождать каждую 
+            выполняемую команду подтверждающим сообщением. <BR>Q1 - запрещает 
+            какие либо подтверждения. <BR>При этом ввод Q без параметра 
+            (например AT Q<ENTER>) эквивалентен Q0. 
+            <P align=justify>Другим хорошим примером является строка 
+            инициализации, используемая программой MTEZ с некоторыми модемами, 
+            часто вызывающая удивление пользователей: </P><PRE>  AT S=Q
+</PRE>
+            <P align=justify>которую можно записать в более понятном виде, как 
+            AT S0=0 Q0 (т.е. запретить автоматический ответ и разрешить выдачу 
+            подтверждений). <A name=1_5></A>
+            <P><I>Повторное выполнение командной строки.</I> 
+            <P align=justify>Следует отметить, что последняя введенная командная 
+            строка хранится в памяти модема до тех пор, пока ее не заменит 
+            следующая команда. Поэтому имеется возможность повторить исполнение 
+            последней командной строки. Для этого служит специальная команда A/. 
+            Поскольку при выключении питания или аппаратном сбросе содержимое 
+            буфера командной строки разрушается, очевидно, что в этом случае 
+            пытаться повторить последнюю командную строку бессмысленно. 
+            <BLOCKQUOTE>
+              <P align=justify>Внимание! Команда A/ набирается без стандартного 
+              префикса AT и не завершается клавишей <ENTER>. Просто наберите A/ 
+              и модем автоматически выполнит предыдущую команду. </P></BLOCKQUOTE>
+            <P align=justify>Команда A/ обычно используется для повторного 
+            выполнения длинной команды или для перенабора телефонного номера, 
+            который был занят. 
+            <P align=justify>Команду A/ можно использовать неоднократно, до тех 
+            пор, пока не будет набрана новая командная строка, начинающаяся с 
+            AT, или не произойдет сброс модема или выключение питания. <A 
+            name=1_6></A>
+            <P><I>Сведения о командах.</I> 
+            <P align=justify>Теперь, когда вы знаете, что такое команды и как 
+            они задаются, обратитесь к следующим главам для полного описания 
+            доступных команд. 
+            <UL>
+              <LI>Команды для вызова удаленного модема описаны в <A 
+              href="http://www.citforum.ru/hardware/modem_tut/gl4.shtml">Главе 
+              4</A>. 
+              <LI>Команды, используемые при ответе на звонок удаленного модема, 
+              описаны в <A 
+              href="http://www.citforum.ru/hardware/modem_tut/gl5.shtml">Главе 
+              5</A>. 
+              <LI>Команды работы с протоколами исправления ошибок и сжатия 
+              данных описаны в <A 
+              href="http://www.citforum.ru/hardware/modem_tut/gl7.shtml">Главе 
+              7</A>. </LI></UL><A name=2></A>
+            <H4>Сообщения модема</H4>
+            <UL type=disk>
+              <LI><A 
+              href="http://www.citforum.ru/hardware/modem_tut/gl3.shtml#2_1">Текстовые 
+              и числовые сообщения</A> 
+              <LI><A 
+              href="http://www.citforum.ru/hardware/modem_tut/gl3.shtml#2_2">Наборы 
+              сообщений</A> 
+              <LI><A 
+              href="http://www.citforum.ru/hardware/modem_tut/gl3.shtml#2_3">Сообщения 
+              модема при работе с протоколами коррекции ошибок и сжатия 
+              данных</A> </LI></UL>
+            <P align=justify>Когда Вы послыаете модему какую-либо команду, модем 
+            выдает в ответ сообщение - обычно OK. Вы можете никогда не увидеть 
+            этих сообщений, так как некоторые телекоммуникационные программы 
+            перехватывают и самостоятельно обрабатывают сообщения, до того, как 
+            они могут быть выведены на дисплей. Однако, если Вы собираетесь 
+            непосредственно управлять модемом, Вам необходимо знать, какие 
+            сообщения и в каких случаях выдает модем. 
+            <P align=justify>В данном разделе рассматриваются все виды 
+            сообщений, выдаваемые модемом. <A name=2_1></A>
+            <P><I>Текстовые и числовые сообщения</I> 
+            <P align=justify>Модем, в зависимости от настроек, может посылать 
+            два типа сообщений - в виде текста и в виде чисел (соотвественно, 
+            называемые текстовыми или числовыми сообщениями). Каждому текстовому 
+            сообщению однозначно соответствует числовое и наоборот. Как правило, 
+            большинство программ и пользователей, работающих с модемом 
+            непосредственно, используют более удобные текстовые сообщения, на 
+            которые модем настроен по умолчанию. Однако в этом тексте для 
+            краткости иногда будут указаны только соответствующие им числовые 
+            сообщения. (См. Табл. 3-1). 
+            <P align=justify>Если Ваше программное обеспечение требует числовых 
+            ответов, то перевести модем в этот режим можно при помощи команды 
+            V0. 
+            <P align=justify>Запретить получение каких либо ответов вообще 
+            (например, для модема, подключенного к принтеру) можно командой Q1. 
+            <A name=2_2></A>
+            <P><I>Наборы сообщений</I> 
+            <P align=justify>Модем может работать в одном из пяти режимов, 
+            задаваемых командой Xn. Каждый из этих режимов предусматривает свой 
+            метод набора номера и каждому из них соответствует определенный 
+            набор сообщений, которые может выдавать модем в ответ на введенную 
+            команду или в ответ на возникшую ситуацию, например обнаружение 
+            сигнала "занято" или установление соединения. Так как команда Xn 
+            влияет не только на вид сообщений модема, но и на метод набора 
+            номера, описание этой команды и соответствующих сообщений находится 
+            в <A 
+            href="http://www.citforum.ru/hardware/modem_tut/gl4.shtml">Главе 
+            4</A>, в разделе "Методы набора номера". <A name=2_3></A>
+            <P><I>Сообщения модема при работе с протоколами коррекции ошибок и 
+            сжатия данных</I> 
+            <P align=justify>Ваш модем поддерживает протоколы исправления ошибок 
+            и сжатия данных MNP и V.42/V.42bis. При работе с этими протоколами 
+            модем выдает дополнительные сообщения, перечисленные в <A 
+            href="http://www.citforum.ru/hardware/modem_tut/gl3.shtml#t3_1">Таблице 
+            3-1</A>. Чтобы разрешить выдачу расширенного набора сообщений, 
+            следует пользоваться командой Wn. 
+            <BLOCKQUOTE>
+              <P align=justify>Внимание! Команду W, разрешающую выдачу 
+              расширенных сообщений при прохождении фазы выбора протокола 
+              коррекции-сжатия данных в момент установления соединения между 
+              двумя модемами, следует отличать от модификатора W в команде D 
+              (набор номера). </P></BLOCKQUOTE>
+            <P align=justify>По умолчанию принимается установка W0, запрещающая 
+            выдачу расширенного набора ответов, если регистр S95=0 (заводская 
+            установка). В режиме W0 все сообщения "CONNECT XXXX" соответствуют 
+            скорости обмена данными между модемом и Вашим терминалом (DTE 
+            speed). 
+            <P align=justify>Командой W1 разрешается выдача сообщений "CARRIER" 
+            и "PROTOCOL". В этом режиме сообщения "CONNECT XXXX" также указывают 
+            скорость обмена данными с терминалом, последнее справедливо в 
+            случае, если регистр S95=0. 
+            <P align=justify>Если Вы желаете, чтобы сообщение "CONNECT XXXX" 
+            указывало физическую скорость передачи данных в канале (DCE speed) 
+            вместо скорости обмена с терминалом, введите команду W2. Эта команда 
+            запрещает выдачу расширенного набора ответов, если регистр S95=0. 
+            <P align=justify>Модемы, поддерживающие протоколы исправления ошибок 
+            и сжатия данных MNP и V.42/V.42bis, обрабатывают также команду \V1. 
+            В этом режиме все сообщения "CONNECT" будут содержать суффикс /ARQ, 
+            если модем установил соединение с использованием протокола коррекции 
+            ошибок. Этот режим устанавливается по умолчанию. 
+            <BLOCKQUOTE>
+              <P align=justify>Внимание! Многие программы могут работать 
+              некорректно в режиме W1, а некоторые - и в режиме W2, поэтому не 
+              рекомендуется изменять заводские настройки, если вы не уверены, 
+              что ваша программа способна работать с расширенными сообщениями. С 
+              другой стороны, коммуникационные программы, использующие 
+              современные протоколы передачи файлов (например, Zmodem), могут 
+              работать неустойчиво, если установлен режим W0 или отсутствуют 
+              суффиксы /ARQ в режиме W2. </P></BLOCKQUOTE><A name=t3_1></A>
+            <P>
+            <CENTER>Таблица 3-1 
+            <TABLE width="100%" border=1>
+              <TBODY>
+              <TR vAlign=top>
+                <TH>Сообщение модема
+                <TH>Сообщение в числовой форме
+                <TH>Значение сообщения</TR> 
+              <TR vAlign=top>
+                <TD>OK
+                <TD align=middle>0
+                <TD>Комманда выполнена успешно</TD>
+              <TR vAlign=top>
+                <TD>CONNECT
+                <TD align=middle>1
+                <TD>Если модем находится в состоянии, отличном от X0, данное 
+                  сообщение означает, что установлено соединение со скоростью 
+                  300 bps. В состоянии X0 оно означает, что было установленно 
+                  соединение с удаленным модемом на произвольной скорости.</TD>
+              <TR vAlign=top>
+                <TD>RING
+                <TD align=middle>2
+                <TD>Модем обнаружил входящий звонок</TD>
+              <TR vAlign=top>
+                <TD>NO CARRIER
+                <TD align=middle>3
+                <TD>Потеряна (или не обнаружена в процессе установления 
+                  соединения) несущая удаленного модема.</TD>
+              <TR vAlign=top>
+                <TD>ERROR
+                <TD align=middle>4
+                <TD>Была введена неверная или недопустимая в данном режиме 
+                  команда, произошел сбой аппаратуры модема или длинна 
+                  коммандной строки превысила 40 символов</TD>
+              <TR vAlign=top>
+                <TD>CONNECT 1200
+                <TD align=middle>5
+                <TD>Установленно соединение на скорости 1200 bps (в режиме X0 
+                  не выдается)</TD>
+              <TR vAlign=top>
+                <TD>NO DIALTONE
+                <TD align=middle>6
+                <TD>Модем не обнаружил непрерывного гудка (сигнала 
+                  "набирайте"). Сообщение выдается только в режимах X2 и X4, а 
+                  так же в любом режиме, если использован символ 'W' в команде 
+                  набора номера.</TD>
+              <TR vAlign=top>
+                <TD>BUSY
+                <TD align=middle>7
+                <TD>Модем обнаружил короткие гудки (сигнал "занято"). Это 
+                  сообщение не выдается в режимах X0, X1, X2, так как 
+                  определение сигнала "занято" в этих режимах не 
+производится.</TD>
+              <TR vAlign=top>
+                <TD>NO ANSWER
+                <TD align=middle>8
+                <TD>Модем не обнаружил "тишину" в линии, когда был использован 
+                  символ '@' в команде набора номера.</TD>
+              <TR vAlign=top>
+                <TD>CONNECT 2400
+                <TD align=middle>10
+                <TD>Установленно соединение на скорости 2400 bps (в режиме X0 
+                  не выдается)</TD>
+              <TR vAlign=top>
+                <TD>CONNECT 4800
+                <TD align=middle>11
+                <TD>Установленно соединение на скорости 4800 bps</TD>
+              <TR vAlign=top>
+                <TD>CONNECT 9600
+                <TD align=middle>12
+                <TD>Установленно соединение на скорости 9600 bps</TD>
+              <TR vAlign=top>
+                <TD>CONNECT 14400
+                <TD align=middle>13
+                <TD>Установленно соединение на скорости 14400 bps</TD>
+              <TR vAlign=top>
+                <TD>CONNECT 19200
+                <TD align=middle>14
+                <TD>Установленно соединение на скорости 19200 bps</TD>
+              <TR vAlign=top>
+                <TD>CONNECT 16800
+                <TD align=middle>15
+                <TD>Установленно соединение на скорости 16800 bps</TD>
+              <TR vAlign=top>
+                <TD>CONNECT 38400
+                <TD align=middle>16
+                <TD>Установленно соединение на скорости 38400 bps</TD>
+              <TR vAlign=top>
+                <TD>CONNECT 57600
+                <TD align=middle>18
+                <TD>Установленно соединение на скорости 57600 bps</TD>
+              <TR vAlign=top>
+                <TD>CONNECT 1200/REL
+                <TD align=middle>22
+                <TD>Установлено соединение с коррекцией ошибок на скорости 
+                  1200 bps</TD>
+              <TR vAlign=top>
+                <TD>CONNECT 2400/REL
+                <TD align=middle>23
+                <TD>Установлено соединение с коррекцией ошибок на скорости 
+                  2400 bps</TD>
+              <TR vAlign=top>
+                <TD>CONNECT 4800/REL
+                <TD align=middle>24
+                <TD>Установлено соединение с коррекцией ошибок на скорости 
+                  4800 bps</TD>
+              <TR vAlign=top>
+                <TD>CONNECT 9600/REL
+                <TD align=middle>26
+                <TD>Установлено соединение с коррекцией ошибок на скорости 
+                  9600 bps</TD>
+              <TR vAlign=top>
+                <TD>CONNECT 19200/REL
+                <TD align=middle>27
+                <TD>Установлено соединение с коррекцией ошибок на скорости 
+                  19200 bps</TD>
+              <TR vAlign=top>
+                <TD>CONNECT 38400/REL
+                <TD align=middle>28
+                <TD>Установлено соединение с коррекцией ошибок на скорости 
+                  38400 bps</TD>
+              <TR vAlign=top>
+                <TD>CARRIER 300
+                <TD align=middle>40
+                <TD>Скорость обмена с удаленным модемом 300 bps</TD>
+              <TR vAlign=top>
+                <TD>CARRIER 1200/75 V.23
+                <TD align=middle>44
+                <TD>Скорость передачи 1200 bps, скорость приема - 75 bps</TD>
+              <TR vAlign=top>
+                <TD>CARRIER 75/1200 V.23
+                <TD align=middle>45
+                <TD>Скорость передачи 72 bps, скорость приема - 1200 bps</TD>
+              <TR vAlign=top>
+                <TD>CARRIER 1200
+                <TD align=middle>46
+                <TD>Скорость обмена с удаленным модемом 1200 bps</TD>
+              <TR vAlign=top>
+                <TD>CARRIER 2400
+                <TD align=middle>47
+                <TD>Скорость обмена с удаленным модемом 2400 bps</TD>
+              <TR vAlign=top>
+                <TD>CARRIER 4800
+                <TD align=middle>48
+                <TD>Скорость обмена с удаленным модемом 4800 bps</TD>
+              <TR vAlign=top>
+                <TD>CARRIER 7200
+                <TD align=middle>49
+                <TD>Скорость обмена с удаленным модемом 7200 bps</TD>
+              <TR vAlign=top>
+                <TD>CARRIER 9600
+                <TD align=middle>50
+                <TD>Скорость обмена с удаленным модемом 9600 bps</TD>
+              <TR vAlign=top>
+                <TD>CARRIER 12000
+                <TD align=middle>51
+                <TD>Скорость обмена с удаленным модемом 12000 bps</TD>
+              <TR vAlign=top>
+                <TD>CARRIER 14400
+                <TD align=middle>52
+                <TD>Скорость обмена с удаленным модемом 14400 bps</TD>
+              <TR vAlign=top>
+                <TD>CARRIER 16800
+                <TD align=middle>52
+                <TD>Скорость обмена с удаленным модемом 16800 bps (только для 
+                  IDC-19xx)</TD>
+              <TR vAlign=top>
+                <TD>CARRIER 19200
+                <TD align=middle>52
+                <TD>Скорость обмена с удаленным модемом 19200 bps (только для 
+                  IDC-19xx)</TD>
+              <TR vAlign=top>
+                <TD>COMPRESSION: CLASS 5
+                <TD align=middle>66
+                <TD>Установлен протокол сжатия данных MNP-5</TD>
+              <TR vAlign=top>
+                <TD>COMPRESSION: V.42 BIS
+                <TD align=middle>67
+                <TD>Установлен протокол сжатия данных V.42bis</TD>
+              <TR vAlign=top>
+                <TD>COMPRESSION: NONE
+                <TD align=middle>69
+                <TD>Протокол сжатия данных не установлен</TD>
+              <TR vAlign=top>
+                <TD>PROTOCOL: NONE
+                <TD align=middle>70
+                <TD>Асинхронный режим, без коррекции ошибок</TD>
+              <TR vAlign=top>
+                <TD>PROTOCOL: LAPM
+                <TD align=middle>77
+                <TD>Установлен протокол коррекции ошибок V.42 LAPM</TD>
+              <TR vAlign=top>
+                <TD>PROTOCOL: ALT
+                <TD align=middle>80
+                <TD>Установлен протокол коррекции ошибок MNP</TD>
+              <TR vAlign=top>
+                <TD>PROTOCOL: MNP 2,4
+                <TD align=middle>81
+                <TD>Установлен байт- ориентированный протокол коррекции ошибок 
+                  MNP 4</TD>
+              <TR vAlign=top>
+                <TD>PROTOCOL: MNP 3,4
+                <TD align=middle>82
+                <TD>Установлен бит-ориентированный протокол коррекции ошибок 
+                  MNP 4</TD>
+              <TR vAlign=top>
+                <TD>COMPRESSION: MNP 5
+                <TD align=middle>83
+                <TD>Установлен протокол сжатия данных MNP 
+5</TD></TR></TBODY></TABLE>
+            <P>
+            <CENTER>
+            <P><FONT size=-1><A 
+            href="http://www.citforum.ru/hardware/modem_tut/gl2.shtml">Назад</A> 
+            | <A 
+            href="http://www.citforum.ru/hardware/modem_tut/index.shtml">Содержание</A> 
+            | <A 
+            href="http://www.citforum.ru/hardware/modem_tut/gl4.shtml">Вперед</A></FONT></CENTER></P>
+            <P> 
+            <DIV 
+            style="BORDER-RIGHT: #008080 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #008080 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 10px auto; BORDER-LEFT: #008080 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #008080 1px solid"><B>Редакция 
+            рекомендует:</B>
+            <UL class=column>
+              <LI><A 
+              href="http://www.citforum.ru/programming/unix/borovsky/">Программирование 
+              для Linux</A>
+              <LI><A 
+              href="http://www.citforum.ru/internet/perl/regexp/">Регулярные 
+              выражения в Perl</A>
+              <LI><A href="http://www.citforum.ru/hardware/data/esata/">eSATA: 
+              ком, хотевший быть блином</A>
+              <LI><A 
+              href="http://www.citforum.ru/operating_systems/windows/ms_office2007/">Новинки 
+              Microsoft Office system 2007</A></LI></UL></DIV>
+            <CENTER><IFRAME frameSpacing=0 
+            src="Управление модемом.files/citforum_bottom.htm" frameBorder=no 
+            width=500 scrolling=no height=600></IFRAME></CENTER>
+            <P align=right><SMALL>Размещение рекламы - pr@citforum.ru, ICQ 
+            232284597</SMALL> </P></CENTER></TD>
+          <TD>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" align=right 
+border=0>
+              <TBODY>
+              <TR>
+                <TD bgColor=#008080><IMG height=1 
+                  src="Управление модемом.files/1x1.gif" width=1 border=0></TD>
+                <TD bgColor=#daecd7><IMG height=1 
+                  src="Управление модемом.files/1x1.gif" width=2 border=0></TD>
+                <TD>
+                  <TABLE cellSpacing=0 cellPadding=0 width=234 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD align=middle><A 
+                        href="http://citforum.ru/redir/infosecurity_2007_citforum" 
+                        target=_blank><IMG height=60 
+                        src="Управление модемом.files/infosecurity_2007_234x60.gif" 
+                        width=234 border=0></A> </TD></TR>
+                    <TR>
+                      <TD style="PADDING-LEFT: 5px"><FONT size=2>
+                        <P><B>Редакция рекомендует:</B>
+                        <UL class=column>
+                          <LI><A 
+                          href="http://www.citforum.ru/security/cryptography/yaschenko/">Введение 
+                          в криптографию</A>
+                          <LI><A 
+                          href="http://www.citforum.ru/internet/html40/cover.html">Спецификация 
+                          HTML 4.0</A>
+                          <LI><A 
+                          href="http://www.citforum.ru/internet/perl/regexp/">Регулярные 
+                          выражения в Perl</A>
+                          <LI><A 
+                          href="http://www.citforum.ru/programming/unix/borovsky/">Программирование 
+                          для Linux</A></LI></UL></FONT></TD></TR>
+                    <TR>
+                      <TD align=middle>
+                    <TR>
+                      <TD bgColor=#008080><IMG height=1 alt="" 
+                        src="Управление модемом.files/1x1.gif" width=1 
+                      border=0></TD></TR>
+                    <TR>
+                      <TD bgColor=#daecd7><IMG height=3 alt="" 
+                        src="Управление модемом.files/1x1.gif" width=1 
+                      border=0></TD></TR>
+                    <TR>
+                      <TD bgColor=#008080><!--subscribe small-->
+                        <TABLE cellSpacing=1 cellPadding=1 width="100%" 
+border=0>
+                          <FORM action=http://citforum.ru/anketa/subscribe.php 
+                          method=post>
+                          <TBODY>
+                          <TR>
+                            <TD bgColor=#ffffff>
+                              <CENTER>
+                              <TABLE cellSpacing=0 cellPadding=1 border=0>
+                                <TBODY>
+                                <TR>
+                                <TD align=middle><FONT size=2>
+                                <P><B>Подписка на новости IT-портала 
+                                CITForum.ru</B><BR><I>(<A 
+                                href="http://citforum.ru/">библиотека</A>, <A 
+                                href="http://citkit.ru/" 
+                                target=_blank>CITKIT.ru</A>, <A 
+                                href="http://citcity.ru/" 
+                                target=_blank>CitCity</A>)</I>
+                                <P><INPUT size=15 value=e@mail name=e_mail><INPUT type=submit value=OK> 
+                                </P></FONT></TD></TR></TBODY></TABLE></CENTER></TD></TR></FORM></TBODY></TABLE><!--/subscribe small--></TD></TR></TD></TR>
+                    <TR>
+                      <TD style="PADDING-LEFT: 5px"><FONT size=2>
+                        <P><B>Новые публикации:</B> 
+                        <P><B>27 сентября</B> 
+                        <P><B><A href="http://citcity.ru/" 
+                        target=_blank>CitCity</A>:</B> 
+                        <LI><A href="http://citcity.ru/17019/" 
+                        target=_blank>Модели построения отношений между службами 
+                        информационной безопасности и IT</A> 
+                        <LI><A href="http://citcity.ru/17017/" 
+                        target=_blank>Брешь в конфиденциальности (Практика 
+                        использования сети Интернет в конкурентной разведке)</A> 
+
+                        <LI><A href="http://citcity.ru/17016/" target=_blank>Как 
+                        защитить сеть: 5 советов</A> 
+                        <P><B><A href="http://citkit.ru/" 
+                        target=_blank>CITKIT.ru</A>:</B> </P>
+                        <LI><A href="http://citkit.ru/articles/471/" 
+                        target=_blank>А.Федорчук: Ум хорошо. А два лучше?</A> 
+                        <P><B>25 сентября</B> </P>
+                        <LI><A 
+                        href="http://www.citforum.ru/database/articles/one_size_fits_all/"><B>«Один 
+                        размер пригоден для всех»: идея, время которой пришло и 
+                        ушло</B></A> 
+                        <P><B><A href="http://citcity.ru/" 
+                        target=_blank>CitCity</A>:</B> </P>
+                        <LI><A href="http://citcity.ru/16989/" target=_blank>Что 
+                        нужно знать о домашнем кинотеатре</A> 
+                        <LI><A href="http://citcity.ru/16988/" 
+                        target=_blank>Организация качественного звука на 
+                        компьютере</A> 
+                        <LI><A href="http://citcity.ru/16985/" 
+                        target=_blank>Собираем музыкально-кинотеатральный 
+                        компьютер (системный блок)</A> 
+                        <P><B>20 сентября</B> </P>
+                        <LI><A 
+                        href="http://www.citforum.ru/database/articles/seltzer/"><B>За 
+                        пределами реляционных баз данных: доступ к базам данных 
+                        не ограничивается возможностями SQL</B></A> 
+                        <P><B><A href="http://citkit.ru/" 
+                        target=_blank>CITKIT.ru</A>:</B> </P>
+                        <LI><A href="http://citkit.ru/articles/467/" 
+                        target=_blank>Графический инсталлятор для FreeBSD</A> 
+                        <LI><A href="http://citkit.ru/articles/466/" 
+                        target=_blank><B>ZFS и FreeBSD. Переводы 
+                        документации</B></A> 
+                        <UL>
+                          <LI><A href="http://citkit.ru/articles/465/" 
+                          target=_blank>Поддержка ZFS включена в базовую систему 
+                          FreeBSD</A> 
+                          <LI><A href="http://citkit.ru/articles/464/" 
+                          target=_blank>ZFS: руководство по быстрому старту</A> 
+                          <LI><A href="http://citkit.ru/articles/463/" 
+                          target=_blank>Корневая файловая система на ZFS</A> 
+                          <LI><A href="http://citkit.ru/articles/462/" 
+                          target=_blank>ZFS: руководство по тюнингу</A></LI></UL>
+                        <P><B>18 сентября</B> 
+                        <P><B><A href="http://citcity.ru/" 
+                        target=_blank>CitCity</A>:</B> </P>
+                        <LI><B><A href="http://citcity.ru/16917/" 
+                        target=_blank>Урожай сенсаций</A></B>: 
+                        <UL>
+                          <LI><A href="http://citcity.ru/16914/" 
+                          target=_blank>QNX, открой личико!</A> 
+                          <LI><A href="http://citcity.ru/16915/" 
+                          target=_blank>История одного банкротства. Конец 
+                          SCO?</A></LI></UL>
+                        <P><B>CITForum:</B> </P>
+                        <LI><A 
+                        href="http://www.citforum.ru/operating_systems/articles/qnx_notes/">QNX: 
+                        очень краткие заметки</A> 
+                        <P><B>13 сентября</B> </P>
+                        <LI><A 
+                        href="http://www.citforum.ru/database/articles/selinger/"><B>Первые 
+                        шаги к управлению всемирной информацией</B>. Беседа с 
+                        Патрицией Селинджер</A> (Перевод: Сергей Кузнецов) 
+                        <LI><A 
+                        href="http://www.citforum.ru/nets/articles/voip_cisco/"><B>Принципы 
+                        организации IP-телефонии на базе решений Cisco 
+                        Systems</B></A> 
+                        <P><B><A href="http://citcity.ru/" 
+                        target=_blank>CitCity</A>:</B> </P>
+                        <LI><A href="http://citcity.ru/16882/" 
+                        target=_blank>Корпоративная культура: построение 
+                        эффективного IT-отдела. 12 простых правил для 
+                        руководителя</A> 
+                        <LI><A href="http://citcity.ru/16883/" 
+                        target=_blank>Cтили работы в компании</A> 
+                        <P><B>11 сентября</B> </P>
+                        <LI><A 
+                        href="http://www.citforum.ru/database/oracle/data_miner_trees/">Решения 
+                        "растут" на деревьях</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/programming/pdl/">Знакомство 
+                        с PDL (Portable Dynamic Loader)</A> 
+                        <P>Обзоры журнала Computer: </P>
+                        <LI><A href="http://www.citforum.ru/computer/2007-08/">В 
+                        поисках новых механизмов поиска во Всемирной Паутине</A> 
+
+                        <LI><A 
+                        href="http://www.citforum.ru/computer/2007-07/">Что 
+                        реально в виртуальной реальности?</A> 
+                        <P><B>6 сентября</B> 
+                        <P><B><A href="http://citcity.ru/" 
+                        target=_blank>CitCity</A>:</B> </P>
+                        <LI><A href="http://citcity.ru/16813/" 
+                        target=_blank>ITIL и ITIL3</A> 
+                        <LI><A href="http://citcity.ru/16812/" 
+                        target=_blank>Построение отчетности в рамках ITSM 
+                        или<BR>Взгляд ITSM-консультанта на основные проблемы 
+                        реализации проектов по построению отчетности на примере 
+                        процесса управления инцидентами</A> 
+                        <LI><A href="http://citcity.ru/16810/" 
+                        target=_blank>Основные характеристики современного 
+                        Хранилища данных</A> 
+                        <LI><A href="http://citcity.ru/16809/" 
+                        target=_blank>Единое представление клиентов в Хранилище 
+                        и его использование для решения управленческих задач</A> 
+
+                        <LI><A href="http://citcity.ru/16808/" 
+                        target=_blank>Этапы реализации прогнозной аналитики. 
+                        Роль Хранилищ данных</A> 
+                        <LI><A href="http://citcity.ru/16811/" 
+                        target=_blank>Мобильная перспектива. Какими станут 
+                        ноутбуки в ближайшее время?</A> 
+                        <P><B>4 сентября</B> </P>
+                        <LI><A 
+                        href="http://www.citforum.ru/SE/project/lindsay/"><B>Designing 
+                        for FAILURE - ключ к успеху?</B> Беседа с Брюсом 
+                        Линдсеем</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/database/oracle/siebel_express/">Интерфейс 
+                        Siebel =&gt; Oracle Server =&gt; Express Server</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/database/oracle/ortd/">Глубинный 
+                        анализ данных в режиме реального времени: Oracle Real 
+                        Time Decisions</A> 
+                        <P><B>30 августа</B> </P>
+                        <LI>Сергей Кузнецов: <B><A 
+                        href="http://www.citforum.ru/SE/middleware/no_silver_bullet/">Серебряные 
+                        пули компьютерной индустрии и учение Экклезиаста</A></B> 
+
+                        <LI><A 
+                        href="http://www.citforum.ru/SE/middleware/corba_history/">Восход 
+                        и закат CORBA</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/SE/middleware/corba_notforgotten/">Corba: 
+                        ушла, но (будем надеяться) не забыта</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/nets/articles/tetra/">Стандарт 
+                        профессиональной радиосвязи TETRA. Преимущества и 
+                        возможности</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/internet/javascript/create_man/">JavaScript: 
+                        создаем Человека</A> 
+                        <P><B>28 августа</B> </P>
+                        <LI><A 
+                        href="http://www.citforum.ru/database/oracle/oratext_easy/">Oracle: 
+                        работать с текстовыми документами очень просто</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/database/oracle/oratext_multiplicity/">Текстовые 
+                        документы в Oracle: разнообразие источников, форматов, 
+                        запросов</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/database/oracle/oratextcat/">Как 
+                        работать с картотекой (набором данных с краткими 
+                        описаниями)</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/database/oracle/oratext_class/">Как 
+                        классифицировать текстовые документы в Oracle</A> 
+                        <P><B>22 августа</B> 
+                        <P><B><A href="http://citcity.ru/" 
+                        target=_blank>CitCity</A>:</B> </P>
+                        <LI><A href="http://citcity.ru/16630/" 
+                        target=_blank>Oracle достигла возраста зрелости (Сергей 
+                        Кузнецов)</A> 
+                        <LI><A href="http://citcity.ru/16663/" 
+                        target=_blank>Интеграция приложений такая, как она есть 
+                        (Глеб Ладыженский)</A> 
+                        <LI><A href="http://citcity.ru/16671/" 
+                        target=_blank>"Большая восьмерка" для оператора</A> 
+                        <P><B>CITForum:</B> </P>
+                        <LI><A 
+                        href="http://www.citforum.ru/hardware/modem_tut/hardware/arch/64_bits/">64 
+                        бита: расставим точки над большим "I"</A> 
+                        <P><B>15 августа</B> </P>
+                        <LI><A 
+                        href="http://www.citforum.ru/database/oracle/microseconds/">Когда 
+                        счет идет на микросекунды</A><BR>
+                        <LI><A 
+                        href="http://www.citforum.ru/database/oracle/time/">Тип 
+                        данных TIME</A> <BR>
+                        <LI><A 
+                        href="http://www.citforum.ru/database/oracle/oracle11g/">Новая 
+                        версия СУБД Oracle - Oracle 11g</A> <BR>
+                        <LI><A 
+                        href="http://www.citforum.ru/hardware/data/intel_turbo_memory/">Закись 
+                        азота для ПК: Intel Turbo Memory</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/hardware/articles/net_printers/">Доступные 
+                        сетевые принтеры</A> 
+                        <P><B>8 августа</B> </P>
+                        <LI><A 
+                        href="http://www.citforum.ru/hardware/arch/servers_in_russia/">Серверы 
+                        в масштабе российского предприятия</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/hardware/data/data_storage/">Хранение 
+                        данных: задачи, решения, перспективы</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/nets/hard/terminals/">И 
+                        снова терминалы</A> 
+                        <P><B><A href="http://citkit.ru/" 
+                        target=_blank>CITKIT.ru</A>:</B> </P>
+                        <LI><A href="http://citkit.ru/articles/456/" 
+                        target=_blank>Debian vs Ubuntu: еще один великолепный 
+                        миф?</A> 
+                        <LI><A href="http://citkit.ru/articles/455/" 
+                        target=_blank>Сказ про TeXmacs, или как прикручивали 
+                        шрифты TeX к графическому режиму, и что из этого 
+                        получилось</A> 
+                        <LI><A href="http://citkit.ru/articles/454/" 
+                        target=_blank>Мультизагрузочный CD с использованием 
+                        GRUB</A> 
+                        <P><B>1 августа</B> 
+                        <P><B><A href="http://citcity.ru/" 
+                        target=_blank>CitCity</A>:</B> </P>
+                        <LI><A href="http://citcity.ru/16501/" 
+                        target=_blank>Информационная безопасность ERP-систем</A> 
+
+                        <LI><A href="http://citcity.ru/16502/" 
+                        target=_blank>Корнями - в древность, кроной - в 
+                        современный бизнес</A> (о рынке информационной 
+                        безопасности) 
+                        <P>Обзор журнала Computer: </P>
+                        <LI><A 
+                        href="http://www.citforum.ru/computer/2007-06/">Open 
+                        Source и проприетарная архитектурная революция</A> 
+                        <P><B><A href="http://citkit.ru/" 
+                        target=_blank>CITKIT.ru</A>:</B> </P>
+                        <LI><A href="http://citkit.ru/articles/449/" 
+                        target=_blank>hwreport: 1 к 84-м в пользу "source 
+                        based"</A> 
+                        <LI><A href="http://citkit.ru/articles/450/" 
+                        target=_blank>Начал ли звонить колокол?</A> (дискуссия 
+                        <A href="http://citkit.ru/articles/windows_vs_linux/" 
+                        target=_blank>Windows vs Linux</A>) 
+                        <P><B>25 июля</B> 
+                        <P><B><A href="http://citcity.ru/" 
+                        target=_blank>CitCity</A>:</B> </P>
+                        <LI><A href="http://citcity.ru/16453/" 
+                        target=_blank><B>Беседа Марго Зельцер с Майклом 
+                        Стоунбрейкером.</B> Перевод: Сергей Кузнецов</A> 
+                        <LI><A href="http://citcity.ru/16456/" 
+                        target=_blank>SideShow: Windows с изнанки</A> 
+                        <LI><A href="http://citcity.ru/16455/" 
+                        target=_blank>Перспективы развития стандартов третьего 
+                        поколения в России и в мире</A> 
+                        <LI><A href="http://citcity.ru/16458/" target=_blank>От 
+                        SMB к Enterprise. Плох тот солдат, который не хочет 
+                        стать генералом</A> 
+                        <LI><A href="http://citcity.ru/16457/" 
+                        target=_blank>Лучше выпить, чем говорить по 
+                        телефону?</A> 
+                        <P><B>18 июля</B> 
+                        <P></P>
+                        <LI><B><A 
+                        href="http://www.citforum.ru/SE/middleware/history/">Влияние 
+                        исследований на технологию промежуточного программного 
+                        обеспечения</A></B> 
+                        <P></P>
+                        <LI><A 
+                        href="http://www.citforum.ru/SE/project/reconciliation/">Семантическая 
+                        реконсиляция прикладных данных на основе моделей</A> 
+                        <P></P>
+                        <LI><A 
+                        href="http://www.citforum.ru/programming/unix/daemons/">Демоны</A> 
+                        (из серии "<A 
+                        href="http://www.citforum.ru/programming/unix/borovsky/"><B>Программирование 
+                        для Linux</B></A>") 
+                        <P><B>11 июля</B> 
+                        <P></P>
+                        <LI><A 
+                        href="http://www.citforum.ru/database/articles/grigoriev/">Почему 
+                        формальную реляционную модель данных можно рассматривать 
+                        как основу безимпедансных систем</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/consulting/BI/karpov/">Адаптивное 
+                        управление по прецедентам, основанное на классификации 
+                        состояний управляемых объектов</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/SE/project/volkova/">Методы 
+                        композиции и декомпозиции исполняемых UML моделей</A> 
+                        <P><B><A href="http://citkit.ru/" 
+                        target=_blank>CITKIT.ru</A>:</B> </P>
+                        <LI><A href="http://citkit.ru/articles/447/" 
+                        target=_blank>Windows. Господа критикисты, 
+                        стыдитесь!</A> 
+                        <P><B>4 июля</B> 
+                        <P>Лекции из курса А.Марченко "Введение в 
+                        программирование на C# 2.0": </P>
+                        <LI><A 
+                        href="http://www.citforum.ru/programming/csharp/gdi_plus/">GDI+</A> 
+
+                        <LI><A 
+                        href="http://www.citforum.ru/programming/csharp/ado_dot_net/">Основы 
+                        ADO .NET</A> 
+                        <P></P>
+                        <LI>К статье <A 
+                        href="http://www.citforum.ru/consulting/articles/ofsa/">OFSA. 
+                        Основные принципы</A> добавлена 
+                        <LI><A 
+                        href="http://www.citforum.ru/consulting/articles/ofsa/ofsa_5.shtml">Часть 
+                        5. FDM как хранилище данных финансовой информации</A> 
+                        <P><B><A href="http://citkit.ru/" 
+                        target=_blank>CITKIT.ru</A>:</B> </P>
+                        <LI><A href="http://citkit.ru/articles/445/" 
+                        target=_blank>Чем удобна Вынь-да?</A> 
+                        <P><B>28 июня</B> 
+                        <P></P>
+                        <LI><A 
+                        href="http://www.citforum.ru/SE/testing/schnitman/">Особенности 
+                        применения технологии UniTESK для тестирования функций 
+                        мобильности в протоколе IPv6</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/operating_systems/rubanov/">Разработка 
+                        ОС реального времени для цифрового сигнального 
+                        процессора</A> 
+                        <P><B><A href="http://citcity.ru/" 
+                        target=_blank>CitCity</A>:</B> </P>
+                        <LI><A href="http://citcity.ru/16252/" 
+                        target=_blank>Карьера! Как много в этом слове... О 
+                        планировании карьеры, плане профессионального развития и 
+                        не только...</A> 
+                        <P><B><A href="http://citkit.ru/" 
+                        target=_blank>CITKIT.ru</A>:</B> </P>
+                        <LI><A href="http://citkit.ru/articles/442/" 
+                        target=_blank>Памятка начинающему снобу</A> 
+                        <P><B>26 июня</B> 
+                        <P></P>
+                        <LI><A 
+                        href="http://www.citforum.ru/programming/windows/machine_code/">Win32 
+                        в машинных кодах</A> 
+                        <P></P>
+                        <LI><A 
+                        href="http://www.citforum.ru/SE/testing/zelenov/">Верификация 
+                        компиляторов - систематический подход</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/SE/testing/kamkin/">Использование 
+                        контрактных спецификаций для автоматизации 
+                        функционального тестирования моделей аппаратного 
+                        обеспечения</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/SE/testing/gingina/">Тестирование 
+                        трансляторов: проблема построения оракула для 
+                        генератора</A> 
+                        <P><B>21 июня</B> 
+                        <P></P>
+                        <LI><A 
+                        href="http://www.citforum.ru/SE/testing/mutilin/">Тестирование 
+                        компонентов, взаимодействующих посредством удаленного 
+                        вызова методов</A> 
+                        <P><B><A href="http://citkit.ru/" 
+                        target=_blank>CITKIT.ru</A>:</B> </P>
+                        <LI><B><A href="http://citkit.ru/articles/434/" 
+                        target=_blank>Открытые стандарты и новые формы 
+                        международного сотрудничества</A></B> 
+                        <LI><A href="http://citkit.ru/articles/435/" 
+                        target=_blank>Zenwalk: хроника последнего обновления</A> 
+
+                        <LI><A href="http://citkit.ru/articles/437/" 
+                        target=_blank>Заметки сноба, или Беру свои слова 
+                        обратно</A> (дискуссия про анонимусов) 
+                        <P><B>19 июня</B> 
+                        <P></P>
+                        <LI><A 
+                        href="http://www.citforum.ru/SE/testing/silakov/">Текущее 
+                        состояние и перспективы развития инфраструктуры LSB</A> 
+                        <P></P>
+                        <LI><A 
+                        href="http://www.citforum.ru/SE/testing/kichigin/">Об 
+                        одном методе сокращения набора тестов</A> 
+                        <P></P>
+                        <LI><A 
+                        href="http://www.citforum.ru/SE/testing/vlasov/">Методика 
+                        автоматизированной проверки возвращаемых кодов ошибок 
+                        при тестировании программных интерфейсов</A> 
+                        <P><B><A href="http://citkit.ru/" 
+                        target=_blank>CITKIT.ru</A>:</B> </P>
+                        <LI><A href="http://citkit.ru/articles/431/" 
+                        target=_blank>Zenwalk: управление пакетами</A> 
+                        <LI><A href="http://citkit.ru/articles/430/" 
+                        target=_blank>Linux - должен?</A> (дискуссионный клуб) 
+                        <P><B>14 июня</B> 
+                        <P></P>
+                        <LI><A 
+                        href="http://www.citforum.ru/SE/project/distributed_team/">Пересекая 
+                        границы: специфика разработки ПО распределенной 
+                        командой</A> 
+                        <LI><A 
+                        href="http://www.citforum.ru/SE/project/terehov/">Групповая 
+                        разработка и организация коллектива</A>. Лекция из курса 
+                        "Введение в технологию программирования" 
+                        <LI><A 
+                        href="http://www.citforum.ru/computer/2007-05/">Компьютерные 
+                        технологии на благо каждого человека</A>. Обзор майского 
+                        номера журнала Computer 
+                        <P><B><A href="http://citkit.ru/" 
+                        target=_blank>CITKIT.ru</A>:</B> </P>
+                        <LI><A href="http://citkit.ru/articles/426/" 
+                        target=_blank>5 лет спустя</A> (дискуссия Windows vs 
+                        Linux) 
+                        <P align=right><B><A 
+                        href="http://www.citforum.ru/news.shtml">Все 
+                        публикации</A> &gt;&gt;&gt;</B> </FONT>
+                        <HR SIZE=1>
+                        </LI></TD></TR>
+                    <TR>
+                      <TD align=middle><IFRAME frameSpacing=0 
+                        src="Управление модемом.files/citforum_right.htm" 
+                        frameBorder=no width=220 scrolling=no 
+                        height=600></IFRAME></TD></TR>
+                    <TR>
+                      <TD style="PADDING-LEFT: 5px">
+                    <TR>
+                      <TD style="PADDING-LEFT: 5px"><IMG height=10 
+                        src="Управление модемом.files/1x1.gif" width=234><BR><!--<a target=_blank href="http://smoking-room.ru"><img src="/pictures/kurilka234x60.gif" border="1"></a><br>  
+--><A 
+                        href="http://smoking-room.ru/" target=_blank><IMG 
+                        src="Управление модемом.files/clocs.gif" 
+                        border=0></A><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD><!--no_right--></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TABLE></TD></TR></TABLE>
+<P>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD bgColor=#008080><IMG height=1 alt="" 
+      src="Управление модемом.files/1x1.gif" width=931 border=0></TD></TR>
+  <TR>
+    <TD bgColor=#daecd7><IMG height=3 alt="" 
+      src="Управление модемом.files/1x1.gif" width=1 border=0></TD></TR>
+  <TR>
+    <TD bgColor=#008080>
+      <TABLE cellSpacing=1 cellPadding=3 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+            href="http://www.citforum.ru/consulting/">IT-консалтинг</A></FONT></TD>
+          <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+            href="http://www.citforum.ru/SE/">Software Engineering</A></FONT></TD>
+          <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+            href="http://www.citforum.ru/programming/">Программирование</A></FONT></TD>
+          <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+            href="http://www.citforum.ru/database/">СУБД</A></FONT></TD>
+          <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+            href="http://www.citforum.ru/security/">Безопасность</A></FONT></TD>
+          <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+            href="http://www.citforum.ru/internet/">Internet</A></FONT></TD>
+          <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+            href="http://www.citforum.ru/nets/">Сети</A></FONT></TD>
+          <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+            href="http://www.citforum.ru/operating_systems/">Операционные 
+            системы</A></FONT></TD>
+          <TD align=middle bgColor=#f4f9f3><FONT size=-1><A class=head 
+            href="http://www.citforum.ru/hardware/">Hardware</A></FONT></TD><!--
+<td bgcolor=#F4F9F3 align=center><font size=-1><a class=head href=/faq/>FAQ (ЧаВО)</a></font></td>
+<td bgcolor=#F4F9F3 align=center><font size=-1><a class=head href=/howto/>HOWTO</a></font></td>
+--></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<P>
+<TABLE width="100%">
+  <TBODY>
+  <TR>
+    <TD><A href="http://www.citforum.ru/about/"><FONT size=2>Информация для 
+      рекламодателей</FONT></A> </TD>
+    <TD><FONT size=2>PR-акции, размещение рекламы - <A 
+      href="mailto:pr@citforum.ru">pr@citforum.ru</A>, тел. +7 495 4119920, ICQ 
+      232284597</FONT> </TD>
+    <TD align=right><FONT size=2>Пресс-релизы - <A 
+      href="mailto:pr@citcity.ru">pr@citcity.ru</A></FONT> </TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD><IMG height=5 alt="" src="Управление модемом.files/1x1.gif" width=1 
+      border=0></TD></TR>
+  <TR>
+    <TD bgColor=#008080><IMG height=1 alt="" 
+      src="Управление модемом.files/1x1.gif" width=1 border=0></TD></TR>
+  <TR>
+    <TD bgColor=#daecd7><IMG height=3 alt="" 
+      src="Управление модемом.files/1x1.gif" width=1 
+border=0></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD><FONT size=2><A 
+      href="http://www.citforum.ru/feedback.php?page=/hardware/modem_tut/gl3.shtml&amp;server=www.citforum.ru">Послать 
+      комментарий</A><BR><A href="http://www.citforum.ru/how.shtml">Информация 
+      для авторов</A> </FONT></TD>
+    <TD><A href="http://top100.rambler.ru/cgi-bin/stats_top100.cgi?13078"><IMG 
+      height=31 alt="Rambler's Top100" 
+      src="Управление модемом.files/banner-88x31-rambler-darkblue2.gif" width=88 
+      border=0></A></TD>
+    <TD><!--TopList LOGO--><A href="http://top.list.ru/jump?from=26978" 
+      target=_top><IMG height=31 alt=TopList 
+      src="C:\90_Студент\1_Лабораторные_работы\3_Описания_Л.Р\ЛР20\Управление модемом.files\counter(1).gif" 
+      width=88 border=0></A><!--TopList LOGO--></TD>
+    <TD><!--LiveInternet logo--><A href="http://www.liveinternet.ru/click" 
+      target=_blank><IMG height=31 
+      alt="liveinternet.ru: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" 
+      src="Управление модемом.files/logo.gif" width=88 border=0></A><!--/LiveInternet--> </TD>
+    <TD vAlign=bottom align=right><FONT face="Arial, sans-serif" size=1>This 
+      Web server launched on February 24, 1997<BR>Copyright © 1997-2000 CIT, © 
+      2001-2007 <A href="http://www.citforum.ru/info.shtml">CIT 
+    Forum</A></FONT></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD bgColor=#daecd7><IMG height=3 alt="" 
+      src="Управление модемом.files/1x1.gif" width=1 border=0></TD></TR>
+  <TR>
+    <TD bgColor=#008080><IMG height=1 alt="" 
+      src="Управление модемом.files/1x1.gif" width=1 
+border=0></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle><FONT face="Arial, sans-serif" size=1><B>Внимание!</B> 
+      Любой из материалов, опубликованных на этом сервере, не может быть 
+      воспроизведен в какой бы то ни было форме и какими бы то ни было 
+      средствами без письменного разрешения владельцев авторских прав. <A 
+      href="http://www.citforum.ru/copyright.shtml">Подробнее...</A></FONT></TD></TR></TBODY></TABLE>
+<HR>
+
+<STYLE>TABLE.u {
+	FONT-SIZE: 8pt
+}
+TABLE.u A {
+	TEXT-DECORATION: none
+}
+</STYLE>
+
+<TABLE class=u width="100%">
+  <TBODY>
+  <TR>
+    <TD></TD></TR></TBODY></TABLE></BODY></HTML>

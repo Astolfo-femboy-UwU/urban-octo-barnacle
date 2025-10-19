@@ -1,0 +1,57 @@
+A {
+	COLOR: blue
+}
+A:hover {
+	COLOR: red
+}
+TD {
+	FONT-SIZE: x-small; FONT-FAMILY: Verdana
+}
+TD.sml {
+	FONT-SIZE: 10px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; FONT-FAMILY: Verdana
+}
+TD.hc {
+	FONT-SIZE: x-small; TEXT-TRANSFORM: uppercase; BORDER-BOTTOM: gainsboro thin dotted; FONT-FAMILY: "Times New Roman"
+}
+TD.hn {
+	COLOR: gray; BORDER-BOTTOM: gainsboro thin dotted; TEXT-ALIGN: right
+}
+TD.r {
+	TEXT-ALIGN: right
+}
+TD.c {
+	TEXT-ALIGN: center
+}
+TD.smlr {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana; TEXT-ALIGN: right
+}
+TD.smlc {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana; TEXT-ALIGN: center
+}
+DIV {
+	FONT-FAMILY: Verdana
+}
+BODY {
+	FONT-SIZE: 10pt; MARGIN: 4px; FONT-FAMILY: Verdana; BACKGROUND-COLOR: white
+}
+LI.p5 {
+	MARGIN-BOTTOM: 5px
+}
+INPUT {
+	BORDER-RIGHT: steelblue 1px solid; BORDER-TOP: steelblue 1px solid; FONT: menu; BORDER-LEFT: steelblue 1px solid; COLOR: navy; BORDER-BOTTOM: steelblue 1px solid; HEIGHT: 18px
+}
+INPUT.noborders {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT: menu; BORDER-LEFT: medium none; COLOR: navy; BORDER-BOTTOM: medium none; HEIGHT: 18px
+}
+SELECT {
+	BORDER-RIGHT: steelblue 1px solid; BORDER-TOP: steelblue 1px solid; FONT-SIZE: 12px; BORDER-LEFT: steelblue 1px solid; COLOR: navy; BORDER-BOTTOM: steelblue 1px solid; FONT-FAMILY: Arial, 'Microsoft Sans Serif'; BORDER-COLLAPSE: collapse
+}
+.textbox {
+	BORDER-RIGHT: steelblue 1px solid; BORDER-TOP: steelblue 1px solid; FONT: menu; BORDER-LEFT: steelblue 1px solid; COLOR: navy; BORDER-BOTTOM: steelblue 1px solid
+}
+H3 {
+	FONT-SIZE: 24px; COLOR: steelblue; FONT-FAMILY: "Times New Roman"
+}
+H4 {
+	FONT-SIZE: 18px; COLOR: steelblue; FONT-FAMILY: "Times New Roman"
+}

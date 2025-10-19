@@ -1,0 +1,459 @@
+P {
+	FONT-SIZE: 80%; MARGIN: 10px; FONT-FAMILY: Arial,Serif; LIST-STYLE-TYPE: circle
+}
+LABEL {
+	FONT-SIZE: 80%; MARGIN: 10px; FONT-FAMILY: Arial,Serif; LIST-STYLE-TYPE: circle
+}
+UL {
+	FONT-SIZE: 80%; MARGIN: 10px; FONT-FAMILY: Arial,Serif; LIST-STYLE-TYPE: circle
+}
+UL UL {
+	FONT-SIZE: 100%
+}
+.begun_h {
+	MARGIN-BOTTOM: 0px; MARGIN-LEFT: 0px
+}
+.begun_lnk {
+	FONT-WEIGHT: bold; MARGIN-LEFT: 0px
+}
+.begun_lnk A {
+	COLOR: #637599
+}
+.begun {
+	FONT-SIZE: 70%; MARGIN: 0px
+}
+.num {
+	FONT-WEIGHT: bold; MARGIN: 22px 5px 0px; COLOR: #004b88
+}
+.rez_h {
+	MARGIN-TOP: 20px; FONT-SIZE: 100%; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 0px
+}
+.rez_h A:visited {
+	COLOR: #6000bf
+}
+.rez_h1 {
+	MARGIN-TOP: 0px; FONT-SIZE: 100%; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 0px
+}
+.rez {
+	MARGIN: 0px
+}
+.rez_descr {
+	MARGIN: 5px 0px 0px; COLOR: #606060
+}
+.rez_descr A {
+	COLOR: #606060
+}
+.rez_cat {
+	MARGIN: 5px 0px 0px; COLOR: #202020
+}
+.rez_cat A {
+	COLOR: #606060
+}
+.faq_h {
+	MARGIN-TOP: 15px; FONT-WEIGHT: bold; FONT-SIZE: 100%; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 23px; COLOR: #004b88
+}
+.faq_h1 {
+	MARGIN-TOP: 15px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 0px; COLOR: #004b88
+}
+.faq_h2 {
+	MARGIN: 10px 0px 5px; COLOR: #004b88
+}
+.faq {
+	MARGIN: 5px 0px
+}
+.faq1 {
+	MARGIN: 5px 0px 5px 16px
+}
+.faq2 {
+	FONT-SIZE: 85%; COLOR: #606060
+}
+.faq2:hover {
+	COLOR: black
+}
+.faq_num {
+	FONT-WEIGHT: bold; MARGIN: 15px 5px 0px; COLOR: #004b88
+}
+.pic_name {
+	MARGIN: 3px 15px 0px
+}
+.pic_size {
+	MARGIN: 0px 15px; COLOR: #004b88
+}
+.pic_descr {
+	FONT-SIZE: 70%; MARGIN: 5px 15px 15px; COLOR: #606060
+}
+.pic_descr A {
+	COLOR: #606060
+}
+.pic_bg1 {
+	VERTICAL-ALIGN: middle; BACKGROUND-COLOR: white; TEXT-ALIGN: left
+}
+.pic_bg2 {
+	VERTICAL-ALIGN: top; BACKGROUND-COLOR: white; TEXT-ALIGN: left
+}
+.pic_bg3 {
+	BACKGROUND-COLOR: #f0f0f0
+}
+.pic_bg4 {
+	VERTICAL-ALIGN: middle; BACKGROUND-COLOR: white; TEXT-ALIGN: right
+}
+.single_size {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+.single_text {
+	MARGIN-TOP: 0px; FONT-SIZE: 12px; MARGIN-BOTTOM: 0px; COLOR: #000000; FONT-FAMILY: Arial, Serif
+}
+.single_discl {
+	MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 0px
+}
+.single_copy {
+	MARGIN-TOP: 10px; FONT-SIZE: 11px; MARGIN-BOTTOM: 5px; COLOR: #606060; FONT-FAMILY: Arial, Serif
+}
+.cat_h {
+	MARGIN-TOP: 12px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 3px; MARGIN-LEFT: 5px; COLOR: #004b88
+}
+.cat_h A {
+	COLOR: #004b88
+}
+.cat {
+	MARGIN: 0px
+}
+.cat A {
+	COLOR: #606060
+}
+.cat U {
+	TEXT-DECORATION: none
+}
+.cat U A {
+	COLOR: #0040bf
+}
+.cat_lnk {
+	MARGIN-TOP: 7px; FONT-SIZE: 70%; MARGIN-BOTTOM: 15px; MARGIN-LEFT: 0px
+}
+.cat_mark {
+	FONT-SIZE: 100%; MARGIN: 0px 5px 0px 7px; COLOR: #004b88
+}
+.torg_h {
+	MARGIN-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 100%; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 21px; COLOR: #004b88
+}
+.torg_h A {
+	COLOR: #004b88
+}
+.torg_h1 {
+	MARGIN-TOP: 5px; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 21px; COLOR: #004b88
+}
+.torg {
+	FONT-SIZE: 70%; MARGIN: 0px 0px 0px 29px; COLOR: #606060
+}
+.torg A {
+	COLOR: #606060
+}
+.torg_lnk {
+	FONT-SIZE: 70%; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 21px; MARGIN-RIGHT: 0px
+}
+.tour_h {
+	MARGIN-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 100%; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 21px; COLOR: #004b88
+}
+.tour_h A {
+	COLOR: #004b88
+}
+.tour_h1 {
+	MARGIN-TOP: 5px; FONT-SIZE: 70%; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 21px; COLOR: #606060
+}
+.tour_h1 A {
+	FONT-SIZE: 120%
+}
+.tour_descr {
+	FONT-SIZE: 70%; MARGIN: 5px 0px 0px 21px
+}
+.tour {
+	FONT-SIZE: 70%; MARGIN: 0px 0px 0px 31px; COLOR: #606060; TEXT-INDENT: -6px
+}
+.tour A {
+	COLOR: #606060
+}
+.tour_th {
+	FONT-SIZE: 70%; MARGIN: 5px 0px 2px
+}
+.tour_th A {
+	COLOR: #606060
+}
+.tour_vl {
+	FONT-SIZE: 70%; MARGIN: 2px 0px 0px; COLOR: #606060
+}
+.tour_vl A {
+	COLOR: #606060
+}
+.tour_lnk {
+	MARGIN-TOP: 5px; FONT-SIZE: 70%; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 21px
+}
+.hist_h {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%; MARGIN: 0px; COLOR: #004b88
+}
+.hist_h A {
+	COLOR: #004b88
+}
+.hist_h1 {
+	MARGIN: 5px 0px 0px
+}
+.hist {
+	FONT-SIZE: 70%; MARGIN: 0px 0px 0px 10px; COLOR: #606060; TEXT-INDENT: -6px
+}
+.hist A {
+	COLOR: #606060
+}
+.hist_lnk {
+	FONT-WEIGHT: normal; FONT-SIZE: 70%; MARGIN: 0px; COLOR: #606060
+}
+.hist_lnk A {
+	COLOR: #606060
+}
+.set_h {
+	MARGIN-TOP: 20px; FONT-WEIGHT: bold; FONT-SIZE: 100%; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 3px; COLOR: #004b88
+}
+.set_h1 {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 3px; COLOR: #004b88
+}
+.set_eg {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 0px; COLOR: #004b88
+}
+.set {
+	MARGIN: 0px 0px 0px 5px
+}
+.select_set {
+	MARGIN-LEFT: 5px
+}
+.ras_h {
+	MARGIN-TOP: 20px; FONT-WEIGHT: bold; FONT-SIZE: 100%; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 3px; COLOR: #004b88
+}
+.ras_h1 {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 3px; COLOR: #004b88
+}
+.ras_eg {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 0px; COLOR: #004b88
+}
+.ras {
+	MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 3px
+}
+.ras1 {
+	MARGIN: 5px 5px 5px 10px
+}
+.ras2 {
+	FONT-SIZE: 70%; MARGIN: 0px 5px 0px 4px; COLOR: #404040
+}
+.ras3 {
+	MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 0px
+}
+.form_h {
+	MARGIN-TOP: 20px; FONT-WEIGHT: bold; FONT-SIZE: 100%; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 3px; COLOR: #004b88; TEXT-ALIGN: left
+}
+.form_h1 {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 30px; COLOR: #004b88
+}
+.form_type {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 3px; COLOR: #004b88; TEXT-ALIGN: left
+}
+.form_type A {
+	FONT-WEIGHT: normal
+}
+.form {
+	MARGIN-LEFT: 30px
+}
+.select_ras {
+	MARGIN-LEFT: 4px
+}
+.inp_ras {
+	MARGIN-RIGHT: 5px
+}
+.promo_h {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%; MARGIN: 0px 0px 5px 21px; COLOR: #004b88
+}
+.promo_h A {
+	COLOR: #004b88
+}
+.promo_h1 {
+	MARGIN: 5px 15px 0px 21px; COLOR: #0040bf
+}
+.promo_h2 {
+	MARGIN: 0px 0px 0px 29px; COLOR: #004b88; TEXT-INDENT: -8px
+}
+.promo_h2 A {
+	COLOR: #606060
+}
+.promo {
+	MARGIN: 0px 0px 0px 21px
+}
+.promo A {
+	COLOR: #606060
+}
+.promo_sp {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%; MARGIN: 0px 0px 5px 21px; COLOR: #004b88
+}
+.promo_sp A {
+	COLOR: #004b88
+}
+.promo_sp1 {
+	MARGIN: 5px 15px 0px 21px; COLOR: #0040bf
+}
+.mult_h {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%; MARGIN: 0px 0px 5px 12px; COLOR: #004b88
+}
+.mult_h A {
+	COLOR: #004b88
+}
+.mult_h1 {
+	MARGIN: 5px 15px 0px 12px; COLOR: #0040bf
+}
+.mult {
+	MARGIN: 0px 0px 0px 12px
+}
+.mult A {
+	COLOR: #606060
+}
+.submenu {
+	FONT-SIZE: 70%; MARGIN-LEFT: 50px; MARGIN-RIGHT: 20px
+}
+.submenu A {
+	TEXT-DECORATION: none
+}
+.submenu A:hover {
+	TEXT-DECORATION: underline
+}
+.footer1 {
+	FONT-SIZE: 70%; MARGIN: 5px 20px 5px 24px; COLOR: #004b88
+}
+.footer1 A {
+	TEXT-DECORATION: none
+}
+.footer1 A:hover {
+	TEXT-DECORATION: underline
+}
+.footer2 {
+	MARGIN: 5px 20px 5px 24px; COLOR: #004b88; TEXT-ALIGN: center
+}
+.footer3 {
+	FONT-SIZE: 70%; MARGIN: 5px 0px 5px 4px; COLOR: #606060
+}
+.footer3 A {
+	COLOR: #404040
+}
+.summary {
+	FONT-SIZE: 70%; MARGIN: 0px 0px 15px 5px; COLOR: #404040; LINE-HEIGHT: 120%
+}
+.summary A {
+	COLOR: #404040
+}
+.see_also {
+	FONT-WEIGHT: bold; MARGIN: 0px 0px 15px 5px; COLOR: #004b88; LINE-HEIGHT: 120%
+}
+.see_also A {
+	FONT-WEIGHT: normal; COLOR: #606060
+}
+.mistake {
+	MARGIN: 0px 0px 15px 5px
+}
+.mistake B {
+	FONT-WEIGHT: bold; COLOR: #004b88
+}
+.mistake A B {
+	FONT-WEIGHT: bold; COLOR: crimson
+}
+.mistake A:hover B {
+	FONT-WEIGHT: bold; COLOR: #004b88
+}
+.pages {
+	FONT-WEIGHT: bold; MARGIN: 0px 0px 15px; COLOR: #d0d0d0
+}
+.pages A {
+	FONT-WEIGHT: normal
+}
+.pages1 {
+	FONT-WEIGHT: bold; MARGIN: 0px 0px 15px 5px; COLOR: #d0d0d0
+}
+.pages1 A {
+	FONT-WEIGHT: normal
+}
+.adv {
+	FONT-SIZE: 70%; MARGIN: 8px 0px 8px 30px
+}
+.box {
+	FONT-SIZE: 70%; MARGIN-LEFT: 0px; COLOR: #d9edff; TEXT-INDENT: 0px; MARGIN-RIGHT: 0px
+}
+.box A {
+	COLOR: #d9edff; TEXT-DECORATION: none
+}
+.box A:hover {
+	COLOR: white; TEXT-DECORATION: underline
+}
+.bm {
+	MARGIN: 1px 5px 3px; TEXT-ALIGN: center
+}
+.bm A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.bm A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+A {
+	COLOR: #0040bf; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: darkorange; TEXT-DECORATION: none
+}
+.bg1 {
+	BACKGROUND-COLOR: #004b88
+}
+.bg1 A {
+	COLOR: #bfe0ff
+}
+.bg1 A:hover {
+	COLOR: white
+}
+.bg1 .footer1 {
+	COLOR: #bfe0ff
+}
+.bg1 .bm {
+	FONT-WEIGHT: bold; COLOR: white
+}
+.bg1 .box {
+	COLOR: #bfe0ff
+}
+.bg2 {
+	BACKGROUND-COLOR: #267abf
+}
+.bg3 {
+	BACKGROUND-COLOR: white
+}
+.bg4_left {
+	BACKGROUND-IMAGE: url(http://img.mail.ru/mail/ru/images/left1_off2.gif); BACKGROUND-COLOR: white
+}
+.bg4_right {
+	BACKGROUND-IMAGE: url(http://img.mail.ru/mail/ru/images/right1_off2.gif); BACKGROUND-COLOR: white
+}
+.bg5 {
+	BACKGROUND-COLOR: #e5e5e5
+}
+.bg7 {
+	BACKGROUND-COLOR: #f0f0f0
+}
+.bg8 {
+	BACKGROUND-COLOR: #8098ad
+}
+.bg_off {
+	BACKGROUND-POSITION: left bottom; BACKGROUND-IMAGE: url(http://img.mail.ru/mail/ru/images/orange2.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: white
+}
+.bg_off A {
+	COLOR: black
+}
+.bg_off A:hover {
+	COLOR: #404040
+}
+.inp_s {
+	MARGIN-LEFT: 4px
+}
+.inp_box {
+	MARGIN-TOP: 2px; MARGIN-LEFT: 11px; MARGIN-RIGHT: 5px
+}
+.hl_char {
+	COLOR: red
+}

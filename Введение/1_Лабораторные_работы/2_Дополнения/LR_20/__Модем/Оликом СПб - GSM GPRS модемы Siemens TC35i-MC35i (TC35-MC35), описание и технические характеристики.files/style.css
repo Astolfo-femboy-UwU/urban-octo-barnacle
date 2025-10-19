@@ -1,0 +1,183 @@
+.container {
+	WIDTH: 1002px
+}
+.logo {
+	BACKGROUND-IMAGE: url(img/logo.jpg); BACKGROUND-REPEAT: no-repeat; HEIGHT: 87px
+}
+.reklama {
+	BACKGROUND-IMAGE: url(img/newlogo4.jpg); MARGIN: -87px 0px 0px 321px; BACKGROUND-REPEAT: repeat-x; HEIGHT: 87px
+}
+.new_year {
+	LEFT: 148px; POSITION: absolute; TOP: 15px
+}
+.menu {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 11px; FLOAT: left; MARGIN-LEFT: 1px; WIDTH: 200px; FONT-FAMILY: Verdana; POSITION: absolute; TOP: 87px
+}
+.menu A:link {
+	COLOR: #000000
+}
+.menu A:active {
+	COLOR: #000000
+}
+.menu A:visited {
+	COLOR: #000000
+}
+.menu A:hover {
+	COLOR: #000000
+}
+.menu A:unknown {
+	COLOR: #000000
+}
+.menu0 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; FONT-SIZE: 13px; BACKGROUND-IMAGE: url(img/button3.jpg); PADDING-BOTTOM: 0px; MARGIN: 0px 0px 2px; COLOR: #ffffff; PADDING-TOP: 3px; BACKGROUND-REPEAT: repeat-y; HEIGHT: 25px
+}
+.menu0 A.menu0in:visited {
+	COLOR: #99ccff
+}
+.menu0 A.menu0in:link {
+	COLOR: #99ccff
+}
+.menu0 A.menu0in:active {
+	COLOR: #99ccff
+}
+.menu0 A:visited {
+	COLOR: #ffffff
+}
+.menu0 A:link {
+	COLOR: #ffffff
+}
+.menu0 A:active {
+	COLOR: #ffffff
+}
+.menu1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-TOP: 5px
+}
+.underline {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; MARGIN: 0px 5px 0px 10px; PADDING-TOP: 0px; BORDER-BOTTOM: #000000 1px solid
+}
+.underlinein {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; MARGIN: 0px 5px 0px 10px; PADDING-TOP: 0px; BORDER-BOTTOM: #000000 1px solid
+}
+.underlinein {
+	BACKGROUND-COLOR: #99ccff
+}
+.menu2in {
+	FONT-SIZE: 11px; MARGIN: 2px 5px 2px 20px; COLOR: #000000; BACKGROUND-COLOR: #d8e7fe
+}
+.menu2out {
+	FONT-SIZE: 11px; MARGIN: 2px 5px 2px 20px; COLOR: #000000; BACKGROUND-COLOR: #d8e7fe
+}
+.menu2in {
+	BACKGROUND-COLOR: #999999
+}
+.countss {
+	BORDER-RIGHT: #000000 1px solid; MARGIN: -65px 0px 0px 1px; WIDTH: 200px
+}
+.hlinks {
+	FONT-SIZE: 9px; MARGIN: -10px 0px 0px 200px; BORDER-LEFT: 1px solid; COLOR: #000066; TEXT-INDENT: 0px; TEXT-ALIGN: center
+}
+.content {
+	PADDING-RIGHT: 10px; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 10px; MIN-HEIGHT: 900px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 200px; BORDER-LEFT: #000000 1px solid; PADDING-TOP: 5px; HEIGHT: auto
+}
+ HTML .content {
+	HEIGHT: 900px
+}
+.promo {
+	CLEAR: right; BORDER-RIGHT: #416cb1 1px solid; FONT-SIZE: 9px; FLOAT: right; BORDER-LEFT: #416cb1 1px solid; WIDTH: 200px; BORDER-BOTTOM: #416cb1 1px solid
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: Verdana; HEIGHT: 100%; BACKGROUND-COLOR: #ffffff
+}
+TABLE {
+	TABLE-LAYOUT: fixed; MARGIN: 10px; BORDER-COLLAPSE: collapse
+}
+TD {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 12px; BORDER-LEFT-COLOR: #000000; BORDER-BOTTOM-COLOR: #000000; PADDING-BOTTOM: 0px; BORDER-TOP-COLOR: #000000; PADDING-TOP: 0px; BORDER-COLLAPSE: collapse; BORDER-RIGHT-COLOR: #000000
+}
+TD.notgoods {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; VERTICAL-ALIGN: top; LINE-HEIGHT: 1.5; PADDING-TOP: 5px; TEXT-ALIGN: center
+}
+IMG.goods {
+	MARGIN: 0px 10px 0px 15px
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 20px; MARGIN: 10px 0px 5px 10px; COLOR: #416cb1; TEXT-ALIGN: center
+}
+H2 {
+	FONT-SIZE: 18px; MARGIN: 5px 0px 5px 20px; COLOR: #6699cc
+}
+H3 {
+	FONT-SIZE: 17px; MARGIN: 0px 0px 0px 10px; COLOR: #6699cc
+}
+H4 {
+	FONT-SIZE: 15px; MARGIN: 10px 0px 0px 10px; COLOR: #000066
+}
+H5 {
+	FONT-SIZE: 13px; MARGIN: 0px; COLOR: #003366
+}
+H6 {
+	FONT-SIZE: 12px; MARGIN: 0px; COLOR: #003366
+}
+P {
+	MARGIN: 5px 20px; COLOR: #000000; TEXT-INDENT: 15px; LINE-HEIGHT: 160%
+}
+UL {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 0px 50px; PADDING-TOP: 5px
+}
+OL {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 0px 50px; PADDING-TOP: 5px
+}
+LI {
+	MARGIN: 0px; LINE-HEIGHT: 1.5
+}
+A {
+	COLOR: #416cb1; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #0033cc; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #0033cc; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #0033cc; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #0033cc; TEXT-DECORATION: underline
+}
+HR {
+	CLEAR: both; MARGIN-TOP: 10px
+}
+.gsm_image {
+	FLOAT: left; MARGIN: 10px; TEXT-ALIGN: center
+}
+.office_image {
+	FLOAT: left; MARGIN: 10px; TEXT-ALIGN: center
+}
+.text {
+	FONT-SIZE: 11px; MARGIN: 5px 15px; COLOR: #000000; TEXT-INDENT: 15px; TEXT-ALIGN: justify
+}
+.news {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid
+}
+.news_header {
+	CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 20px; FONT-WEIGHT: bold; FONT-SIZE: 15px; PADDING-BOTTOM: 0px; MARGIN: 10px 0px 0px; COLOR: #ffffff; PADDING-TOP: 0px; BACKGROUND-COLOR: #416cb1
+}
+.news_body {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 11px; PADDING-BOTTOM: 5px; OVERFLOW: auto; PADDING-TOP: 5px; POSITION: relative; TEXT-ALIGN: justify
+}
+.news_image {
+	FLOAT: left; MARGIN: 10px 20px 10px 10px
+}
+.news_more {
+	FONT-SIZE: 10px; MARGIN: 30px 30px 0px 0px; TEXT-ALIGN: right
+}
+.smalltext {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 9px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.imp {
+	FONT-WEIGHT: bold
+}
+.small {
+	FONT-SIZE: 10px
+}

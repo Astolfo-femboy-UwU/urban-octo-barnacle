@@ -1,0 +1,96 @@
+PRE {
+	BORDER-RIGHT: 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 9pt; PADDING-BOTTOM: 3px; OVERFLOW: auto; BORDER-LEFT: 1px solid; WIDTH: 468px; PADDING-TOP: 3px; BORDER-BOTTOM: 1px solid
+}
+A.head {
+	FONT-SIZE: 9pt; FONT-FAMILY: Times
+}
+A.plain {
+	COLOR: navy; TEXT-DECORATION: none
+}
+.topic {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #005050; FONT-FAMILY: Arial Cyr, Arial, sans-serif
+}
+P.topic1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; FONT-FAMILY: Arial Cyr, Arial, sans-serif
+}
+P.header {
+	FONT-WEIGHT: bold; COLOR: #000000
+}
+H1 {
+	FONT-FAMILY: Arial Cyr, Arial, sans-serif
+}
+H2 {
+	FONT-FAMILY: Arial Cyr, Arial, sans-serif
+}
+H3 {
+	FONT-SIZE: 16pt; FONT-FAMILY: Arial Cyr, Arial, sans-serif
+}
+H4 {
+	FONT-SIZE: 14pt; FONT-FAMILY: Arial Cyr, Arial, sans-serif
+}
+H5 {
+	FONT-SIZE: 12pt; FONT-FAMILY: Arial Cyr, Arial, sans-serif
+}
+H6 {
+	FONT-SIZE: 11pt; FONT-FAMILY: Arial Cyr, Arial, sans-serif
+}
+.earlink {
+	FONT-SIZE: 10pt; FONT-FAMILY: serif
+}
+TABLE.ad TD {
+	VERTICAL-ALIGN: top
+}
+TABLE.ad A {
+	TEXT-DECORATION: none
+}
+TABLE.ad DIV {
+	FONT-SIZE: 9pt; MARGIN: 3pt; FONT-FAMILY: Times
+}
+DIV.ad-head {
+	FONT-WEIGHT: bold; COLOR: navy; TEXT-DECORATION: underline
+}
+DIV.ad-body {
+	COLOR: black
+}
+DIV.ad-site {
+	COLOR: red; FONT-FAMILY: helvetica
+}
+DIV.ad-url {
+	COLOR: red; FONT-FAMILY: helvetica
+}
+TABLE.go {
+	BACKGROUND: #feeac7
+}
+TABLE.go TD {
+	VERTICAL-ALIGN: top
+}
+TABLE.go A {
+	TEXT-DECORATION: none
+}
+TABLE.go DIV {
+	FONT-SIZE: 9pt; MARGIN: 3pt; FONT-FAMILY: Times
+}
+P.go-line {
+	FONT-WEIGHT: bold; COLOR: darkblue; TEXT-ALIGN: center
+}
+UL.column {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LIST-STYLE-POSITION: inside; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.comment {
+	MARGIN-TOP: 24px
+}
+DIV.go {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 15px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: Times
+}
+DIV.go A {
+	TEXT-DECORATION: none
+}
+DIV.go-head {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; COLOR: navy; PADDING-TOP: 2px; TEXT-DECORATION: underline
+}
+DIV.go-body {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; COLOR: black; PADDING-TOP: 2px
+}
+DIV.go-site {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; COLOR: red; PADDING-TOP: 2px; FONT-FAMILY: helvetica
+}

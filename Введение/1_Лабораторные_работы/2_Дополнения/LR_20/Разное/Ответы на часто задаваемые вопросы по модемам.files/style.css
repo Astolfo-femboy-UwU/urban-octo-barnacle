@@ -1,0 +1,147 @@
+.big_text {
+	FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: "Verdana"
+}
+BODY {
+	FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: "Verdana"
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: "Verdana"
+}
+INPUT {
+	FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: "Verdana"
+}
+SELECT {
+	FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: "Verdana"
+}
+TEXTAREA {
+	FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: "Verdana"
+}
+A {
+	FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: "Verdana"
+}
+.switch {
+	FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: Verdana,Microsoft Sans Serif
+}
+A.switch {
+	FONT-SIZE: 10px; COLOR: #0064b9; FONT-FAMILY: Verdana,Microsoft Sans Serif; TEXT-DECORATION: none
+}
+.ms_gr9 {
+	FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: Verdana,Microsoft Sans Serif; TEXT-DECORATION: none
+}
+A.ms_gr9:hover {
+	COLOR: #ffffff; BACKGROUND-COLOR: #0165ba
+}
+.ms_lgr9 {
+	FONT-SIZE: 10px; COLOR: #999999; FONT-FAMILY: Verdana,Microsoft Sans Serif; TEXT-DECORATION: none
+}
+.ms_lgr9u {
+	FONT-SIZE: 10px; COLOR: #999999; FONT-FAMILY: Verdana,Microsoft Sans Serif; TEXT-DECORATION: underline
+}
+.ms_gr10 {
+	FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: Verdana,Microsoft Sans Serif; TEXT-DECORATION: none
+}
+.ms_gr10u {
+	FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: Verdana,Microsoft Sans Serif; TEXT-DECORATION: underline
+}
+.ms_gr11 {
+	FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: "Microsoft Sans Serif"; TEXT-DECORATION: none
+}
+A.ms_gr11:hover {
+	COLOR: #ff7f00
+}
+.ms_gr11u {
+	FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: "Microsoft Sans Serif"; TEXT-DECORATION: underline
+}
+A.ms_gr11u:hover {
+	COLOR: #ff7f00
+}
+.ms_gr11u2 {
+	FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: "Microsoft Sans Serif"; TEXT-DECORATION: underline
+}
+A.ms_gr11u2:hover {
+	COLOR: #ff7f00
+}
+.ms_gr11u2_on {
+	FONT-SIZE: 11px; COLOR: #0064b9; FONT-FAMILY: "Microsoft Sans Serif"; TEXT-DECORATION: underline
+}
+A.ms_gr11u2_on:hover {
+	COLOR: #0064b9
+}
+.ms_dbred {
+	FONT-SIZE: 12px; COLOR: #ed1b23; FONT-FAMILY: "Microsoft Sans Serif"; TEXT-DECORATION: none
+}
+.ms_gr11u210 {
+	FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: "Microsoft Sans Serif"; TEXT-DECORATION: underline
+}
+A.ms_gr11u210:hover {
+	COLOR: #ff7f00
+}
+.ms_gr11u210_on {
+	FONT-SIZE: 11px; COLOR: #0064b9; FONT-FAMILY: "Microsoft Sans Serif"; TEXT-DECORATION: underline
+}
+A.ms_gr11u210_on:hover {
+	COLOR: #0064b9
+}
+.ms_dbl11 {
+	FONT-SIZE: 11px; COLOR: #333366; FONT-FAMILY: "Microsoft Sans Serif"; TEXT-DECORATION: none
+}
+.ms_dbl12 {
+	FONT-SIZE: 12px; COLOR: #333366; FONT-FAMILY: Verdana,Microsoft Sans Serif; TEXT-DECORATION: none
+}
+.ms_dbl11u {
+	FONT-SIZE: 12px; COLOR: #333366; FONT-FAMILY: Verdana,Microsoft Sans Serif; TEXT-DECORATION: underline
+}
+A.ms_dbl11u:hover {
+	COLOR: #ff7d01
+}
+.ms_dbl11u1 {
+	FONT-SIZE: 11px; COLOR: #395779; FONT-FAMILY: "Microsoft Sans Serif"; TEXT-DECORATION: underline
+}
+A.ms_dbl11u1:hover {
+	COLOR: #395779
+}
+.ta_gr10 {
+	FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: "Tahoma"; TEXT-DECORATION: none
+}
+.ms_dbl11u2 {
+	FONT-SIZE: 11px; COLOR: #333366; FONT-FAMILY: "Microsoft Sans Serif"; TEXT-DECORATION: underline
+}
+A.ms_dbl11u2:hover {
+	COLOR: #ff7d01
+}
+.ta_gr11 {
+	FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: "Tahoma"; TEXT-DECORATION: none
+}
+.und_hea {
+	FONT-SIZE: 13px; COLOR: #666666; FONT-FAMILY: "Microsoft Sans Serif"; TEXT-DECORATION: none
+}
+.button {
+	BORDER-RIGHT: #dedede 1px solid; BORDER-TOP: #dedede 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #dedede 1px solid; COLOR: #666666; BORDER-BOTTOM: #dedede 1px solid; FONT-FAMILY: Verdana,Microsoft Sans Serif; BACKGROUND-COLOR: #dedede; TEXT-DECORATION: none
+}
+A.calc1 {
+	FONT-SIZE: 10px; COLOR: #8291a0; FONT-FAMILY: 'Microsoft Sans Serif'; TEXT-DECORATION: underline
+}
+A.calc1:hover {
+	FONT-SIZE: 10px; COLOR: #8291a0; FONT-FAMILY: 'Microsoft Sans Serif'; TEXT-DECORATION: underline
+}
+.cal {
+	FONT-SIZE: 10px; COLOR: #8291a0; FONT-FAMILY: 'Microsoft Sans Serif'; BACKGROUND-COLOR: #fcfdfd; TEXT-DECORATION: none
+}
+A.cal {
+	FONT-SIZE: 10px; COLOR: #8291a0; FONT-FAMILY: 'Microsoft Sans Serif'; BACKGROUND-COLOR: #fcfdfd; TEXT-DECORATION: none
+}
+A.cal:hover {
+	FONT-SIZE: 10px; COLOR: #8291a0; FONT-FAMILY: 'Microsoft Sans Serif'; BACKGROUND-COLOR: #fcfdfd; TEXT-DECORATION: none
+}
+.cal1 {
+	FONT-SIZE: 10px; FONT-FAMILY: 'Microsoft Sans Serif'; BACKGROUND-COLOR: #b8d7ea
+}
+.cal2 {
+	FONT-SIZE: 10px; COLOR: #8291a0; FONT-FAMILY: 'Microsoft Sans Serif'; BACKGROUND-COLOR: #f7f8fa
+}
+.cal2_1 {
+	FONT-SIZE: 10px; COLOR: #8291a0; FONT-FAMILY: 'Microsoft Sans Serif'; BACKGROUND-COLOR: #b8d7ea
+}
+.cal3 {
+	FONT-SIZE: 10px; COLOR: black; FONT-FAMILY: 'Microsoft Sans Serif'; BACKGROUND-COLOR: #fcfdfd
+}

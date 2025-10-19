@@ -1,0 +1,65 @@
+$$  коментарий
+$tip114    <----- тип вопроса
+$wo1 -------------------------------------------------
+
+           ”кажите группу английских терминов, 
+
+   которые относ€тс€ к режиму посто€нной коммутации:
+$ot1 ------------------------------------------------
+
++    Permanent switching, dedicated channels, leased channels.
+
+
+     Virtual circuit, virtual channel, soft-switch.
+
+
+
+     Routing table, forwarding table, logical channel.
+
+
+     Backbone, core network, access network.
+
+$ot2 ------------------------------------------------
+
+     Backbone, core network, access network.
+
+
++    Permanent switching, dedicated channels, leased channels.
+
+
+
+     Virtual circuit, virtual channel, soft-switch.
+
+
+     Routing table, forwarding table, logical channel.
+$ot3 ------------------------------------------------
+
+     Routing table, forwarding table, logical channel.
+
+
+     Backbone, core network, access network.
+
+
+
++    Permanent switching, dedicated channels, leased channels.
+
+
+     Virtual circuit, virtual channel, soft-switch.
+$ot4 ------------------------------------------------
+ 
+     Virtual circuit, virtual channel, soft-switch.
+
+
+     Routing table, forwarding table, logical channel.
+
+
+
+     Backbone, core network, access network.
+
+
++    Permanent switching, dedicated channels, leased channels.
+
+$spr*  <- справка
+ *****  
+
+$end   <--- конец справки и всего файла

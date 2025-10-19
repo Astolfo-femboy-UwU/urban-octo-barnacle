@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0045)http://elikt.narod.ru/shem/telefon/shem11.htm -->
+<HTML><HEAD><TITLE>Принцип работы АОН</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY bgProperties=fixed background="Принцип работы АОН.files/fon3.jpg">
+<DL>
+  <DIV align=center>
+  <CENTER>
+  <DT><STRONG><EM><FONT size=5>Принцип работы АОНа.</FONT></EM><FONT face=Arial 
+  size=3><BR></FONT></STRONG></CENTER></DT></DIV>
+  <TABLE width="100%" border=0>
+    <TBODY>
+    <TR>
+      <TD width="100%">
+        <P align=center><FONT face=Times size=2>Определитель номера в своей 
+        работе использует следующие </FONT><FONT face=Arial 
+        size=2><STRONG>параметры сигналов АТС:</STRONG></FONT></P>
+        <UL>
+          <LI><FONT face=Times size=2>Напряжение в телефонной линии (при 
+          опущенной трубке) - 60 В</FONT> 
+          <LI><FONT face=Times size=2>Амплитуда сигнала индукторного вызова при 
+          входящей связи 50-100 В; форма импульсов - колоколообразная, частота - 
+          25 Гц</FONT> 
+          <LI><FONT face=Times size=2>Напряжение в телефонной сети при снятой 
+          трубке 5-8 В</FONT> 
+          <LI><FONT face=Times size=2>Скорость набора номера 9-11 имп./с, 
+          импульсный коэффициент набора номера 1.3-1.9</FONT> 
+          <LI><FONT face=Times size=2>Сигнал "Ответ станции" - непрерывный 
+          тональный сигнал частотой 425 Гц</FONT> 
+          <LI><FONT face=Times size=2>Сигнал "Занято" - 425 Гц (длительность и 
+          пауза - 0.35 с)</FONT> 
+          <LI><FONT face=Times size=2>Сигнал "Контроль посылки вызова" - 450 Гц 
+          (длительность импульса 1 с, паузы - 4 с)</FONT> 
+          <LI><FONT face=Times size=2>Сигнал "Отбой" - удержание трубки на 
+          рычаге аппарата более 1.2 с</FONT> </LI></UL>
+        <P align=center><FONT face=Arial size=2><STRONG>Параметры сигнала 
+        запроса информации АОН</STRONG></FONT>:</P></TD></TR></TBODY></TABLE></DL><FONT 
+face=Arial size=2><STRONG>
+<P align=center></STRONG></FONT><IMG height=219 alt=ris14.gif 
+src="Принцип работы АОН.files/ris14.gif" width=403></P>
+<TABLE width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD width="100%">
+      <UL>
+        <LI><FONT face=Times size=2>Время от подключения АОНа к линии до выдачи 
+        запроса (t паузы) - 250-275 мс</FONT> 
+        <LI><FONT face=Times size=2>Длительность сигнала запроса (t запр) - 100 
+        мс</FONT> 
+        <LI><FONT face=Times size=2>Уровень сигнала запроса (U запр) - 4.3дб 
+        (Действующее напряжение сигнала запроса).</FONT> 
+        <LI><FONT face=Times size=2>Частота сигнала запроса (f запр) - 495-505 
+        Гц</FONT> </LI></UL>
+      <P align=center><FONT face=Arial size=2><STRONG>Принцип определения 
+      номера</STRONG></FONT>:</P></TD></TR></TBODY></TABLE>
+<DL>
+  <DIV align=center>
+  <CENTER>
+  <DT><IMG height=69 alt=ris15.gif src="Принцип работы АОН.files/ris15.gif" 
+  width=262><BR></CENTER></DT></DIV>
+  <TABLE width="100%" border=0>
+    <TBODY>
+    <TR>
+      <TD width="100%"><FONT face=Times size=2>Абонент АТС-1, подняв трубку, 
+        звонит абоненту АТС-2. При этом у абонента АТС-2 по телефонной сети 
+        поступает индукторный вызов (вызов от АТС). Телефон АОН абонента-2 
+        подключается к телефонной линии, понижая напряжение до уровня 22-24 В - 
+        блокирует разговорный тракт. Затем, через 250-275 мс (время на окончание 
+        переходных процессов при коммутации телефонной линии) АОН абонента-2 
+        выдает на АТС-1 сигнал "Запрос АОН" частотой 495-505 Гц с уровнем 4.3 дб 
+        и длительностью 100 мс. На АТС-1 декодируется этот сигнал и выдается 
+        "Ответ" -номер телефона звонящего абонента АТС-1 многочастотным методом 
+        "безинтервальный пакет" в принятом коде "2 из 6". АОН у абонента-2 
+        осуществляет прием пакета частотной информации в порядке поступления с 
+        последующей дешифрацией комбинации.</FONT></TD></TR></TBODY></TABLE>
+  <DIV align=center>
+  <CENTER>
+  <DT><IMG height=303 alt=ris16.gif src="Принцип работы АОН.files/ris16.gif" 
+  width=651> </CENTER></DT></DIV>
+  <TABLE width="100%" border=0>
+    <TBODY>
+    <TR>
+      <TD width="100%">
+        <DL>
+          <DIV align=center>
+          <CENTER>
+          <DT><FONT face=Times size=2>Частотная информация - последовательность 
+          двухчастотных посылок из ряда частот:</FONT> 
+    </CENTER></DT></DIV></DL></TD></TR></TBODY></TABLE></DL>
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=5 border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <DL>
+        <DT><FONT face=Arial size=2><STRONG>f,Гц</STRONG></FONT> </DT></DL></TD>
+    <TD>
+      <DL>
+        <DT><FONT face=Arial size=2><STRONG>Уровень, Дб</STRONG></FONT> 
+    </DT></DL></TD></TR>
+  <TR>
+    <TD>
+      <DL>
+        <DT><FONT face=Times 
+        size=2>700<BR>900<BR>1100<BR>1300<BR>1500<BR>1700</FONT> </DT></DL></TD>
+    <TD>
+      <DL>
+        <DT><FONT face=Times size=2>-6.5 до 27.4<BR>-6.5 до 29.0<BR>-6.5 до 
+        31.0<BR>-6.5 до 32.6<BR>-6.5 до 34.3<BR>-6.5 до 36.0</FONT> 
+  </DT></DL></TD></TR></TBODY></TABLE>
+<TABLE width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD width="100%">
+      <P align=center><FONT face=Times size=2>Комбинации двух из шести 
+      вышеуказанных частот обозначает следующее:</FONT></P></TD></TR></TBODY></TABLE>
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=5 border=0>
+  <TBODY>
+  <TR>
+    <TD></TD>
+    <TD>
+      <P align=center><FONT face=Arial 
+      size=2><STRONG>f1+f2,Гц</STRONG></FONT></P></TD>
+    <TD>
+      <P align=center><FONT face=Arial size=2><STRONG>Код "2 из 
+      6"</STRONG></FONT></P></TD></TR>
+  <TR>
+    <TD>
+      <DL>
+        <DT><FONT face=Times size=2>Цифра 
+        1<BR>2<BR>3<BR>4<BR>5<BR>6<BR>7<BR>8<BR>9<BR>0<BR>"Начало"<BR>"Повтор"</FONT> 
+        </DT></DL></TD>
+    <TD>
+      <DL>
+        <DT><FONT face=Times 
+        size=2>700+900<BR>700+1100<BR>900+1100<BR>700+1300<BR>900+1300<BR>1100+1300<BR>700+1500<BR>900+1500<BR>1100+1500<BR>1300+1500<BR>1100+1700<BR>1300+1700</FONT> 
+        </DT></DL></TD>
+    <TD>
+      <DL>
+        <DT><FONT face=Times 
+        size=2>000011<BR>000101<BR>000110<BR>001001<BR>001010<BR>001100<BR>010001<BR>010010<BR>010100<BR>011000<BR>100100<BR>101000</FONT> 
+
+        <DD> </DD></DL></TD></TR></TBODY></TABLE>
+<TABLE width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD width="100%">
+      <DL>
+        <DT><FONT face=Times size=2>Начало" - означает начало и конец пакета 
+        двухчастотных посылок (многочастотная последовательность имеет несколько 
+        раз повторяющийся пакет информации, начало и конец которого указывает 
+        эта комбинация). "Повтор" - означает, что очередная цифра повторяет 
+        предыдущую (при отсутствии этой комбинации дешифрация двух 
+        последовательно следующих одинаковых цифр была бы крайне затруднена). 
+        Пакет информации содержит 10 двухчастотных посылок длительностью по 
+        38-42 мс со следующей последовательностью передачи:</FONT> 
+        <DD>&nbsp;
+        <OL><FONT face=Times size=2>
+          <LI>"Начало" 
+          <LI>Цифра категории 
+          <LI>Цифра единиц номера 
+          <LI>Цифра десятков номера 
+          <LI>Цифра сотен номера 
+          <LI>Цифра тысяч номера 
+          <LI>Третья цифра индекса станции 
+          <LI>Вторая цифра индекса станции 
+          <LI>Первая цифра индекса станции 
+          <LI>"Начало" </FONT></LI></OL>
+        <DT> 
+        <DT><FONT face=Times size=2>Информация обрабатывается микропроцессором и 
+        выводится на индикатор. При этом в самом телефоне абонента-2 (АОНе) 
+        вырабатываются сигналы имитирующие сигнал КПВ (Контроль Посылки Вызова - 
+        длинные прерывистые гудки). Далее при необходимости, абонент-2 может 
+        вести разговор - алгоритм Определения Номера закончился.</FONT> 
+        <DD>&nbsp; 
+        <DIV align=center>
+        <CENTER></DIV>
+        <DT><FONT face=Arial size=2><STRONG>Физические основы обработки 
+        многочастотного сигнала:</STRONG></FONT> </CENTER>
+        <DIV></DIV>
+        <DIV align=center>
+        <CENTER></DIV>
+        <DT><FONT face=Arial size=2>На рисунке приведен фрагмент двухчастотной 
+        посылки.</FONT> </CENTER>
+        <DIV></DIV></DT></DL></TD></TR></TBODY></TABLE>
+<DL>
+  <DIV align=center>
+  <CENTER>
+  <DT><FONT face=Arial size=2><IMG height=194 alt=ris17.gif 
+  src="Принцип работы АОН.files/ris17.gif" 
+  width=337><BR></FONT></CENTER></DT></DIV>
+  <TABLE width="100%" border=0>
+    <TBODY>
+    <TR>
+      <TD width="100%"><FONT face=Arial size=2>Подобный сигнал поступает на 
+        вход компаратора (электронной схемы сравнения), а на другой вход 
+        подается потенциал (уровень) сравнения. Все, что выше уровня сравнения 
+        компаратора оценивается на выходе как высокий потенциал, а все, что ниже 
+        - "0".</FONT>
+        <P><FONT face=Arial size=2>Преобразованный в цифровую форму сигнал 
+        поступает на вход порта ввода-вывода. Центральный процессор (ЦП) под 
+        упрвлением программы, хранящейся в ПЗУ (постоянное запоминающее 
+        устройство), осуществляет опрос с оределенной частотой состояния порта 
+        ввода-вывода (состояние компаратора), помещая результаты во временную 
+        память устройства - ОЗУ. Затем результаты - последовательность "0" и 
+        "1", записанные в ОЗУ в определенной выборке (длительность выборки 
+        зависит от размера отведенной памяти, чтобы результаты не переполнили 
+        ОЗУ), с помощью специальных программ цифрового анализа гармонического 
+        сигнала, анализируются ЦП и идентифицируются с конкретным сигналом: 
+        цифры 0,1-9, "начало", "повтор". Работая в реальном времени, ЦП за время 
+        прохождения одной двухчастотной посылки (40 миллисекунд), успевает 
+        проанализировать её до 5-и раз, тем самым появляется возможность для 
+        сравнения результатов, что положительно сказывается на эффективности 
+        определения номера. За врем следования ответа ЦП выполняет 50-150 таких 
+        выборок для получения однозначного решения: каковы категория и номер 
+        звонящего абонента. </FONT></P></TD></TR></TBODY></TABLE></DL><!-- ><!-- "><!-- '><!-- --></TEXTAREA></FORM></TITLE></COMMENT></A>
+<DIV></DIV></SPAN></ILAYER></LAYER></IFRAME></NOFRAMES></STYLE></NOSCRIPT></TABLE></SCRIPT></APPLET></FONT>
+<STYLE>#bn {
+	DISPLAY: block
+}
+#bt {
+	DISPLAY: block
+}
+</STYLE>
+
+<DIV 
+style="BACKGROUND: url(http://www.tns-counter.ru/V13a****yandex_ru/ru/CP1251/tmsec=narod_total/)"></DIV>
+<SCRIPT language=JavaScript src="Принцип работы АОН.files/163.htm"></SCRIPT>
+<!-- YaMetrics begin -->
+<SCRIPT type=text/javascript><!--
+var ya_cid=107613;
+//-->
+</SCRIPT>
+
+<SCRIPT src="Принцип работы АОН.files/watch.js" type=text/javascript></SCRIPT>
+<NOSCRIPT>
+<DIV style="DISPLAY: inline"><IMG height=1 alt="" 
+src="Принцип работы АОН.files/107613.gif" width=1></DIV></NOSCRIPT><!-- YaMetrics end --><!-- mailto:spm111@yandex.ru --></BODY></HTML>

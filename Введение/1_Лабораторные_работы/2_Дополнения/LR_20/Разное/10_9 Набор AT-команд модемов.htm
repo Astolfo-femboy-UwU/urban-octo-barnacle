@@ -1,0 +1,601 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0056)http://zeus.sai.msu.ru:7000/nets/semenov/10/at_109.shtml -->
+<HTML><HEAD><TITLE>10.9 Набор AT-команд модемов</TITLE>
+<META content="text/html; charset=windows-1251" http-equiv=Content-Type><!-- Meta http equivalent was here                                     -->
+<META content="AT-команды&#13;&#10;модем" name=keywords><!--#include virtual="/ssi/top_style.html"-->
+<META content="MSHTML 5.00.2614.3500" name=GENERATOR></HEAD>
+<BODY>
+<CENTER>
+<TABLE border=0 cellPadding=5 cellSpacing=1>
+  <TBODY>
+  <TR>
+    <TD vAlign=top>
+      <P align=center><A 
+      href="http://zeus.sai.msu.ru:7000/nets/semenov/">Оглавление</A> 
+      <BR><B>Previous: </B><A 
+      href="http://zeus.sai.msu.ru:7000/nets/semenov/10/sreg_108.shtml">10.8 
+      Управляющие регистры модемов и их функции</A> <B>&nbsp;&nbsp; UP: </B><A 
+      href="http://zeus.sai.msu.ru:7000/nets/semenov/10/rec_101.shtml">10.1 
+      Рекомендации CCITT по телекоммуникациям</A> <BR><B>&nbsp; &nbsp; Next:</B> 
+      <A 
+      href="http://zeus.sai.msu.ru:7000/nets/semenov/10/abbr/acr_1010.shtml">10.10 
+      Наиболее употребимые сокращения, используемые в телекоммуникациях (с 
+      разбивкой по буквам)</A> </P></TD></TR>
+  <TR>
+    <TD align=middle><FONT size=6><B>10.9 Набор AT-команд 
+      модемов</B></FONT><BR><FONT size=3>Семенов Ю.А. (ГНЦ ИТЭФ), <A 
+      href="http://book.itep.ru/" target=_blank>book.itep.ru</A></FONT>
+      <P></P></TD></TR>
+  <TR>
+    <TD><!--new-->
+      <P align=justify>AT-команды посылаются ЭВМ или терминалом модему через 
+      последовательный интерфейс RS-232 (модем должен быть при этом в командном 
+      режиме). Все эти команды начинаются с префикса <B>AT</B>, за исключением 
+      A/, A&gt; и +++. Код <B>A/</B> вызывает выполнение модемом предыдущей 
+      команды, A&gt; заставляет модем выполнять предыдущую команду до 9 раз или 
+      пока не будет нажата какая-либо клавиша терминала или управляющей панели 
+      модема, или пока не будет установлена связь с удаленным модемом. Команда 
+      +++ (ESC-последовательность) переводит модем в командный режим или 
+      возвращает его в режим передачи данных.</P>
+      <P align=center>Таблица 10.9.1. Стандартные AT-команды</P></FONT>
+      <CENTER>
+      <TABLE border=10 cellPadding=5 cellSpacing=2>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width="16%"><B>
+            <P align=justify>Обозначение команды</B></P></TD>
+          <TD vAlign=top width="84%"><B>
+            <P align=justify>Описание функции команды</B> </P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>A</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Включает режим отклика (снимается трубка, 
+            выполняется подключение к линии)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>+ B0</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Выбирает режим CCITT V.22 (1200бит/с, по 
+            умолчанию)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>B1</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Выбирает для коммуникации стандарт Bell 212A (1200 
+            бит/с)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>D</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Вход в базовый режим, набор номера и попытка 
+            соединения с удаленным модемом.</P>
+            <P align=justify>Числа и модификаторы, применимые с командой 
+            D:<BR>0-9,#,* - цифры набора номера. Ниже следуют модификаторы 
+            набора.<BR>P - Импульсный набор.<BR>T - Тоновый набор.<BR>R - 
+            Начинает вызов в режиме отклика. Вводится как последняя цифра.<BR>S 
+            - Набирается номер, записанный в памяти.<BR>W - Ожидание длинного 
+            гудка перед набором (длительность ожидания определяется S7, по 
+            умолчанию 30сек).<BR><B>,</B> - Пауза на время, заданное S8 (по 
+            умолчанию 2сек).<BR><B>;</B> - Возврат в командный режим после 
+            набора номера.<BR>@ - Ожидание 5 сек. молчания прежде чем 
+            продолжить, в противном случае возврат (NO ANSWER).</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>DL</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Набор номера, использованного последним.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>DSn</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Набор номера, записанного в EEPROM в позиции 
+            n(0-9).</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>E0</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Запрет символьного отклика в командном 
+          режиме.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>+ E1</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Разрешает символьный отклик в командном 
+          режиме.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>Fn</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Переключение между дуплексным и полудуплексным 
+            режимами (n=0 - полудуплексный; n=1 - дуплексный).</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>H0</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Вешание трубки и отключение от линии</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>H1</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Снятие трубки и подключение к линии</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>I0</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Отображение информации о модеме (идентификационный 
+            код)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>I1</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Отображение результата проверки контрольной суммы 
+            ROM (EPRROM).</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>I2</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Проверяется состояние внутренней памяти ROM и 
+            возвращается сообщение OK или CHECKSUM ERROR.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>I3</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Выдается версия модема</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>I4</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Модем передает ЭВМ строку, заданную производителем 
+            модема.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>I5</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Выдается код страны производителя.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>I6</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Выдается код модели модема</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>L0-7</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Управление громкостью динамика (по умолчанию 
+            L4).</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>M0</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Громкоговоритель всегда выключен.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>+ M1</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Громкоговоритель включен пока не обнаружена 
+            несущая.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>M2</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Громкоговоритель всегда включен.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>M3</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Громкоговоритель включен после набора последней 
+            цифры и выключается после детектирования несущей.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>N0-7</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Управление громкостью звонка. N0 запретит звонок 
+            при приходе сигнала вызова.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>O</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Возвращение в состояние on line.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>P</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Импульсный набор</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>+ Q0</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Модем возвращает код результата (по 
+          умолчанию)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>Q1</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Модем не возвращает код результата</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>Q2</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Модем возвращает код результата, но отключается 
+            после ответа на звонок.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>Sr=n</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Записывает в S-регистр <B>r</B> код <B>n</B>, n 
+            должно быть десятичным числом в интервале 0-255.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>Sr ?</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Отображает код, записанный в регистре<B> 
+          r.</B></P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>+ T</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Тоновый набор (по умолчанию)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>V0</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Отображает код результата в сжатой цифровой 
+            форме.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>+ V1</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Отображает код результата в символьной форме (по 
+            умолчанию)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>Xn</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Опции отображения работы и кодов результата (по 
+            умолчанию X5). Определяет набор сообщений, управляет определением 
+            сигнала анято проверкой наличия гудка.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>Yn</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Определяет способ отключения модема от линии. 
+            Команда Y1 заставляет модем повесить трубку, если от удаленного 
+            модема получен сигнал BREAK. Команда Y0 запрещает прерывать связь 
+            при получении длительного сигнала BREAK</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>Wn</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Записывает текущую конфигурацию модема в профайл 
+            n.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="16%">
+            <P align=justify>Zn</P></TD>
+          <TD vAlign=top width="84%">
+            <P align=justify>Устанавливает конфигурацию модема из профайла n 
+            (n=0-3). Z4 устанавливает заводской набор параметров 
+        модема.</P></TD></TR></TBODY></TABLE></CENTER>
+      <P align=justify>Символ казывает на то, что данный режим является режимом 
+      по умолчанию.</P>
+      <P align=justify>Команда X0 заставляет модем посылать сообщения в короткой 
+      форме. Номер набирается после паузы вне зависимости от наличия гудка. 
+      Состояние анятое распознается. После команды X1 модем посылает сообщения в 
+      полной форме. Команда X2 отличается от X1 и X0 тем, что набор номера 
+      выполняется лишь при наличии гудка. Команда X3 требует полной формы 
+      сообщений, номер набирается после паузы вне зависимости от наличия гудка, 
+      сигнал занято идентифицируется. Команда X4 сходна с X3, но требует для 
+      набора наличия гудка. При получении команд X2 или X4 модем разрывает связь 
+      и кладет трубку, если удаленный модем переведет линию в состояние BREAK на 
+      1,6 секунды.</P>
+      <P align=justify>Существует несколько команд вывода справочной информации 
+      (работают не на всех модемах):</P>
+      <TABLE border=0 cellPadding=2 cellSpacing=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width="11%">
+            <P align=justify>$</P></TD>
+          <TD vAlign=top width="89%">
+            <P align=justify>справочная информация по базовому набору 
+          команд;</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="11%">
+            <P align=justify>&amp;$</P></TD>
+          <TD vAlign=top width="89%">
+            <P align=justify>справочная информация по расширенному набору команд 
+            (названия команд начинаются с символа &amp;);</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="11%">
+            <P align=justify>*$</P></TD>
+          <TD vAlign=top width="89%">
+            <P align=justify>справочная информация по улучшенному набору 
+            команд.</P></TD></TR></TBODY></TABLE>
+      <P align=justify>Таблица 10.9.2. Команды модема из расширенного набора 
+      (различие для разных типов модемов здесь может быть значительным).</P>
+      <CENTER>
+      <TABLE border=10 cellPadding=5 cellSpacing=2>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width="13%"><B>
+            <P align=justify>Команда</B></P></TD>
+          <TD vAlign=top width="87%"><B>
+            <P align=justify>Описание</B></P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>&amp;B0</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>DTE/DCE скорость следует за быстродействием 
+            линии.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>+ &amp;B1</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>DTE/DCE скорость зафиксирована на уровне заданном 
+            DTE (300-76800 бит/с, режим по умолчанию)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>&amp;C0</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>Предполагает, что несущая всегда присутствует 
+            (делает CD=ON)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>+ &amp;C1</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>CD отслеживает наличие несущей (по 
+          умолчанию.)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>&amp;D0</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>Игнорируется DTR сигнал, предполагает 
+        DTR=ON.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>&amp;D1</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>Переключение DTR OFF-&gt;ON вызывает набор номера 
+            по умолчанию.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>&amp;D2</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>DTR OFF вызывает отключение от линии и переход 
+            модема в командный режим.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>&amp;D3</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>Аналогична &amp;D2, но вызывает также загрузку 
+            профайла 0.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>&amp;F</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>Загружает в RAM заводской набор параметров 
+            модема.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>&amp;K0</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>Никакого контроля ошибок.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>&amp;K1</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>MNP4 (включая MNP3)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>&amp;K2</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>MNP4 + MNP5</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>&amp;K3</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>V.42 (эквивалентно &amp;K1)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>+ &amp;K4</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>V.42 + V.42bis (эквивалентно &amp;K2)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>+ &amp;L0</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>Выход в обычную городскую телефонную сеть (по 
+            умолчанию)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>&amp;L1</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>2-проводная выделенная линия.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="13%">
+            <P align=justify>&amp;L2</P></TD>
+          <TD vAlign=top width="87%">
+            <P align=justify>4-проводная выделенная 
+      линия</P></TD></TR></TBODY></TABLE></CENTER>
+      <P align=justify>Пример записи AT-команды: ATDnnnnnnnnn, где 
+      последовательность символов n включает номер телефона и модификаторы 
+      набора (к модификаторам можно отнести P и T, указывающие на импульсный и 
+      тоновый тип набора соответственно. Допускается и более удобная для 
+      восприятия запись: ATD 8, (095) 123-94-42.</P>
+      <P align=center>Таблица 10.9.3. Сообщения модема (коды результата Xn)</P>
+      <CENTER>
+      <TABLE border=10 cellPadding=5 cellSpacing=2>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width="6%"><B>
+            <P align=justify>Код</B></P></TD>
+          <TD vAlign=top width="21%"><B>
+            <P align=justify>Название</B></P></TD>
+          <TD vAlign=top width="73%"><B>
+            <P>Описание</B></P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>0</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=justify>OK</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Команда выполнена без ошибок</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>1</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=justify>Connect</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Установлена связь на скорости 300 бит/с (после реализации команд 
+            X1, X2, X3, X4) или на скорости 600, 1200, 2400 бит/с (после команды 
+            X0)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>2</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=justify>Ring</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Обнаружен сигнал звонка. Этот код модем передает ЭВМ каждый раз, 
+            когда поступает сигнал вызова.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>3</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=justify>No Carrier</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Потеряна или не получена несущая от удаленного модема.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>4</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=justify>Error</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Обнаружена ошибка в командной строке, переполнен командный буфер 
+            или обнаружена ошибка контрольной суммы.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>5</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=left>Connect 1200</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Установлена связь на скорости 1200 бит/с (см. команды X1, X2, X3, 
+            X4).</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>6</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=left>No Dial Tone</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Нет сигнала (гудка) при снятии трубки (см. команды X2, 
+        X4)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>7</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=justify>Busy</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Обнаружен сигнал &lt;занято&gt; после набора номера.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>8</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=left>No Answer</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Отклик может быть получен при использовании в командной строке 
+            символа @, если не выполнено условие - 5-сек тишины.</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>9</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=justify>Ringing</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Пришел вызов (звонок)</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>10</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=left>Connect 2400</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Установлена связь на скорости 2400бит/с (см. команды X1, X2, X3, 
+            X4).</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>11</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=left>Connect 4800</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Установлена связь на скорости 4800бит/с</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>12</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=left>Connect 9600</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Установлена связь на скорости 9600бит/с</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>14</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=left>Connect 19200</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Установлена связь на скорости 19200бит/с</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>15</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=left>Connect 7200</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Установлена связь на скорости 7200бит/с</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>16</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=left>Connect 12000</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Установлена связь на скорости 12000бит/с</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>17</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=left>Connect 14400</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Установлена связь на скорости 14400бит/с</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>18</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=left>Connect 16800</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Установлена связь на скорости 16800бит/с</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>19</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=left>Connect 38400</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Установлена связь на скорости 38400бит/с</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>20</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=left>Connect 57600</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Установлена связь на скорости 57600бит/с</P></TD></TR>
+        <TR>
+          <TD vAlign=top width="6%">
+            <P align=center>21</P></TD>
+          <TD vAlign=top width="21%">
+            <P align=left>Connect 76800</P></TD>
+          <TD vAlign=top width="73%">
+            <P>Установлена связь на скорости 
+      76800бит/с</P></TD></TR></TBODY></TABLE></CENTER></TD></TR>
+  <TR>
+    <TD vAlign=top>
+      <P align=center><B>Previous: </B><A 
+      href="http://zeus.sai.msu.ru:7000/nets/semenov/10/sreg_108.shtml">10.8 
+      Управляющие регистры модемов и их функции</A> <B>&nbsp; &nbsp;UP:</B> <A 
+      href="http://zeus.sai.msu.ru:7000/nets/semenov/10/rec_101.shtml">10.1 
+      Рекомендации CCITT по телекоммуникациям</A> <BR><B>&nbsp; &nbsp;Next:</B> 
+      <A 
+      href="http://zeus.sai.msu.ru:7000/nets/semenov/10/abbr/acr_1010.shtml">10.10 
+      Наиболее употребимые сокращения, используемые в телекоммуникациях (с 
+      разбивкой по буквам)</A> </P></TD></TR></TBODY></TABLE><!--#include virtual="/ssi/bottom.html"--></CENTER></BODY></HTML>

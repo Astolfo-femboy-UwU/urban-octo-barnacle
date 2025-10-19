@@ -1,0 +1,21 @@
+BODY {
+	MARGIN-TOP: 0px; FONT-SIZE: 14px; MARGIN-LEFT: 0px; COLOR: #000066; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+TD {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000066; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+A {
+	FONT-SIZE: 14px; COLOR: #cc0000; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+A:hover {
+	FONT-SIZE: 14px; COLOR: #000066; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.Title {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #cccccc
+}
+.my {
+	FONT-SIZE: 14px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.w {
+	FONT-SIZE: 14px; COLOR: #cc0000; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif
+}

@@ -1,0 +1,67 @@
+$$  коментарий
+$tip114    <----- тип вопроса
+$wo1 -------------------------------------------------
+
+        Какой уровень ВОС обеспечивает
+       
+        шифрование и расшифровку днных:
+$ot1* ------------------------------------------------
+
++   Presentation layer
+
+
+    Session layer
+
+
+
+    Application layer
+
+
+    Network layer
+$ot2* ------------------------------------------------
+
+    Session layer
+
+
++   Presentation layer
+
+
+
+    Application layer
+
+
+    Network layer
+
+$ot3* ------------------------------------------------
+  
+    Session layer
+
+
+    Application layer
+
+
+
++   Presentation layer
+
+
+    Network layer
+$ot4* ------------------------------------------------
+
+    Session layer
+
+
+    Application layer
+
+
+
+    Network layer
+
+
++   Presentation layer
+$spr*  <- справка
+ *****  
+
+
+$end   <--- конец справки и всего файла
+
+

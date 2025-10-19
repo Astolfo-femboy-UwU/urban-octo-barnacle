@@ -1,0 +1,820 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0112)http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm -->
+<HTML><HEAD><TITLE>2: Syntax and Procedures</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251"><!--header.tmpl_START--><!-- FileName = atwic2.fm --><!-- Folder = /TD/Doc/NUBU/5300/cfgnts/Portware/atcmds/ATwic book --><!-- Object_ID = 090019e980ad3422 --><!-- Chronicle ID = 090019e980abf168 --><!-- Revision = 6.0 --><!-- DocType = unknown --><!-- ProdType = cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk --><!-- Sector = Access --><!-- RelState = Released --><!-- PubDate = 02/09/2004 --><!-- PushDate = Mon Feb  9 22:33:05 PST 2004 --><!-- Competitors =  --><!-- ParentTree = cc/td/doc/product/access/acs_mod/1700/atwicbk, cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk, cc/td/doc/product/access/acs_mod/cis3600/sw_conf/firmware/atwicbk, cc/td/doc/product/access/acs_serv/5300/iosrn/53_113, cc/td/doc/product/access/acs_serv/5300/sw_conf/ios_main, cc/td/doc/product/access/acs_serv/as5350/sw_conf, cc/td/doc/product/access/acs_serv/as5400/sw_conf, cc/td/doc/product/access/acs_serv/as5800/hw_inst/sc3600, cc/td/doc/product/access/acs_serv/as5800/sw_conf, cc/td/doc/product/access/acs_serv/as5850/sw_conf, cc/td/doc/product/access/sc/ippacsol/cmpntdoc/as5850, cc/td/doc/product/access/sc/rel7/soln/voip11, cc/td/doc/product/access/sc/rel7/soln/voip13, cc/td/doc/product/access/sc/rel7/soln/vxml_uc, cc/td/doc/product/access/sc/rel7/soln/wv_rel1/wv_compo/wvrel1gk/wvrel136, cc/td/doc/product/access/sc/rel7/soln/wv_rel1/wv_compo/wvrel1gk/wvrel172, cc/td/doc/product/access/sc/rel7/soln/wv_rel1/wv_compo/wvrel1gw, cc/td/doc/product/access/sc/rel7/soln/wv_rel1/wv_compo/wvrel1sc, cc/td/doc/product/access/sc/rel8, cc/td/doc/product/access/sc/rel9/soln/voip20/compo/gk, cc/td/doc/product/access/sc/rel9/soln/voip20/compo/gw, cc/td/doc/product/access/sc/rel9/soln/vxml_uc2, cc/td/doc/product/access/sc/slt/slt_soln, cc/td/doc/product/access/solution/asap/cmpntdoc/dial_gat, cc/td/doc/product/access/solution/asap/cmpntdoc/gatekeep/csc7200, cc/td/doc/product/access/solution/asap/cmpntdoc/medgtcon, cc/td/doc/product/access/solution/asap/cmpntdoc/univ_gat, cc/td/doc/product/access/solution/asap/rel_soln, cc/td/doc/product/core/7200vx/misc, cc/td/doc/product/core/7202/misc, cc/td/doc/product/core/7204/misc, cc/td/doc/product/core/7206/misc, cc/td/doc/product/core/7401/misc, cc/td/doc/product/core/ngrpcore, cc/td/doc/product/iaabu/newsecf/iossec/sec113t, cc/td/doc/product/iaabu/newsecf/iossec/sec120s, cc/td/doc/product/iaabu/newsecf/iossec/sec120t, cc/td/doc/product/iaabu/newsecf/iossec/sec120xa, cc/td/doc/product/netsec, cc/td/doc/product/rtrmgmt/cmnm, cc/td/doc/product/software/ios113ed/113aa/7200sr, cc/td/doc/product/software/ios113ed/113na, cc/td/doc/product/software/ios113ed/ios113p/5300as, cc/td/doc/product/software/ios120/120newft/120limit/120xe/120xe1, cc/td/doc/product/vpn/ciscosec, cc/td/doc/solution/carnaval, cc/td/doc/solution/dialvoic/bliss/cable/portal/ipcore, cc/td/doc/solution/dialvoic/bliss/ether/portal/gatekeep, cc/td/doc/solution/dialvoic/bliss/ether/portal/medgat, cc/td/doc/solution/dialvoic/mpn/compo, cc/td/doc/solution/dialvoic/pstngw/compo/gateway, cc/td/doc/solution/dialvoic/pstngw/compo/node, cc/td/doc/solution/dialvoic/tv --><!-- Parents = cc/td/doc/product/access/acs_mod/1700/atwicbk, cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk, cc/td/doc/product/access/acs_mod/cis3600/sw_conf/firmware/atwicbk --><!-- IsCategory =  --><!-- EncodeDesc =  --><!-- Language = English --><!-- Robots = 0 --><!-- Category = AT Command Set and Register Summary for V.90 WIC-1AM and WIC-2AM Analog Modem WAN Interface Cards  --><!-- Keyword = AT Command Set and Register Summary for V.90 WIC-1AM and WIC-2AM Analog Modem WAN Interface Cards  -->
+<META content=atwic2.fm name=FileName>
+<META content="/TD/Doc/NUBU/5300/cfgnts/Portware/atcmds/ATwic book" name=Folder>
+<META content=090019e980ad3422 name=Object_ID>
+<META content=090019e980abf168 name="Chronicle ID">
+<META content=6.0 name=Revision>
+<META content=unknown name=DocType>
+<META content=cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk 
+name=ProdType>
+<META content=Access name=Sector>
+<META content=Released name=RelState>
+<META content=02/09/2004 name=PubDate>
+<META content="Mon Feb  9 22:33:05 PST 2004" name=PushDate>
+<META content="" name=Competitors>
+<META 
+content="cc/td/doc/product/access/acs_mod/1700/atwicbk, cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk, cc/td/doc/product/access/acs_mod/cis3600/sw_conf/firmware/atwicbk, cc/td/doc/product/access/acs_serv/5300/iosrn/53_113, cc/td/doc/product/access/acs_serv/5300/sw_conf/ios_main, cc/td/doc/product/access/acs_serv/as5350/sw_conf, cc/td/doc/product/access/acs_serv/as5400/sw_conf, cc/td/doc/product/access/acs_serv/as5800/hw_inst/sc3600, cc/td/doc/product/access/acs_serv/as5800/sw_conf, cc/td/doc/product/access/acs_serv/as5850/sw_conf, cc/td/doc/product/access/sc/ippacsol/cmpntdoc/as5850, cc/td/doc/product/access/sc/rel7/soln/voip11, cc/td/doc/product/access/sc/rel7/soln/voip13, cc/td/doc/product/access/sc/rel7/soln/vxml_uc, cc/td/doc/product/access/sc/rel7/soln/wv_rel1/wv_compo/wvrel1gk/wvrel136, cc/td/doc/product/access/sc/rel7/soln/wv_rel1/wv_compo/wvrel1gk/wvrel172, cc/td/doc/product/access/sc/rel7/soln/wv_rel1/wv_compo/wvrel1gw, cc/td/doc/product/access/sc/rel7/soln/wv_rel1/wv_compo/wvrel1sc, cc/td/doc/product/access/sc/rel8, cc/td/doc/product/access/sc/rel9/soln/voip20/compo/gk, cc/td/doc/product/access/sc/rel9/soln/voip20/compo/gw, cc/td/doc/product/access/sc/rel9/soln/vxml_uc2, cc/td/doc/product/access/sc/slt/slt_soln, cc/td/doc/product/access/solution/asap/cmpntdoc/dial_gat, cc/td/doc/product/access/solution/asap/cmpntdoc/gatekeep/csc7200, cc/td/doc/product/access/solution/asap/cmpntdoc/medgtcon, cc/td/doc/product/access/solution/asap/cmpntdoc/univ_gat, cc/td/doc/product/access/solution/asap/rel_soln, cc/td/doc/product/core/7200vx/misc, cc/td/doc/product/core/7202/misc, cc/td/doc/product/core/7204/misc, cc/td/doc/product/core/7206/misc, cc/td/doc/product/core/7401/misc, cc/td/doc/product/core/ngrpcore, cc/td/doc/product/iaabu/newsecf/iossec/sec113t, cc/td/doc/product/iaabu/newsecf/iossec/sec120s, cc/td/doc/product/iaabu/newsecf/iossec/sec120t, cc/td/doc/product/iaabu/newsecf/iossec/sec120xa, cc/td/doc/product/netsec, cc/td/doc/product/rtrmgmt/cmnm, cc/td/doc/product/software/ios113ed/113aa/7200sr, cc/td/doc/product/software/ios113ed/113na, cc/td/doc/product/software/ios113ed/ios113p/5300as, cc/td/doc/product/software/ios120/120newft/120limit/120xe/120xe1, cc/td/doc/product/vpn/ciscosec, cc/td/doc/solution/carnaval, cc/td/doc/solution/dialvoic/bliss/cable/portal/ipcore, cc/td/doc/solution/dialvoic/bliss/ether/portal/gatekeep, cc/td/doc/solution/dialvoic/bliss/ether/portal/medgat, cc/td/doc/solution/dialvoic/mpn/compo, cc/td/doc/solution/dialvoic/pstngw/compo/gateway, cc/td/doc/solution/dialvoic/pstngw/compo/node, cc/td/doc/solution/dialvoic/tv" 
+name=ParentTree>
+<META 
+content="cc/td/doc/product/access/acs_mod/1700/atwicbk, cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk, cc/td/doc/product/access/acs_mod/cis3600/sw_conf/firmware/atwicbk" 
+name=Parents>
+<META content="" name=IsCategory>
+<META content="" name=EncodeDesc>
+<META content=English name=Language>
+<META content=0 name=Robots>
+<META 
+content="AT Command Set and Register Summary for V.90 WIC-1AM and WIC-2AM Analog Modem WAN Interface Cards " 
+name=Category>
+<META 
+content="AT Command Set and Register Summary for V.90 WIC-1AM and WIC-2AM Analog Modem WAN Interface Cards " 
+name=Keyword><!--header.tmpl_END-->
+<META content="MSHTML 6.00.2900.3059" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff><!--archive_cd:standard.tmpl_FILE--><!--ccci:standard.tmpl_FILE--><!--ucdit:standard.tmpl_FILE--><!--ucdrt:standard.tmpl_FILE--><!--ucdbeta:standard.tmpl_FILE--><!--public_cco:standard.tmpl_FILE--><!--pcat:standard.tmpl_FILE--><!--interlink:standard.tmpl_FILE--><!--cmci:standard.tmpl_FILE--><!--cmcr:standard.tmpl_FILE--><!--cpressr:standard.tmpl_FILE--><!--cpressi:standard.tmpl_FILE--><!--cpress_cco:standard.tmpl_FILE--><!--ccsten:standard.tmpl_FILE--><!--ccsten1:standard.tmpl_FILE--><!--ccstcp_cco:standard.tmpl_FILE--><!--ccstcp:standard.tmpl_FILE--><!--ccsmb_rcd:standard.tmpl_FILE--><!--cco:standard.tmpl_FILE--><!--ccd_html:standard.tmpl_FILE--><!--ccci_kp:standard.tmpl_FILE--><!--SKIP_START-->
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><IMG height=21 
+      alt=cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware 
+      src="2 Syntax and Procedures.files/docstrip.gif" width=504 border=0><BR><!--SKIP_END--><!--nav_buttons.tmpl_START--><!--SKIP_START--><A 
+      href="http://www.pluscom.ru/cisco_product/home/home.htm"><IMG height=20 
+      alt=home src="2 Syntax and Procedures.files/home.gif" width=63 
+      border=0></A><A 
+      href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/index.htm"><IMG 
+      height=20 alt=toc src="2 Syntax and Procedures.files/toc.gif" width=63 
+      border=0></A><A 
+      href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic1.htm"><IMG 
+      height=20 alt=prev src="2 Syntax and Procedures.files/prev.gif" width=63 
+      border=0></A><A 
+      href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic3.htm"><IMG 
+      height=20 alt=next src="2 Syntax and Procedures.files/next.gif" width=63 
+      border=0></A><A 
+      href="http://www.pluscom.ru/cisco_product/cc/td/doc/cisintwk/ita/index.htm"><IMG 
+      height=20 alt=glossary src="2 Syntax and Procedures.files/gloss.gif" 
+      width=63 border=0></A><A 
+      href="http://www.pluscom.ru/cisco_product/home/feedback.htm"><IMG 
+      height=20 alt=feedback src="2 Syntax and Procedures.files/feed.gif" 
+      width=63 border=0></A><A 
+      href="http://www.pluscom.ru/cisco_product/home/search.aspx"><IMG height=20 
+      alt=search src="2 Syntax and Procedures.files/search.gif" width=63 
+      border=0></A><A 
+      href="http://www.pluscom.ru/cisco_product/cc/td/doc/abtunicd/help.htm"><IMG 
+      height=20 alt=help src="2 Syntax and Procedures.files/help.gif" width=63 
+      border=0></A> 
+      <!--SKIP_END--><!--nav_buttons.tmpl_END--><!--SKIP_START--><BR></TD></TR></TBODY></TABLE><!--td_pdfbuttons.tmpl_START--><A 
+href="http://www.cisco.com/univercd/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.pdf"><IMG 
+height=65 alt=PDF src="2 Syntax and Procedures.files/pdf_opt.gif" width=63 
+align=right border=0></A> <!--td_pdfbuttons.tmpl_END--><!--SKIP_END--><!--SKIP_START--><I></I><!--SKIP_END-->
+<H2>Table of Contents</H2><A 
+href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1039854"><B>Syntax 
+and Procedures</B><BR></A><A 
+href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1039859"><B>2.1&nbsp;&nbsp; 
+Alphabet</B><BR></A><A 
+href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1039862"><B>2.2&nbsp;&nbsp; 
+DTE Commands Lines</B><BR></A>
+<UL><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1039867"><SPAN>2.2.1&nbsp;&nbsp; 
+  Command Line General Format</SPAN><BR></A><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1040313"><SPAN>2.2.2&nbsp;&nbsp; 
+  Command Line Editing</SPAN><BR></A><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1039881"><SPAN>2.2.3&nbsp;&nbsp; 
+  Command Line Echo</SPAN><BR></A><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1039884"><SPAN>2.2.4&nbsp;&nbsp; 
+  Repeating a Command Line</SPAN><BR></A><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1039887"><SPAN>2.2.5&nbsp;&nbsp; 
+  Types of DTE Commands</SPAN><BR></A></UL><A 
+href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1039894"><B>2.3&nbsp;&nbsp; 
+Basic Syntax Commands</B><BR></A>
+<UL><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1039895"><SPAN>2.3.1&nbsp;&nbsp; 
+  Basic Syntax Command Format</SPAN><BR></A><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1039908"><SPAN>2.3.2&nbsp;&nbsp; 
+  S-Parameters</SPAN><BR></A></UL><A 
+href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1039923"><B>2.4&nbsp;&nbsp; 
+Extended Syntax Commands</B><BR></A>
+<UL><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1039924"><SPAN>2.4.1&nbsp;&nbsp; 
+  Command Naming Rules</SPAN><BR></A><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1039949"><SPAN>2.4.2&nbsp;&nbsp; 
+  Values</SPAN><BR></A><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1039977"><SPAN>2.4.3&nbsp;&nbsp; 
+  Action Commands</SPAN><BR></A><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1040008"><SPAN>2.4.4&nbsp;&nbsp; 
+  Parameter Commands</SPAN><BR></A><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1040043"><SPAN>2.4.5&nbsp;&nbsp; 
+  Additional Syntax Rules</SPAN><BR></A></UL><A 
+href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1040050"><B>2.5&nbsp;&nbsp; 
+Issuing Commands</B><BR></A><A 
+href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1040059"><B>2.6&nbsp;&nbsp; 
+Executing Commands</B><BR></A>
+<UL><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1040062"><SPAN>2.6.1&nbsp;&nbsp; 
+  Aborting Commands</SPAN><BR></A><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1040065"><SPAN>2.6.2&nbsp;&nbsp; 
+  Handling of Invalid Numbers and S-Parameter Values</SPAN><BR></A></UL><A 
+href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1040076"><B>2.7&nbsp;&nbsp; 
+Modem Responses</B><BR></A>
+<UL><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1040083"><SPAN>2.7.1&nbsp;&nbsp; 
+  Responses</SPAN><BR></A><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1040108"><SPAN>2.7.2&nbsp;&nbsp; 
+  Extended Syntax Result Codes</SPAN><BR></A><A 
+  href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic2.htm#1040139"><SPAN>2.7.3&nbsp;&nbsp; 
+  +&lt;name&gt;: &lt;compound_value&gt;Information Text Formats for Test 
+  Commands</SPAN><BR></A></UL>
+<UL></UL>
+<UL></UL><!--QLINK_START--><!--QLINK_END-->
+<P>
+<H2 class=pTitle><A name=1039854></A><A name=85417></A><A 
+name=1039854></A>Syntax and Procedures </H2>
+<HR>
+
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039855></A>The command 
+and response syntax and procedures generally conform to referenced 
+recommendations and standards. Since these recommendations and standards 
+describe characteristics universal to a large installed base of modems to a 
+maximum degree, there may be syntax and procedural differences due to extensions 
+and behavioral differences in implemented commands, parameters, and responses 
+beyond that described in these recommendations and standards. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039857></A>The syntax 
+and procedures described in this section are based on V.250 and V.253 with 
+additional information included for implemented extensions, behavioral 
+differences beyond V.250, and legacy commands. </P>
+<H2><A name=1039859></A>2.1&nbsp;&nbsp; Alphabet</H2>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039860></A>The T.50 
+International Alphabet 5 (IA5) is used in this document. Only the low-order 
+seven bits of each character are significant to the modem; any eighth or 
+higher-order bit(s), if present, are ignored for the purpose of identifying 
+commands and parameters. Lower-case characters are considered identical to their 
+upper-case equivalents when received by the modem from the DTE. Result codes 
+from the modem are in upper case. </P>
+<H2><A name=1039862></A>2.2&nbsp;&nbsp; DTE Commands Lines</H2>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039863></A>Words 
+enclosed in &lt;angle brackets&gt; are references to syntactical elements. The 
+brackets are not used when the words appear in a command line, the brackets are 
+not used. Words enclosed in [square brackets] represent optional items which may 
+be omitted from the command line at the specified point. The square brackets are 
+not used when the words appear in the command line. Other characters that appear 
+in syntax descriptions must as included as shown. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039865></A>Any modem 
+responses are mentioned in terms of their alphabetic format; the actual response 
+issued will depend on the setting of parameters that affect response formats, 
+for example, Q and V commands. </P>
+<H3><A name=1039867></A>2.2.1&nbsp;&nbsp; Command Line General Format</H3>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039868></A>A command 
+line is made up of three elements: the prefix, the body, and the termination 
+character. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039870></A>The command 
+line prefix consists of the characters "AT" or "at" or, to repeat the execution 
+of the previous command line, the characters "A/" or "a/". </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039872></A>The body is 
+made up of individual commands described in this document. Space characters (IA5 
+2/0) are ignored and may be used freely for formatting purposes, unless they are 
+embedded in numeric or string constants. The termination character may not 
+appear in the body. The modem can accept at least 50 characters in the body. 
+</P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040312></A>The 
+termination character may be selected by a user option (parameter S3), the 
+default being CR. </P>
+<H3><A name=1040313></A>2.2.2&nbsp;&nbsp; Command Line Editing</H3>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040314></A>The 
+character defined by parameter S5 (default, BS) is interpreted as a request from 
+the DTE to the modem to delete the previous character. Any control characters 
+(IA5 0/0 through 1/15, inclusive) that remain in the command line after receipt 
+of the termination character are ignored by the modem. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039879></A>The modem 
+checks characters from the DTE first to see if they match the termination 
+character (S3), then the editing character (S5), before checking for other 
+characters. This ensures that these characters will be properly recognized even 
+if they are set to values that the modem uses for other purposes. If S3 and S5 
+are set to the same value, a matching character will be treated as matching S3 
+(S3 is checked before S5). </P>
+<H3><A name=1039881></A>2.2.3&nbsp;&nbsp; Command Line Echo</H3>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039882></A>The modem 
+may echo characters received from the DTE during command state and online 
+command state back to the DTE, depending on the setting of the E command. If 
+enabled, characters received from the DTE are echoed in the same format as 
+received. Invalid characters in the command line or incomplete or 
+improperly-formed command line prefixes may not be echoed. </P>
+<H3><A name=1039884></A>2.2.4&nbsp;&nbsp; Repeating a Command Line</H3>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039885></A>If the 
+prefix "A/" or "a/" is received, the modem immediately executes once again the 
+body of the preceding command line. No editing is possible, and no termination 
+character is necessary. A command line may be repeated multiple times in this 
+manner. Responses to the repeated command line are issued using format of the 
+original command line. If "A/" is received before any command line has been 
+executed, the preceding command line is assumed to have been empty (that results 
+in an OK result code). </P>
+<H3><A name=1039887></A>2.2.5&nbsp;&nbsp; Types of DTE Commands</H3>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039888></A>There are 
+two types of commands: action commands and parameter commands. Commands of 
+either type may be included in command lines, in any order. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039890></A>Action 
+commands may be "executed" (to invoke a particular function of the equipment, 
+which generally involves more than the simple storage of a value for later use), 
+or "tested" (to determine whether or not the equipment implements the action 
+command, and, if subparameters are associated with the action, the ranges of 
+subparameter values that are supported). </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039892></A>Parameters 
+may be "set" (to store a value or values for later use), "read" (to determine 
+the current value or values stored), or "tested" (to determine whether or not 
+the equipment implements the parameter, and the ranges of values supported). 
+</P>
+<H2><A name=1039894></A>2.3&nbsp;&nbsp; Basic Syntax Commands</H2>
+<H3><A name=1039895></A>2.3.1&nbsp;&nbsp; Basic Syntax Command Format</H3>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039896></A>The format 
+of Basic Syntax commands, except for the D and S commands, is as follows: </P>
+<P style="MARGIN-LEFT: 2.5em"><A 
+name=1039898></A>&lt;command&gt;[&lt;number&gt;] </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039900></A>where 
+&lt;command&gt; is either a single character, or the "&amp;" character followed 
+by a single character per V.250. In addition, &lt;command&gt; can be the "%" 
+character followed by a single character, the "*" character followed by a single 
+character, or the "^" character followed by a single character. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A 
+name=1039902></A>&lt;number&gt; may be a string of one or more characters from 
+"0" through "9" representing a decimal integer value. Commands that expect a 
+&lt;number&gt; are noted in the description of the command. If a command expects 
+&lt;number&gt; and it is missing (&lt;command&gt; is immediately followed in the 
+command line by another &lt;command&gt; or the termination character), the value 
+"0" is assumed. If a command does not expect a &lt;number&gt; and a number is 
+present, an ERROR is generated. All leading "0"s in &lt;number&gt; are ignored 
+by the modem. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039904></A>Additional 
+commands may follow a command (and associated parameter, if any) on the same 
+command line without any character required for separation. The actions of some 
+commands cause the remainder of the command line to be ignored (for example, A). 
+</P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039906></A>See the D 
+command for details on the format of the information that follows it. </P>
+<H3><A name=1039908></A>2.3.2&nbsp;&nbsp; S-Parameters</H3>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039909></A>Commands 
+that begin with the letter "S" are known as "S-parameters". The number following 
+the "S" indicates the "parameter number" being referenced. If the number is not 
+recognized as a valid parameter number, an ERROR result code is issued. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039911></A>Immediately 
+following this number, either a "?" or "=" character must appear. "?" is used to 
+read the current value of the indicated S-parameter; "=" is used to set the 
+S-parameter to a new value. </P>
+<P style="MARGIN-LEFT: 2.5em"><A name=1039913></A>S&lt;parameter_number&gt;? 
+</P>
+<P style="MARGIN-LEFT: 2.5em"><A 
+name=1039915></A>S&lt;parameter_number&gt;=[&lt;value&gt;] </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039917></A>If the "=" 
+is used, the new value to be stored in the S-parameter is specified in decimal 
+following the "=". If no value is given (i.e., the end of the command line 
+occurs or the next command follows immediately), the S-parameter specified may 
+be set to 0, or an ERROR result code issued and the stored value left unchanged. 
+The ranges of acceptable values are given in the description of each 
+S-parameter. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039919></A>If the "?" 
+is used, the modem transmits a single line of information text to the DTE. The 
+text portion of this information text consists of exactly three characters, 
+giving the value of the S-parameter in decimal, with leading zeroes included. 
+</P>
+<H2><A name=1039923></A>2.4&nbsp;&nbsp; Extended Syntax Commands</H2>
+<H3><A name=1039924></A>2.4.1&nbsp;&nbsp; Command Naming Rules</H3>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039925></A>Both 
+actions and parameters have names, which are used in the related commands. Names 
+always begin with the character "+". Following the "+", from one to 16 
+additional characters appear in the command name. These characters will be 
+selected from the following set: </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041060></A></P>
+<DIV align=left>
+<TABLE cellPadding=10 border=0>
+  <TBODY>
+  <TR vAlign=top align=left>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041084></A>A 
+      through Z </P></TD>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041232></A>(IA5 
+      4/1 through 5/10) </P></TD></TR>
+  <TR vAlign=top align=left>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041088></A>0 
+      through 9 </P></TD>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041090></A>(IA5 
+      3/0 through 3/9) </P></TD></TR>
+  <TR vAlign=top align=left>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041092></A>! 
+    </P></TD>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041094></A>(IA5 
+      2/1) </P></TD></TR>
+  <TR vAlign=top align=left>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041096></A>% 
+    </P></TD>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041098></A>(IA5 
+      2/5) </P></TD></TR>
+  <TR vAlign=top align=left>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041100></A>- 
+    </P></TD>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041102></A>(IA5 
+      2/13) </P></TD></TR>
+  <TR vAlign=top align=left>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041104></A>. 
+    </P></TD>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041106></A>(IA5 
+      2/14) </P></TD></TR>
+  <TR vAlign=top align=left>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041108></A>/ 
+    </P></TD>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041110></A>(IA5 
+      2/15) </P></TD></TR>
+  <TR vAlign=top align=left>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041112></A>: 
+    </P></TD>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041114></A>(IA5 
+      3/10) </P></TD></TR>
+  <TR vAlign=top align=left>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041116></A>_ 
+    </P></TD>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041118></A>(IA5 
+      5/15) </P></TD></TR></TBODY></TABLE></DIV>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"></P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039945></A>The first 
+character following the "+" is an alphabetic character in the range of "A" 
+through "Z". This first character generally implies the application in which a 
+command is used (for example, F for Fax or V for voice). </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039947></A>The modem 
+considers lower-case characters to be the same as their upper-case equivalents. 
+</P>
+<H3><A name=1039949></A>2.4.2&nbsp;&nbsp; Values</H3>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039950></A>When subpar 
+a meters are associated with the execution of an action, or when setting a 
+parameter, the command may include specification of values. This is indicated by 
+the appearance of &lt;value&gt; in the descriptions below. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A 
+name=1039952></A>&lt;value&gt; consists of either a numeric constant or a string 
+constant. </P>
+<H5><A name=1039954></A>Numeric Constants</H5>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039955></A>Numeric 
+constants are expressed in decimal, hexadecimal, or binary. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039957></A>Decimal 
+numeric constants consist of a sequence of one or more of the characters "0" 
+through "9", inclusive. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039959></A>Hexadecimal 
+numeric constants consist of a sequence of one or more of the characters "0" 
+through "9", inclusive, and "A" through "F" inclusive. The characters "A" 
+through "F" represent the equivalent decimal values 10 through 15. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039961></A>Binary 
+numeric constants consist of a sequence of one or more of the characters "0" and 
+"1". </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039963></A>In all 
+numeric constants, the most significant digit is specified first. Leading "0" 
+characters are ignored by the modem. No spaces, hyphens, periods, commas, 
+parentheses, or other generally-accepted numeric formatting characters are 
+permitted in numeric constants; note in particular that no "H" suffix is 
+appended to the end of hexadecimal constants. </P>
+<H5><A name=1039965></A>String Constants</H5>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039966></A>String 
+constants consist of a sequence of displayable IA5 characters, each in the range 
+from 2/0 to 7/15, inclusive, except for the characters `"' (IA5 2/2) and "\" 
+(IA5 5/12). String constants are bounded at the beginning and end by the 
+double-quote character (`"', IA5 2/2). </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039968></A>Any 
+character value may be included in the string by representing it as a backslash 
+("\") character followed by two hexadecimal digits. For example, "\0D" is a 
+string consisting of the single character &lt;CR&gt; (IA5 0/13). If the "\" 
+character itself is to be represented in a string, it is encoded as "\5C". The 
+double-quote character, used as the beginning and ending string delimiter, is 
+represented within a string constant as "\22". </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039970></A>A "null" 
+string constant, or a string constant of zero length, is represented by two 
+adjacent delimiters (""). </P>
+<H5><A name=1039972></A>Compound Values</H5>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039973></A>Actions may 
+have more than one subparameter associated with them, and parameters may have 
+more than one value. These are known as "compound values", and their treatment 
+is the same in both actions and parameters. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039975></A>A compound 
+value consists of any combination of numeric and string values (as defined in 
+the description of the action or parameter). The comma character must be 
+included as a separator, before the second and all subsequent values in the 
+compound value. If a value is not specified (i.e., defaults assumed), the 
+required comma separator must be specified; however, trailing comma characters 
+may be omitted if all associated values are also omitted. </P>
+<H3><A name=1039977></A>2.4.3&nbsp;&nbsp; Action Commands</H3>
+<H5><A name=1039978></A>Action Execution Command Syntax</H5>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039979></A>There are 
+two general types of action commands: those that have associated subparameter 
+values that affect only that invocation of the command, and those that have no 
+subparameters. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039981></A>If 
+subparameters are associated with a command, the definition of the action 
+command indicates, for each subparameter, whether the specification of a value 
+for that subparameter is mandatory or optional. For optional subparameters, the 
+definition indicates the assumed (default) value for the subparameter if no 
+value is specified for that subparameter; the assumed value may be either a 
+previous value (i.e., the value of an omitted subparameter remains the same as 
+the previous invocation of the same command, or is determined by a separate 
+parameter or other mechanism), or a fixed value (for example, the value of an 
+omitted subparameter is assumed to be zero). Generally, the default value for 
+numeric subparameters is 0, and the default value for string subparameters is "" 
+(empty string). </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039983></A>The 
+following syntax is used for actions that have no subparameters: </P>
+<P style="MARGIN-LEFT: 2.5em"><A name=1039985></A>+&lt;name&gt; </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039989></A>The 
+following syntax is used for actions that have one subparameter: </P>
+<P style="MARGIN-LEFT: 2.5em"><A name=1039991></A>+&lt;name&gt;[=&lt;value&gt;] 
+</P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039993></A>The 
+following syntax is used for actions that have two or more subparameters: </P>
+<P style="MARGIN-LEFT: 2.5em"><A 
+name=1039995></A>+&lt;name&gt;[=&lt;compound_value&gt;] </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039997></A>For actions 
+that accept subparameters, if all subparameters are defined as being optional, 
+and the default values for all subparameters are satisfactory, the data terminal 
+equipment (DTE) may use the first syntax above (i.e., omit the "=" from the 
+action execution command as well as all of the subparameter value string). </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1039999></A>If all 
+other relevant criteria are met (for example, the modem is in the proper state), 
+the command is executed with any indicated subparameters. If &lt;name&gt; is not 
+recognized, the modem issues the ERROR result code and terminates processing of 
+the command line. An ERROR is also generated if a subparameter is specified for 
+an action that does not accept subparameters, if too many subparameters are 
+specified, if a mandatory subparameter is not specified, if a value is specified 
+of the wrong type, or if a value is specified that is not within the supported 
+range. </P>
+<H5><A name=1040001></A>Action Test Command Syntax</H5>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040002></A>The DTE may 
+test if an action command is implemented in the modem by using the syntax: </P>
+<P style="MARGIN-LEFT: 2.5em"><A name=1040004></A>+&lt;name&gt;=? </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040006></A>If the 
+modem does not recognize the indicated name, it returns an ERROR result code and 
+terminates processing of the command line. If the modem does recognize the 
+action name, it returns an OK result code. If the named action accepts one or 
+more subparameters, the modem sends an information text response to the DTE, 
+prior to the OK result code, specifying the values supported by the modem for 
+each such subparameter, and possibly additional information. The format of this 
+information text is defined for each action command. </P>
+<H3><A name=1040008></A>2.4.4&nbsp;&nbsp; Parameter Commands</H3>
+<H5><A name=1040009></A>Parameter Types</H5>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040010></A>Parameters 
+may be defined as "read-only" or "read-write". "Read-only" parameters are used 
+to provide status or identifying information to the DTE, but cannot be set by 
+the DTE; attempting to set their value is an error. In some cases (specified in 
+the description of the individual parameter), the modem may ignore attempts to 
+set the value of such parameters rather than respond with an ERROR result code, 
+if the continued correct operation of the interface between the modem and DTE 
+will not be affected by such action. Read-only parameters may be read and 
+tested. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A 
+name=1040012></A>"Read-write" parameters may be set by the DTE, to store a value 
+or values for later use. Read-write parameters may be set, read, and tested. 
+</P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040014></A>Parameters 
+may take either a single value, or multiple (compound) values. Each value may be 
+either numeric or string; the definition of the parameter will specify the type 
+of value for each subparameter. Attempting to store a string value in a numeric 
+parameter, or a numeric value in a string parameter, is an error. </P>
+<H5><A name=1040016></A>Parameter Set Command Syntax</H5>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040017></A>The 
+definition of the parameter indicates, for each value, whether the specification 
+of that value is mandatory or optional. For optional values, the definition 
+indicates the assumed (default) value if none is specified; the assumed value 
+may be either a previous value (i.e., the value of an omitted subparameter 
+retains its previous value), or a fixed value (for example, the value of an 
+omitted subparameter is assumed to be zero). Generally, the default value for 
+numeric parameters is 0, and the default value for string parameters is "" 
+(empty string). </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040019></A>The 
+following syntax is used for parameters that accept a single value: </P>
+<P style="MARGIN-LEFT: 2.5em"><A name=1040021></A>+&lt;name&gt;=[&lt;value&gt;] 
+</P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040023></A>The 
+following syntax is used for parameters that accept more than one value: </P>
+<P style="MARGIN-LEFT: 2.5em"><A 
+name=1040025></A>+&lt;name&gt;=[&lt;compound_value&gt;] </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040027></A>For each 
+implemented parameter, if all mandatory values are specified, and all values are 
+valid according to the definition of the parameter, the specified values are 
+stored. If &lt;name&gt; is not recognized, one or more mandatory values are 
+omitted, or one or more values are of the wrong type or outside the permitted 
+range, the modem issues the ERROR result code and terminates processing of the 
+command line. An ERROR is also generated if too many values are specified. In 
+case of an error, all previous values of the parameter are unaffected. </P>
+<H5><A name=1040029></A>Parameter Read Command Syntax</H5>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040030></A>The DTE may 
+determine the current value or values stored in a parameter by using the 
+following syntax: </P>
+<P style="MARGIN-LEFT: 2.5em"><A name=1040032></A>+&lt;name&gt;? </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040034></A>The modem 
+responds by sending the current values stored for the parameter to the DTE in an 
+information text response. The format of this response is described in the 
+definition of the parameter. Generally, the values are sent in the same form in 
+which they would be issued by the DTE in a parameter setting command; if 
+multiple values are supported, they will generally be separated by commas, as in 
+a parameter setting command. </P>
+<H5><A name=1040036></A>Parameter Test Command Syntax</H5>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040037></A>The DTE may 
+test if a parameter is implemented in the modem, and determine the supported 
+values, by using the syntax: </P>
+<P style="MARGIN-LEFT: 2.5em"><A name=1040039></A>+&lt;name&gt;=? </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040041></A>If the 
+modem does not recognize the indicated name, it returns an ERROR result code and 
+terminates processing of the command line. If the modem does recognize the 
+parameter name, it returns an information text response to the DTE, followed by 
+an OK result code. The information text response indicates the values supported 
+by the modem for each such subparameter, and possibly additional information. 
+The format of this information text is defined for each parameter. </P>
+<H3><A name=1040043></A>2.4.5&nbsp;&nbsp; Additional Syntax Rules</H3>
+<H5><A name=1040044></A>Concatenating Commands after Extended Syntax 
+Commands</H5>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040045></A>Additional 
+commands may follow an extended-syntax command on the same command line if a 
+semicolon (";") is inserted after the preceding extended command as a separator. 
+The semicolon is not necessary when the extended syntax command is the last 
+command on the command line. </P>
+<H5><A name=1040047></A>Concatenating Commands after Basic Format Commands</H5>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040048></A>Extended 
+syntax commands may appear on the same command line after a basic syntax command 
+without a separator, in the same manner as concatenation of basic syntax 
+commands. </P>
+<H2><A name=1040050></A>2.5&nbsp;&nbsp; Issuing Commands</H2>
+<P style="FONT-WEIGHT: bold; TEXT-ALIGN: left"><A name=1040051></A><B 
+style="FONT-WEIGHT: bold">All characters in a command line must be issued at the 
+same data rate, and with the same parity and format.</B> </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040053></A>The modem 
+will ignore any command line that is not properly terminated. The modem may 
+consider 30&nbsp;seconds of mark idle time between any two characters as an 
+improperly terminated command line. In this case the modem may or may not 
+generate an ERROR message. The modem will ignore any characters received from 
+the DTE that are not part of a properly-formatted command line. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040055></A>If the 
+maximum number of characters that the modem can accept in the body is exceeded, 
+an ERROR result code is generated after the command line is terminated. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040057></A>The DTE 
+will not begin issuing a subsequent command line until at least one-tenth of a 
+second has elapsed after receipt of the entire result code issued by the modem 
+in response to the preceding command line. </P>
+<H2><A name=1040059></A>2.6&nbsp;&nbsp; Executing Commands</H2>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040060></A>Upon 
+receipt of the termination character, the modem commences execution of the 
+commands in the command line in the order received from the DTE. Should 
+execution of a command result in an error, or a character be not recognized as a 
+valid command, execution is terminated, the remainder of the command line is 
+ignored, and the ERROR result code is issued. Otherwise, if all commands execute 
+correctly, only the result code associated with the last command is issued; 
+result codes for preceding commands are suppressed. If no commands appear in the 
+command line, the OK result code is issued. </P>
+<H3><A name=1040062></A>2.6.1&nbsp;&nbsp; Aborting Commands</H3>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040063></A>Some action 
+commands that require time to execute may be aborted while in progress; these 
+are explicitly noted in the description of the command. Aborting of commands is 
+accomplished by the transmission from the DTE to the modem of any character. A 
+single character is sufficient to abort the command in progress; however, 
+characters transmitted during the first 125 milliseconds after transmission of 
+the termination character are ignored (to allow for the DTE to append additional 
+control characters such as line feed after the command line termination 
+character). <B style="FONT-WEIGHT: bold">To ensure that the aborting character 
+is recognized by the modem, it should be sent at the same rate as the preceding 
+command line; the modem may ignore characters sent at other rates. </B>When such 
+an aborting event is recognized by the modem, the modem terminates the command 
+in progress and returns an appropriate result code to the DTE, as specified for 
+the particular command. </P>
+<H3><A name=1040065></A>2.6.2&nbsp;&nbsp; Handling of Invalid Numbers and 
+S-Parameter Values</H3>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040066></A>The modem 
+reacts to undefined numbers and S-parameter values in one of three ways: </P>
+<P><A name=1040068></A>1. Issue the ERROR result code, and leave the previous 
+value of the parameter unchanged;</P>
+<P><A name=1040070></A>2. Issue the OK result code, and leave the previous value 
+of the parameter unchanged; or,</P>
+<P><A name=1040072></A>3. Issue the OK result code, and set the parameter value 
+to the valid value nearest to that specified in the command line.</P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040074></A>The 
+description of each command specifies which of these three techniques is used to 
+handle invalid parameter values for that command or parameter. </P>
+<H2><A name=1040076></A>2.7&nbsp;&nbsp; <A name=16672></A><A 
+name=1040076></A>Modem Responses</H2>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040077></A>While in 
+command state and online command state, the modem will issue responses using the 
+same rate, word length, and parity as the most recently received DTE command 
+line. In the event that no DTE command has yet been received, rate, word length, 
+and parity used will depend on the capabilities of the modem. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040079></A>When the 
+modem transitions from the command state or online command state to the online 
+data state, the result code CONNECT should be issued at the bit rate and parity 
+used during the command state. When the modem transitions from the online data 
+state to the command state or online command state, the result codes should be 
+issued at the bit rate used during the online data state. Thereafter, any 
+unsolicited result codes should use the bit rate and parity of the last command 
+line issued by the DTE to the modem. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040081></A>The 
+characters of a response will be contiguous, with no more than 100 milliseconds 
+of mark idle issued between characters in addition to stop elements. </P>
+<H3><A name=1040083></A>2.7.1&nbsp;&nbsp; Responses</H3>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040084></A>There are 
+two types of responses that may be issued by the modem: information text and 
+result codes. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040086></A><B 
+style="FONT-WEIGHT: bold">Information Text. </B>Information text responses 
+consist of three parts: a header, information text, and a trailer: </P>
+<P><A name=1040088></A>1. The characters transmitted for the header are 
+determined by the V command.</P>
+<P><A name=1040090></A>2. The trailer consists of two characters, being the 
+character having the ordinal value of parameter S3 followed by the character 
+having the ordinal value of parameter S4.</P>
+<P><A name=1040092></A>3. Information text usually consists of a single line; 
+information text returned in response to some commands may contain multiple 
+lines, and the text may therefore include CR, LF, and other formatting 
+characters to improve readability.</P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040094></A><B 
+style="FONT-WEIGHT: bold">Result Code Parts. </B>Result codes consist of three 
+parts: a header, the result text, and a trailer. </P>
+<P><A name=1040096></A>1. The characters transmitted for the header and trailer 
+are determined by the V command setting.</P>
+<P><A name=1040098></A>2. The result text may be transmitted as a number or as a 
+string, also depending on a the V command setting.</P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040100></A><B 
+style="FONT-WEIGHT: bold">Result Code Types.</B> There are three types of result 
+codes: final, intermediate, and unsolicited. Result codes are described in 
+Section 3.5. </P>
+<P><A name=1040102></A>1. A final result code indicates the completion of a full 
+modem action and a ability to accept new commands from the DTE.</P>
+<P><A name=1040104></A>2. An intermediate result code is a report of the 
+progress of an modem action. The CONNECT result code is an intermediate result 
+code. In the case of a dialing or answering command, the modem switches from 
+command state to online data state, and issues a CONNECT result code. This is an 
+intermediate result code for the modem because it cannot accept commands from 
+the DTE while in online data state. When the modem switches back to the command 
+state it then issues a final result code (such as OK or NO CARRIER).</P>
+<P><A name=1040106></A>3. Unsolicited result codes (such as RING) indicate the 
+occurrence of an event not directly associated with the issuance of a command 
+from the DTE.</P>
+<H3><A name=1040108></A>2.7.2&nbsp;&nbsp; Extended Syntax Result Codes</H3>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040109></A>Extended 
+syntax result codes may be issued in response to either basic or extended 
+commands, or both. The appropriate responses are specified in the definitions of 
+the commands, the responses, or both. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040111></A>The general 
+format of extended syntax result codes is the same as result codes defined in 
+TIA-602 with regard to headers and trailers. The characters specified in 
+S-parameters S3 and S4 are used in headers and trailers of extended syntax 
+result codes as they are in basic format result codes. The setting of the V 
+command affects the headers and trailers associated with extended syntax result 
+codes in the same manner as basic format result codes; however, unlike basic 
+format result codes, extended syntax result codes have no numeric equivalent, 
+and are always issued in alphabetic form. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040113></A>Extended 
+syntax result codes are subject to suppression by the Q1 command, as with basic 
+format result codes. The issuance of extended syntax result codes are not be 
+affected by the setting of the X command. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040115></A>Extended 
+syntax result codes may be either final, intermediate, or unsolicited; the type 
+being indicated in the definition of the result code. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040117></A>Extended 
+syntax result codes are prefixed by the "+" character to avoid duplication of 
+basic format result codes specified in TIA-602. Following the "+" character, the 
+name of the result code appears; result code names follow the same rules as 
+command names. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040119></A>Extended 
+syntax result codes may include the reporting of values. The definition of the 
+result code specifies whether or not values are appended to the result code, 
+and, if so, how many, their types, and their assumed default values if omitted. 
+</P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040121></A><B 
+style="FONT-WEIGHT: bold">Data/voice Modes. </B>When no values are to be 
+reported, the result code appears in the simplest form: </P>
+<P style="MARGIN-LEFT: 2.5em"><A name=1040123></A>+&lt;name&gt; </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040125></A>If a single 
+value is to be reported, the form of the result code is: </P>
+<P style="MARGIN-LEFT: 2.5em"><A name=1040127></A>+&lt;name&gt;: &lt;value&gt; 
+</P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040129></A>A single 
+space character separates the colon character from the &lt;value&gt;; no space 
+appears between the result code name and the colon. If multiple values are to be 
+reported with the result code, the form is: </P>
+<P style="MARGIN-LEFT: 2.5em"><A name=1040131></A>+&lt;name&gt;: 
+&lt;compound_value&gt; </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040135></A><B 
+style="FONT-WEIGHT: bold">Fax Modes.</B> If a single value is to be reported, 
+the form of the result code is: </P>
+<P style="MARGIN-LEFT: 2.5em"><A name=1040137></A>&lt;value&gt; or 
+(&lt;value&gt;) </P>
+<H3><A name=1040139></A>2.7.3&nbsp;&nbsp; +&lt;name&gt;: 
+&lt;compound_value&gt;Information Text Formats for Test Commands</H3>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040140></A>In general, 
+the format of information text returned by extended syntax commands is described 
+in the definition of the command. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040142></A>The modem 
+may insert intermediate &lt;CR&gt; characters in very long information text 
+responses in order to avoid overrunning DTE receive buffers. If intermediate 
+&lt;CR&gt; characters are included, the modem does not include the character 
+sequences "0 &lt;CR&gt;"or "OK&lt;CR&gt;", so that DTE can avoid false detection 
+of the end of these information text responses. </P>
+<H5><A name=1040144></A>Range of Values</H5>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040145></A>When the 
+action accepts a single numeric subparameter, or the parameter accepts only one 
+numeric value, the set of supported values may be presented in the information 
+text as an ordered list of values. The list is preceded by a left parenthesis 
+((), and is followed by a right parenthesis ()). If only a single value is 
+supported, it appears between the parentheses. If more than one value is 
+supported, then the values may be listed individually, separated by comma 
+characters, or, when a continuous range of values is supported, by the first 
+value in the range, followed by a hyphen character (-), followed by the last 
+value in the range. The specification of single values and ranges of values may 
+be intermixed within a single information text. In all cases, the supported 
+values are indicated in ascending order. </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040969></A>For 
+example, the following are some examples of value range indications: </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040986></A></P>
+<DIV align=left>
+<TABLE cellPadding=10 border=0>
+  <TBODY>
+  <TR vAlign=top align=left>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040994></A>(0) 
+      </P></TD>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040996></A>Only 
+      the value 0 is supported. </P></TD></TR>
+  <TR vAlign=top align=left>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A 
+      name=1040998></A>(1,2,3) </P></TD>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041039></A>The 
+      values 1, 2, and 3 are supported. </P></TD></TR>
+  <TR vAlign=top align=left>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041002></A>(1-3) 
+      </P></TD>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041004></A>The 
+      values 1 through 3 are supported. </P></TD></TR>
+  <TR vAlign=top align=left>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A 
+      name=1041006></A>(0,4,5,6,9,11,12) </P></TD>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041008></A>The 
+      several listed values are supported. </P></TD></TR>
+  <TR vAlign=top align=left>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A 
+      name=1041010></A>(0,4-6,9,11-12) </P></TD>
+    <TD>
+      <P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1041012></A>An 
+      alternative expression of the above list. </P></TD></TR></TBODY></TABLE></DIV>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"></P>
+<H5><A name=1040975></A>Compound Range of Values</H5>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040160></A>When the 
+action accepts more than one subparameter, or the parameter accepts more than 
+one value, the set of supported values is presented as a list of the 
+parenthetically-enclosed value range strings described above, separated by 
+commas. For example, the information text in response to testing an action that 
+accepts three subparameters, and supports various ranges for each of them, could 
+appear as follows: </P>
+<P style="MARGIN-LEFT: 2.5em"><A name=1040162></A>(0),(1-3),(0,4-6,9,11-12) </P>
+<P style="FONT-WEIGHT: normal; TEXT-ALIGN: left"><A name=1040164></A>This 
+indicates that the first subparameter accepts only the value 0, the second 
+accepts any value from 1 through 3 inclusive, and the third subparameter accepts 
+any of the values 0, 4, 5, 6, 9, 11, or 12. </P><BR><!-- EndOfContent -->
+<P><!--footer_buttons.tmpl_START--><!--SKIP_START--><A 
+href="http://www.pluscom.ru/cisco_product/home/home.htm"><IMG height=20 alt=home 
+src="2 Syntax and Procedures.files/home.gif" width=63 border=0></A><A 
+href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/index.htm"><IMG 
+height=20 alt=toc src="2 Syntax and Procedures.files/toc.gif" width=63 
+border=0></A><A 
+href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic1.htm"><IMG 
+height=20 alt=prev src="2 Syntax and Procedures.files/prev.gif" width=63 
+border=0></A><A 
+href="http://www.pluscom.ru/cisco_product/cc/td/doc/product/access/acs_mod/cis2600/sw_conf/firmware/atwicbk/atwic3.htm"><IMG 
+height=20 alt=next src="2 Syntax and Procedures.files/next.gif" width=63 
+border=0></A><A 
+href="http://www.pluscom.ru/cisco_product/cc/td/doc/cisintwk/ita/index.htm"><IMG 
+height=20 alt=glossary src="2 Syntax and Procedures.files/gloss.gif" width=63 
+border=0></A><A 
+href="http://www.pluscom.ru/cisco_product/home/feedback.htm"><IMG height=20 
+alt=feedback src="2 Syntax and Procedures.files/feed.gif" width=63 
+border=0></A><A href="http://www.pluscom.ru/cisco_product/home/search.aspx"><IMG 
+height=20 alt=search src="2 Syntax and Procedures.files/search.gif" width=63 
+border=0></A><A 
+href="http://www.pluscom.ru/cisco_product/cc/td/doc/abtunicd/help.htm"><IMG 
+height=20 alt=help src="2 Syntax and Procedures.files/help.gif" width=63 
+border=0></A> <!--SKIP_END--><BR><!--footer_buttons.tmpl_END-->Posted: Mon Feb 9 
+22:33:05 PST 2004 <BR>All contents are Copyright © 1992--2004 Cisco Systems, 
+Inc. All rights reserved. <BR><A 
+href="http://www.cisco.com/public/copyright.html">Important Notices</A> and <A 
+href="http://www.cisco.com/public/privacy.html">Privacy Statement</A>. 
+</P></BODY></HTML>

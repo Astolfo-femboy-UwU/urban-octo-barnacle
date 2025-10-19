@@ -1,0 +1,96 @@
+BODY {
+	FONT-SIZE: 12pt; COLOR: black; FONT-FAMILY: Arial, Tahoma, Helvetica; BACKGROUND-COLOR: white; TEXT-ALIGN: justify
+}
+A:link {
+	COLOR: #0066cc
+}
+A:visited {
+	COLOR: #335566
+}
+A:hover {
+	COLOR: #0066cc
+}
+A.link1 {
+	FONT-WEIGHT: bold; COLOR: #fffac2; TEXT-DECORATION: none
+}
+A.link1:visited {
+	FONT-WEIGHT: normal; COLOR: #fffac2; TEXT-DECORATION: none
+}
+A.link1:hover {
+	COLOR: #fffac2; TEXT-DECORATION: underline
+}
+H1 {
+	FONT-SIZE: 14pt; COLOR: black; FONT-FAMILY: Arial, Verdana; TEXT-ALIGN: center
+}
+H2 {
+	FONT-SIZE: 12pt; MARGIN-LEFT: 10pt; COLOR: black; FONT-FAMILY: Arial, Verdana
+}
+H3 {
+	FONT-SIZE: 10pt; MARGIN-LEFT: 10pt; COLOR: black; FONT-FAMILY: Arial, Verdana
+}
+H4 {
+	FONT-SIZE: 10pt; MARGIN-LEFT: 10pt; COLOR: black; FONT-FAMILY: Arial, Verdana
+}
+DT {
+	MARGIN-LEFT: 10pt
+}
+H5 {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Arial, Verdana
+}
+.xxxlarge {
+	FONT-SIZE: 14pt; COLOR: black; FONT-FAMILY: Arial, Verdana
+}
+.xxlarge {
+	FONT-SIZE: 12pt; COLOR: black
+}
+.xxlargeshift {
+	PADDING-LEFT: 30px; FONT-SIZE: 12pt; COLOR: black
+}
+.xlarge {
+	FONT-SIZE: 11pt; COLOR: black
+}
+.xlargecolor {
+	FONT-SIZE: 11pt; COLOR: #320096
+}
+.xlargeshift {
+	PADDING-LEFT: 30px; FONT-SIZE: 11pt; COLOR: black
+}
+.large {
+	FONT-SIZE: 10pt; COLOR: black
+}
+.largeshift {
+	PADDING-LEFT: 30px; FONT-SIZE: 10pt; COLOR: black
+}
+.largeshift2 {
+	PADDING-LEFT: 60px; FONT-SIZE: 10pt; COLOR: black
+}
+.medium {
+	FONT-SIZE: 9pt; COLOR: black
+}
+.mediumblack {
+	FONT-SIZE: 9pt; COLOR: black
+}
+.small {
+	FONT-SIZE: 8pt; COLOR: black
+}
+.smallwhite {
+	FONT-SIZE: 8pt; COLOR: white
+}
+.smallcolor {
+	FONT-SIZE: 8pt; COLOR: #320096
+}
+.supersmall {
+	FONT-SIZE: 7pt; COLOR: black
+}
+.xsupersmall {
+	FONT-SIZE: 6pt; COLOR: black
+}
+.supersmallcolor {
+	FONT-SIZE: 7pt; COLOR: #320096
+}
+.xsupersmallcolor {
+	FONT-SIZE: 6pt; COLOR: #320096
+}
+ACRONYM {
+	CURSOR: help; BORDER-BOTTOM: #333333 1px dotted
+}
