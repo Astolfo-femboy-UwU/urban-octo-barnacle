@@ -4,35 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "b44411859a629f2d",
+        "id": "d6ba10ac9f26866e",
         "type": "tabs",
         "children": [
           {
-            "id": "071c6ac889265d55",
+            "id": "918cdb8536ce0033",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Физика/Учебники/Механика/Глава М6.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Глава М6"
-            }
-          },
-          {
-            "id": "d87be37889c1fbf6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Физика/Учебники/Механика/Глава М3.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Глава М3"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,12 +162,12 @@
       "templates:Insert template": false
     }
   },
-  "active": "d87be37889c1fbf6",
+  "active": "918cdb8536ce0033",
   "lastOpenFiles": [
+    "Физика/Учебники/Механика/Глава М3.pdf",
     "Физика/Учебники/Механика/Глава М6.pdf",
     "Физика/Учебники/Механика/Глава М5.pdf",
     "Физика/Учебники/Механика/Глава М4.pdf",
-    "Физика/Учебники/Механика/Глава М3.pdf",
     "Физика/Учебники/Механика/Глава М2.pdf",
     "Физика/Учебники/Механика/Глава М1.pdf",
     "Физика/1. Механика/Механическое движение твёрдого тела.md",
