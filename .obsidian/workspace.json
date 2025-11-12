@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "65712a3dd8d9cf1c",
+        "id": "8a9070744de5edaf",
         "type": "tabs",
         "children": [
           {
-            "id": "ae030520e3472a5c",
+            "id": "6c10b2ccb3ba956e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Высшая математика/Действительные числа.md",
+                "file": "История/12.11.2025 Возвышение Москвы и новых региональных центров.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Действительные числа"
+              "title": "12.11.2025 Возвышение Москвы и новых региональных центров"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Файловый менеджер"
             }
           },
           {
@@ -160,17 +160,27 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false
     }
   },
-  "active": "ae030520e3472a5c",
+  "active": "6c10b2ccb3ba956e",
   "lastOpenFiles": [
+    "История/29.10.2025.md",
+    "История/12.11.2025 Возвышение Москвы и новых региональных центров.md",
+    "История/15.10.2025.md",
+    "История/17.10.2025.md",
+    "Основы Российской Государственности/12.11.2025 Российское государство-цивилизация.md",
+    "Шпенглер.md",
+    "Основы Российской Государственности/29.10.2025 Российское государство-цивилизация. Формирование границ.md",
+    "Основы Российской Государственности/03.09.2025 Что такое Россия.md",
+    "Высшая математика/Границы последовательностей.md",
+    "Высшая математика/Действительные числа.md",
     "Untitled.md",
     "temp/Векторное произведение.png"
   ]
