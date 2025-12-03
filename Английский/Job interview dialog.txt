@@ -1,0 +1,41 @@
+I - interveiwer
+A - applicant
+1) Applying for a job of Data Analyst
+
+I: Hello! Tell us something about yourself.
+A: Hello, my name is Adam Smith. I got an education at the University of California, USA.
+
+I: How do your skills and experience match the job requirements?
+A: My skills and experience match the job requirements perfectly! I have got a proper education and quite an experience in the job.
+
+I: Good for You! Would You describe yourself as an ambitious person?
+A: I surely would! I hope for a career growth, even if it takes extra efforts of mine.
+
+I: What skills do You think You need to improve?
+A: I think I lack soft skills, e.g. working in a team or resolving conflicts.
+
+I: You'll catch up. What languages can You speak?
+A: Oh, I can speak several languages, including Spanish, English and German. Also, I am actively learning Chinese.
+
+A: Now, do you offer continuing education and professional training?
+I: Yes, we do! It is free and You can start it right after the first day of work!
+
+
+2) Applying for a job of a firefighter
+I: Hello. What made You choose to become a firefighter?
+A: I have always wanted to save people's lives.
+
+I: What do You see as your strengths?
+A: I am physically strong and endurant. I can stay calm during stressful situations
+
+I: What is your opinion about working in a team?
+A: I think this is the most important part of the job. An ability to cope with difficult situations only comes with being supportive to and trusting each other.
+
+I: What do You like doing in your spare time?
+A: In my spare time, I usually do sports to stay fit. Also, I am learning to play the guitar.
+
+I: Tell me about a time You played an important role in a team?
+A: Although, I am not much of a team leader, during our school and university projects, I helped teammates communicate a lot.
+
+I: Where do You see yourself in five years' time?
+A: I see myself as an integral part of a cohesive team.
