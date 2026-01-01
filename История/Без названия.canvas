@@ -1,4 +1,11 @@
 {
-	"nodes":[],
-	"edges":[]
+	"nodes":[
+		{"id":"33b24714b3c46e8a","type":"text","text":"==LAtin==","x":-380,"y":-300,"width":250,"height":60,"color":"3"},
+		{"id":"9e8ec85b9f7b0ea2","type":"text","text":"123","x":-255,"y":-40,"width":250,"height":60},
+		{"id":"e2c4b058cf73e107","type":"text","text":"123","x":-60,"y":-180,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"0d8588912ac7173f","fromNode":"33b24714b3c46e8a","fromSide":"bottom","toNode":"9e8ec85b9f7b0ea2","toSide":"bottom"},
+		{"id":"a1da503d68e27f8e","fromNode":"9e8ec85b9f7b0ea2","fromSide":"left","toNode":"e2c4b058cf73e107","toSide":"left"}
+	]
 }
